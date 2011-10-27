@@ -161,6 +161,8 @@
             this.lNPCDialogsAuction = new System.Windows.Forms.Label();
             this.oNPCDialogsAuction = new System.Windows.Forms.ComboBox();
             this.gPanelStyle = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pPreview)).BeginInit();
             this.gLegendary.SuspendLayout();
             this.gInterface.SuspendLayout();
@@ -192,7 +194,7 @@
             this.pPreview.InitialImage = ((System.Drawing.Image)(resources.GetObject("pPreview.InitialImage")));
             this.pPreview.Location = new System.Drawing.Point(0, 0);
             this.pPreview.Name = "pPreview";
-            this.pPreview.Size = new System.Drawing.Size(1022, 260);
+            this.pPreview.Size = new System.Drawing.Size(1022, 257);
             this.pPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pPreview.TabIndex = 0;
             this.pPreview.TabStop = false;
@@ -202,9 +204,9 @@
             this.oLegendaryRelicMaster.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oLegendaryRelicMaster.Enabled = false;
             this.oLegendaryRelicMaster.FormattingEnabled = true;
-            this.oLegendaryRelicMaster.Location = new System.Drawing.Point(10, 220);
+            this.oLegendaryRelicMaster.Location = new System.Drawing.Point(6, 220);
             this.oLegendaryRelicMaster.Name = "oLegendaryRelicMaster";
-            this.oLegendaryRelicMaster.Size = new System.Drawing.Size(121, 21);
+            this.oLegendaryRelicMaster.Size = new System.Drawing.Size(131, 21);
             this.oLegendaryRelicMaster.Sorted = true;
             this.oLegendaryRelicMaster.TabIndex = 48;
             this.oLegendaryRelicMaster.Tag = "Relic Master";
@@ -213,7 +215,7 @@
             // lLegendaryRelicMaster
             // 
             this.lLegendaryRelicMaster.AutoSize = true;
-            this.lLegendaryRelicMaster.Location = new System.Drawing.Point(7, 206);
+            this.lLegendaryRelicMaster.Location = new System.Drawing.Point(5, 206);
             this.lLegendaryRelicMaster.Name = "lLegendaryRelicMaster";
             this.lLegendaryRelicMaster.Size = new System.Drawing.Size(66, 13);
             this.lLegendaryRelicMaster.TabIndex = 0;
@@ -246,9 +248,9 @@
             this.oLegendaryLegendaryItemTracking.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oLegendaryLegendaryItemTracking.Enabled = false;
             this.oLegendaryLegendaryItemTracking.FormattingEnabled = true;
-            this.oLegendaryLegendaryItemTracking.Location = new System.Drawing.Point(10, 182);
+            this.oLegendaryLegendaryItemTracking.Location = new System.Drawing.Point(6, 182);
             this.oLegendaryLegendaryItemTracking.Name = "oLegendaryLegendaryItemTracking";
-            this.oLegendaryLegendaryItemTracking.Size = new System.Drawing.Size(121, 21);
+            this.oLegendaryLegendaryItemTracking.Size = new System.Drawing.Size(131, 21);
             this.oLegendaryLegendaryItemTracking.Sorted = true;
             this.oLegendaryLegendaryItemTracking.TabIndex = 47;
             this.oLegendaryLegendaryItemTracking.Tag = "Legendary Item Tracking";
@@ -257,7 +259,7 @@
             // lLegendaryLegendaryItemTracking
             // 
             this.lLegendaryLegendaryItemTracking.AutoSize = true;
-            this.lLegendaryLegendaryItemTracking.Location = new System.Drawing.Point(7, 168);
+            this.lLegendaryLegendaryItemTracking.Location = new System.Drawing.Point(5, 168);
             this.lLegendaryLegendaryItemTracking.Name = "lLegendaryLegendaryItemTracking";
             this.lLegendaryLegendaryItemTracking.Size = new System.Drawing.Size(72, 13);
             this.lLegendaryLegendaryItemTracking.TabIndex = 0;
@@ -268,9 +270,9 @@
             this.oLegendaryLegacyUpdate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oLegendaryLegacyUpdate.Enabled = false;
             this.oLegendaryLegacyUpdate.FormattingEnabled = true;
-            this.oLegendaryLegacyUpdate.Location = new System.Drawing.Point(10, 144);
+            this.oLegendaryLegacyUpdate.Location = new System.Drawing.Point(6, 144);
             this.oLegendaryLegacyUpdate.Name = "oLegendaryLegacyUpdate";
-            this.oLegendaryLegacyUpdate.Size = new System.Drawing.Size(121, 21);
+            this.oLegendaryLegacyUpdate.Size = new System.Drawing.Size(131, 21);
             this.oLegendaryLegacyUpdate.Sorted = true;
             this.oLegendaryLegacyUpdate.TabIndex = 46;
             this.oLegendaryLegacyUpdate.Tag = "Legacy Update";
@@ -279,7 +281,7 @@
             // lLegendaryLegacyUpdate
             // 
             this.lLegendaryLegacyUpdate.AutoSize = true;
-            this.lLegendaryLegacyUpdate.Location = new System.Drawing.Point(7, 130);
+            this.lLegendaryLegacyUpdate.Location = new System.Drawing.Point(5, 130);
             this.lLegendaryLegacyUpdate.Name = "lLegendaryLegacyUpdate";
             this.lLegendaryLegacyUpdate.Size = new System.Drawing.Size(80, 13);
             this.lLegendaryLegacyUpdate.TabIndex = 0;
@@ -290,9 +292,9 @@
             this.oLegendaryLegacyExtraction.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oLegendaryLegacyExtraction.Enabled = false;
             this.oLegendaryLegacyExtraction.FormattingEnabled = true;
-            this.oLegendaryLegacyExtraction.Location = new System.Drawing.Point(10, 106);
+            this.oLegendaryLegacyExtraction.Location = new System.Drawing.Point(6, 106);
             this.oLegendaryLegacyExtraction.Name = "oLegendaryLegacyExtraction";
-            this.oLegendaryLegacyExtraction.Size = new System.Drawing.Size(121, 21);
+            this.oLegendaryLegacyExtraction.Size = new System.Drawing.Size(131, 21);
             this.oLegendaryLegacyExtraction.Sorted = true;
             this.oLegendaryLegacyExtraction.TabIndex = 45;
             this.oLegendaryLegacyExtraction.Tag = "Legacy Extraction";
@@ -301,7 +303,7 @@
             // lLegendaryLegacyExtraction
             // 
             this.lLegendaryLegacyExtraction.AutoSize = true;
-            this.lLegendaryLegacyExtraction.Location = new System.Drawing.Point(7, 92);
+            this.lLegendaryLegacyExtraction.Location = new System.Drawing.Point(5, 92);
             this.lLegendaryLegacyExtraction.Name = "lLegendaryLegacyExtraction";
             this.lLegendaryLegacyExtraction.Size = new System.Drawing.Size(92, 13);
             this.lLegendaryLegacyExtraction.TabIndex = 0;
@@ -312,9 +314,9 @@
             this.oLegendaryItemAdvancement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oLegendaryItemAdvancement.Enabled = false;
             this.oLegendaryItemAdvancement.FormattingEnabled = true;
-            this.oLegendaryItemAdvancement.Location = new System.Drawing.Point(10, 68);
+            this.oLegendaryItemAdvancement.Location = new System.Drawing.Point(6, 68);
             this.oLegendaryItemAdvancement.Name = "oLegendaryItemAdvancement";
-            this.oLegendaryItemAdvancement.Size = new System.Drawing.Size(121, 21);
+            this.oLegendaryItemAdvancement.Size = new System.Drawing.Size(131, 21);
             this.oLegendaryItemAdvancement.Sorted = true;
             this.oLegendaryItemAdvancement.TabIndex = 44;
             this.oLegendaryItemAdvancement.Tag = "Item Advancemet";
@@ -323,7 +325,7 @@
             // lLegendaryItemAdvancement
             // 
             this.lLegendaryItemAdvancement.AutoSize = true;
-            this.lLegendaryItemAdvancement.Location = new System.Drawing.Point(7, 54);
+            this.lLegendaryItemAdvancement.Location = new System.Drawing.Point(5, 54);
             this.lLegendaryItemAdvancement.Name = "lLegendaryItemAdvancement";
             this.lLegendaryItemAdvancement.Size = new System.Drawing.Size(96, 13);
             this.lLegendaryItemAdvancement.TabIndex = 0;
@@ -334,9 +336,9 @@
             this.oLegendaryForgeMaster.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oLegendaryForgeMaster.Enabled = false;
             this.oLegendaryForgeMaster.FormattingEnabled = true;
-            this.oLegendaryForgeMaster.Location = new System.Drawing.Point(10, 30);
+            this.oLegendaryForgeMaster.Location = new System.Drawing.Point(6, 30);
             this.oLegendaryForgeMaster.Name = "oLegendaryForgeMaster";
-            this.oLegendaryForgeMaster.Size = new System.Drawing.Size(121, 21);
+            this.oLegendaryForgeMaster.Size = new System.Drawing.Size(131, 21);
             this.oLegendaryForgeMaster.Sorted = true;
             this.oLegendaryForgeMaster.TabIndex = 43;
             this.oLegendaryForgeMaster.Tag = "Forge Master";
@@ -345,7 +347,7 @@
             // lLegendaryForgeMaster
             // 
             this.lLegendaryForgeMaster.AutoSize = true;
-            this.lLegendaryForgeMaster.Location = new System.Drawing.Point(7, 16);
+            this.lLegendaryForgeMaster.Location = new System.Drawing.Point(5, 16);
             this.lLegendaryForgeMaster.Name = "lLegendaryForgeMaster";
             this.lLegendaryForgeMaster.Size = new System.Drawing.Size(69, 13);
             this.lLegendaryForgeMaster.TabIndex = 0;
@@ -354,7 +356,7 @@
             // lCharPanelsInspectBio
             // 
             this.lCharPanelsInspectBio.AutoSize = true;
-            this.lCharPanelsInspectBio.Location = new System.Drawing.Point(7, 100);
+            this.lCharPanelsInspectBio.Location = new System.Drawing.Point(5, 92);
             this.lCharPanelsInspectBio.Name = "lCharPanelsInspectBio";
             this.lCharPanelsInspectBio.Size = new System.Drawing.Size(82, 13);
             this.lCharPanelsInspectBio.TabIndex = 0;
@@ -363,7 +365,7 @@
             // lCharPanelsTraits
             // 
             this.lCharPanelsTraits.AutoSize = true;
-            this.lCharPanelsTraits.Location = new System.Drawing.Point(7, 62);
+            this.lCharPanelsTraits.Location = new System.Drawing.Point(5, 54);
             this.lCharPanelsTraits.Name = "lCharPanelsTraits";
             this.lCharPanelsTraits.Size = new System.Drawing.Size(33, 13);
             this.lCharPanelsTraits.TabIndex = 0;
@@ -374,9 +376,9 @@
             this.oCharPanelsInspectBio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oCharPanelsInspectBio.Enabled = false;
             this.oCharPanelsInspectBio.FormattingEnabled = true;
-            this.oCharPanelsInspectBio.Location = new System.Drawing.Point(10, 114);
+            this.oCharPanelsInspectBio.Location = new System.Drawing.Point(6, 106);
             this.oCharPanelsInspectBio.Name = "oCharPanelsInspectBio";
-            this.oCharPanelsInspectBio.Size = new System.Drawing.Size(121, 21);
+            this.oCharPanelsInspectBio.Size = new System.Drawing.Size(131, 21);
             this.oCharPanelsInspectBio.Sorted = true;
             this.oCharPanelsInspectBio.TabIndex = 42;
             this.oCharPanelsInspectBio.Tag = "InspectBio";
@@ -384,9 +386,8 @@
             // 
             // lPanelStyleBorder
             // 
-            this.lPanelStyleBorder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lPanelStyleBorder.AutoSize = true;
-            this.lPanelStyleBorder.Location = new System.Drawing.Point(6, 24);
+            this.lPanelStyleBorder.Location = new System.Drawing.Point(5, 16);
             this.lPanelStyleBorder.Name = "lPanelStyleBorder";
             this.lPanelStyleBorder.Size = new System.Drawing.Size(38, 13);
             this.lPanelStyleBorder.TabIndex = 0;
@@ -394,13 +395,12 @@
             // 
             // oPanelStyleScrollbar
             // 
-            this.oPanelStyleScrollbar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.oPanelStyleScrollbar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oPanelStyleScrollbar.Enabled = false;
             this.oPanelStyleScrollbar.FormattingEnabled = true;
-            this.oPanelStyleScrollbar.Location = new System.Drawing.Point(9, 114);
+            this.oPanelStyleScrollbar.Location = new System.Drawing.Point(6, 106);
             this.oPanelStyleScrollbar.Name = "oPanelStyleScrollbar";
-            this.oPanelStyleScrollbar.Size = new System.Drawing.Size(121, 21);
+            this.oPanelStyleScrollbar.Size = new System.Drawing.Size(131, 21);
             this.oPanelStyleScrollbar.Sorted = true;
             this.oPanelStyleScrollbar.TabIndex = 10;
             this.oPanelStyleScrollbar.Tag = "Scrollbar";
@@ -411,9 +411,9 @@
             this.oCharPanelsTraits.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oCharPanelsTraits.Enabled = false;
             this.oCharPanelsTraits.FormattingEnabled = true;
-            this.oCharPanelsTraits.Location = new System.Drawing.Point(10, 77);
+            this.oCharPanelsTraits.Location = new System.Drawing.Point(6, 68);
             this.oCharPanelsTraits.Name = "oCharPanelsTraits";
-            this.oCharPanelsTraits.Size = new System.Drawing.Size(121, 21);
+            this.oCharPanelsTraits.Size = new System.Drawing.Size(131, 21);
             this.oCharPanelsTraits.Sorted = true;
             this.oCharPanelsTraits.TabIndex = 41;
             this.oCharPanelsTraits.Tag = "Traits";
@@ -421,13 +421,12 @@
             // 
             // oPanelStyleButtons
             // 
-            this.oPanelStyleButtons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.oPanelStyleButtons.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oPanelStyleButtons.Enabled = false;
             this.oPanelStyleButtons.FormattingEnabled = true;
-            this.oPanelStyleButtons.Location = new System.Drawing.Point(9, 76);
+            this.oPanelStyleButtons.Location = new System.Drawing.Point(6, 68);
             this.oPanelStyleButtons.Name = "oPanelStyleButtons";
-            this.oPanelStyleButtons.Size = new System.Drawing.Size(121, 21);
+            this.oPanelStyleButtons.Size = new System.Drawing.Size(131, 21);
             this.oPanelStyleButtons.Sorted = true;
             this.oPanelStyleButtons.TabIndex = 9;
             this.oPanelStyleButtons.Tag = "Buttons";
@@ -435,13 +434,12 @@
             // 
             // oPanelStyleBorder
             // 
-            this.oPanelStyleBorder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.oPanelStyleBorder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oPanelStyleBorder.Enabled = false;
             this.oPanelStyleBorder.FormattingEnabled = true;
-            this.oPanelStyleBorder.Location = new System.Drawing.Point(9, 38);
+            this.oPanelStyleBorder.Location = new System.Drawing.Point(6, 30);
             this.oPanelStyleBorder.Name = "oPanelStyleBorder";
-            this.oPanelStyleBorder.Size = new System.Drawing.Size(121, 21);
+            this.oPanelStyleBorder.Size = new System.Drawing.Size(131, 21);
             this.oPanelStyleBorder.Sorted = true;
             this.oPanelStyleBorder.TabIndex = 8;
             this.oPanelStyleBorder.Tag = "Border";
@@ -452,9 +450,9 @@
             this.oCharPanelsCharacter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oCharPanelsCharacter.Enabled = false;
             this.oCharPanelsCharacter.FormattingEnabled = true;
-            this.oCharPanelsCharacter.Location = new System.Drawing.Point(10, 39);
+            this.oCharPanelsCharacter.Location = new System.Drawing.Point(6, 30);
             this.oCharPanelsCharacter.Name = "oCharPanelsCharacter";
-            this.oCharPanelsCharacter.Size = new System.Drawing.Size(121, 21);
+            this.oCharPanelsCharacter.Size = new System.Drawing.Size(131, 21);
             this.oCharPanelsCharacter.Sorted = true;
             this.oCharPanelsCharacter.TabIndex = 40;
             this.oCharPanelsCharacter.Tag = "Character";
@@ -463,7 +461,7 @@
             // lCharPanelsCharacter
             // 
             this.lCharPanelsCharacter.AutoSize = true;
-            this.lCharPanelsCharacter.Location = new System.Drawing.Point(7, 24);
+            this.lCharPanelsCharacter.Location = new System.Drawing.Point(5, 16);
             this.lCharPanelsCharacter.Name = "lCharPanelsCharacter";
             this.lCharPanelsCharacter.Size = new System.Drawing.Size(53, 13);
             this.lCharPanelsCharacter.TabIndex = 0;
@@ -472,6 +470,8 @@
             // gInterface
             // 
             this.gInterface.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gInterface.Controls.Add(this.comboBox1);
+            this.gInterface.Controls.Add(this.label1);
             this.gInterface.Controls.Add(this.lInterfaceFullMap);
             this.gInterface.Controls.Add(this.lInterfaceEndTravel);
             this.gInterface.Controls.Add(this.lInterfaceChat);
@@ -496,7 +496,7 @@
             this.gInterface.Controls.Add(this.lInterfaceAttunement);
             this.gInterface.Location = new System.Drawing.Point(153, 0);
             this.gInterface.Name = "gInterface";
-            this.gInterface.Size = new System.Drawing.Size(143, 442);
+            this.gInterface.Size = new System.Drawing.Size(143, 480);
             this.gInterface.TabIndex = 3;
             this.gInterface.TabStop = false;
             this.gInterface.Text = "Interface";
@@ -504,7 +504,7 @@
             // lInterfaceFullMap
             // 
             this.lInterfaceFullMap.AutoSize = true;
-            this.lInterfaceFullMap.Location = new System.Drawing.Point(7, 206);
+            this.lInterfaceFullMap.Location = new System.Drawing.Point(5, 206);
             this.lInterfaceFullMap.Name = "lInterfaceFullMap";
             this.lInterfaceFullMap.Size = new System.Drawing.Size(47, 13);
             this.lInterfaceFullMap.TabIndex = 0;
@@ -513,7 +513,7 @@
             // lInterfaceEndTravel
             // 
             this.lInterfaceEndTravel.AutoSize = true;
-            this.lInterfaceEndTravel.Location = new System.Drawing.Point(7, 168);
+            this.lInterfaceEndTravel.Location = new System.Drawing.Point(5, 168);
             this.lInterfaceEndTravel.Name = "lInterfaceEndTravel";
             this.lInterfaceEndTravel.Size = new System.Drawing.Size(59, 13);
             this.lInterfaceEndTravel.TabIndex = 0;
@@ -522,7 +522,7 @@
             // lInterfaceChat
             // 
             this.lInterfaceChat.AutoSize = true;
-            this.lInterfaceChat.Location = new System.Drawing.Point(7, 130);
+            this.lInterfaceChat.Location = new System.Drawing.Point(5, 130);
             this.lInterfaceChat.Name = "lInterfaceChat";
             this.lInterfaceChat.Size = new System.Drawing.Size(50, 13);
             this.lInterfaceChat.TabIndex = 0;
@@ -531,7 +531,7 @@
             // lInterfaceBags
             // 
             this.lInterfaceBags.AutoSize = true;
-            this.lInterfaceBags.Location = new System.Drawing.Point(7, 92);
+            this.lInterfaceBags.Location = new System.Drawing.Point(5, 92);
             this.lInterfaceBags.Name = "lInterfaceBags";
             this.lInterfaceBags.Size = new System.Drawing.Size(31, 13);
             this.lInterfaceBags.TabIndex = 0;
@@ -540,7 +540,7 @@
             // lInterfaceGambit
             // 
             this.lInterfaceGambit.AutoSize = true;
-            this.lInterfaceGambit.Location = new System.Drawing.Point(7, 54);
+            this.lInterfaceGambit.Location = new System.Drawing.Point(5, 54);
             this.lInterfaceGambit.Name = "lInterfaceGambit";
             this.lInterfaceGambit.Size = new System.Drawing.Size(40, 13);
             this.lInterfaceGambit.TabIndex = 0;
@@ -551,9 +551,9 @@
             this.oInterfaceTooltips.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceTooltips.Enabled = false;
             this.oInterfaceTooltips.FormattingEnabled = true;
-            this.oInterfaceTooltips.Location = new System.Drawing.Point(10, 410);
+            this.oInterfaceTooltips.Location = new System.Drawing.Point(6, 448);
             this.oInterfaceTooltips.Name = "oInterfaceTooltips";
-            this.oInterfaceTooltips.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceTooltips.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceTooltips.Sorted = true;
             this.oInterfaceTooltips.TabIndex = 21;
             this.oInterfaceTooltips.Tag = "Tool Tip";
@@ -562,7 +562,7 @@
             // lInterfaceTooltips
             // 
             this.lInterfaceTooltips.AutoSize = true;
-            this.lInterfaceTooltips.Location = new System.Drawing.Point(7, 396);
+            this.lInterfaceTooltips.Location = new System.Drawing.Point(5, 434);
             this.lInterfaceTooltips.Name = "lInterfaceTooltips";
             this.lInterfaceTooltips.Size = new System.Drawing.Size(44, 13);
             this.lInterfaceTooltips.TabIndex = 0;
@@ -573,9 +573,9 @@
             this.oInterfaceToolbar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceToolbar.Enabled = false;
             this.oInterfaceToolbar.FormattingEnabled = true;
-            this.oInterfaceToolbar.Location = new System.Drawing.Point(10, 372);
+            this.oInterfaceToolbar.Location = new System.Drawing.Point(6, 410);
             this.oInterfaceToolbar.Name = "oInterfaceToolbar";
-            this.oInterfaceToolbar.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceToolbar.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceToolbar.Sorted = true;
             this.oInterfaceToolbar.TabIndex = 20;
             this.oInterfaceToolbar.Tag = "Toolbar";
@@ -584,7 +584,7 @@
             // lInterfaceToolbar
             // 
             this.lInterfaceToolbar.AutoSize = true;
-            this.lInterfaceToolbar.Location = new System.Drawing.Point(7, 358);
+            this.lInterfaceToolbar.Location = new System.Drawing.Point(5, 396);
             this.lInterfaceToolbar.Name = "lInterfaceToolbar";
             this.lInterfaceToolbar.Size = new System.Drawing.Size(43, 13);
             this.lInterfaceToolbar.TabIndex = 0;
@@ -595,9 +595,9 @@
             this.oInterfaceQuestTracker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceQuestTracker.Enabled = false;
             this.oInterfaceQuestTracker.FormattingEnabled = true;
-            this.oInterfaceQuestTracker.Location = new System.Drawing.Point(10, 334);
+            this.oInterfaceQuestTracker.Location = new System.Drawing.Point(6, 334);
             this.oInterfaceQuestTracker.Name = "oInterfaceQuestTracker";
-            this.oInterfaceQuestTracker.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceQuestTracker.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceQuestTracker.Sorted = true;
             this.oInterfaceQuestTracker.TabIndex = 19;
             this.oInterfaceQuestTracker.Tag = "Quest Tracker";
@@ -606,7 +606,7 @@
             // lInterfaceQuestTracker
             // 
             this.lInterfaceQuestTracker.AutoSize = true;
-            this.lInterfaceQuestTracker.Location = new System.Drawing.Point(7, 320);
+            this.lInterfaceQuestTracker.Location = new System.Drawing.Point(5, 320);
             this.lInterfaceQuestTracker.Name = "lInterfaceQuestTracker";
             this.lInterfaceQuestTracker.Size = new System.Drawing.Size(75, 13);
             this.lInterfaceQuestTracker.TabIndex = 0;
@@ -617,9 +617,9 @@
             this.oInterfaceProgressBar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceProgressBar.Enabled = false;
             this.oInterfaceProgressBar.FormattingEnabled = true;
-            this.oInterfaceProgressBar.Location = new System.Drawing.Point(10, 296);
+            this.oInterfaceProgressBar.Location = new System.Drawing.Point(6, 296);
             this.oInterfaceProgressBar.Name = "oInterfaceProgressBar";
-            this.oInterfaceProgressBar.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceProgressBar.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceProgressBar.Sorted = true;
             this.oInterfaceProgressBar.TabIndex = 18;
             this.oInterfaceProgressBar.Tag = "Progress Bar";
@@ -628,7 +628,7 @@
             // lInterfaceProgressBar
             // 
             this.lInterfaceProgressBar.AutoSize = true;
-            this.lInterfaceProgressBar.Location = new System.Drawing.Point(7, 282);
+            this.lInterfaceProgressBar.Location = new System.Drawing.Point(5, 282);
             this.lInterfaceProgressBar.Name = "lInterfaceProgressBar";
             this.lInterfaceProgressBar.Size = new System.Drawing.Size(67, 13);
             this.lInterfaceProgressBar.TabIndex = 0;
@@ -639,9 +639,9 @@
             this.oInterfaceMinimap.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceMinimap.Enabled = false;
             this.oInterfaceMinimap.FormattingEnabled = true;
-            this.oInterfaceMinimap.Location = new System.Drawing.Point(10, 258);
+            this.oInterfaceMinimap.Location = new System.Drawing.Point(6, 258);
             this.oInterfaceMinimap.Name = "oInterfaceMinimap";
-            this.oInterfaceMinimap.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceMinimap.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceMinimap.Sorted = true;
             this.oInterfaceMinimap.TabIndex = 17;
             this.oInterfaceMinimap.Tag = "Minimap";
@@ -650,7 +650,7 @@
             // lInterfaceMinimap
             // 
             this.lInterfaceMinimap.AutoSize = true;
-            this.lInterfaceMinimap.Location = new System.Drawing.Point(7, 244);
+            this.lInterfaceMinimap.Location = new System.Drawing.Point(5, 244);
             this.lInterfaceMinimap.Name = "lInterfaceMinimap";
             this.lInterfaceMinimap.Size = new System.Drawing.Size(84, 13);
             this.lInterfaceMinimap.TabIndex = 0;
@@ -661,9 +661,9 @@
             this.oInterfaceFullMap.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceFullMap.Enabled = false;
             this.oInterfaceFullMap.FormattingEnabled = true;
-            this.oInterfaceFullMap.Location = new System.Drawing.Point(10, 220);
+            this.oInterfaceFullMap.Location = new System.Drawing.Point(6, 220);
             this.oInterfaceFullMap.Name = "oInterfaceFullMap";
-            this.oInterfaceFullMap.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceFullMap.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceFullMap.Sorted = true;
             this.oInterfaceFullMap.TabIndex = 16;
             this.oInterfaceFullMap.Tag = "Full Map";
@@ -674,9 +674,9 @@
             this.oInterfaceEndTravel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceEndTravel.Enabled = false;
             this.oInterfaceEndTravel.FormattingEnabled = true;
-            this.oInterfaceEndTravel.Location = new System.Drawing.Point(10, 182);
+            this.oInterfaceEndTravel.Location = new System.Drawing.Point(6, 182);
             this.oInterfaceEndTravel.Name = "oInterfaceEndTravel";
-            this.oInterfaceEndTravel.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceEndTravel.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceEndTravel.Sorted = true;
             this.oInterfaceEndTravel.TabIndex = 15;
             this.oInterfaceEndTravel.Tag = "EndTravel";
@@ -687,9 +687,9 @@
             this.oInterfaceChat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceChat.Enabled = false;
             this.oInterfaceChat.FormattingEnabled = true;
-            this.oInterfaceChat.Location = new System.Drawing.Point(10, 144);
+            this.oInterfaceChat.Location = new System.Drawing.Point(6, 144);
             this.oInterfaceChat.Name = "oInterfaceChat";
-            this.oInterfaceChat.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceChat.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceChat.Sorted = true;
             this.oInterfaceChat.TabIndex = 14;
             this.oInterfaceChat.Tag = "Chat";
@@ -700,9 +700,9 @@
             this.oInterfaceBags.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceBags.Enabled = false;
             this.oInterfaceBags.FormattingEnabled = true;
-            this.oInterfaceBags.Location = new System.Drawing.Point(10, 106);
+            this.oInterfaceBags.Location = new System.Drawing.Point(6, 106);
             this.oInterfaceBags.Name = "oInterfaceBags";
-            this.oInterfaceBags.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceBags.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceBags.Sorted = true;
             this.oInterfaceBags.TabIndex = 13;
             this.oInterfaceBags.Tag = "Bags";
@@ -713,9 +713,9 @@
             this.oInterfaceGambit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceGambit.Enabled = false;
             this.oInterfaceGambit.FormattingEnabled = true;
-            this.oInterfaceGambit.Location = new System.Drawing.Point(10, 68);
+            this.oInterfaceGambit.Location = new System.Drawing.Point(6, 68);
             this.oInterfaceGambit.Name = "oInterfaceGambit";
-            this.oInterfaceGambit.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceGambit.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceGambit.Sorted = true;
             this.oInterfaceGambit.TabIndex = 12;
             this.oInterfaceGambit.Tag = "Gambit";
@@ -726,9 +726,9 @@
             this.oInterfaceAttunement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oInterfaceAttunement.Enabled = false;
             this.oInterfaceAttunement.FormattingEnabled = true;
-            this.oInterfaceAttunement.Location = new System.Drawing.Point(10, 30);
+            this.oInterfaceAttunement.Location = new System.Drawing.Point(6, 30);
             this.oInterfaceAttunement.Name = "oInterfaceAttunement";
-            this.oInterfaceAttunement.Size = new System.Drawing.Size(121, 21);
+            this.oInterfaceAttunement.Size = new System.Drawing.Size(131, 21);
             this.oInterfaceAttunement.Sorted = true;
             this.oInterfaceAttunement.TabIndex = 11;
             this.oInterfaceAttunement.Tag = "Attunement";
@@ -737,7 +737,7 @@
             // lInterfaceAttunement
             // 
             this.lInterfaceAttunement.AutoSize = true;
-            this.lInterfaceAttunement.Location = new System.Drawing.Point(7, 15);
+            this.lInterfaceAttunement.Location = new System.Drawing.Point(5, 16);
             this.lInterfaceAttunement.Name = "lInterfaceAttunement";
             this.lInterfaceAttunement.Size = new System.Drawing.Size(61, 13);
             this.lInterfaceAttunement.TabIndex = 0;
@@ -752,9 +752,9 @@
             this.gCharPanels.Controls.Add(this.oCharPanelsTraits);
             this.gCharPanels.Controls.Add(this.oCharPanelsCharacter);
             this.gCharPanels.Controls.Add(this.lCharPanelsCharacter);
-            this.gCharPanels.Location = new System.Drawing.Point(451, 296);
+            this.gCharPanels.Location = new System.Drawing.Point(600, 259);
             this.gCharPanels.Name = "gCharPanels";
-            this.gCharPanels.Size = new System.Drawing.Size(143, 146);
+            this.gCharPanels.Size = new System.Drawing.Size(143, 137);
             this.gCharPanels.TabIndex = 6;
             this.gCharPanels.TabStop = false;
             this.gCharPanels.Text = "Character Panels";
@@ -793,7 +793,7 @@
             // 
             this.gAbout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.gAbout.Controls.Add(this.lAbout);
-            this.gAbout.Location = new System.Drawing.Point(0, 377);
+            this.gAbout.Location = new System.Drawing.Point(1, 394);
             this.gAbout.Name = "gAbout";
             this.gAbout.Size = new System.Drawing.Size(268, 65);
             this.gAbout.TabIndex = 13;
@@ -854,7 +854,7 @@
             // gHelp
             // 
             this.gHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.gHelp.Location = new System.Drawing.Point(0, 296);
+            this.gHelp.Location = new System.Drawing.Point(0, 312);
             this.gHelp.Name = "gHelp";
             this.gHelp.Size = new System.Drawing.Size(268, 75);
             this.gHelp.TabIndex = 12;
@@ -894,7 +894,7 @@
             // lSkirmishSkirmishBard
             // 
             this.lSkirmishSkirmishBard.AutoSize = true;
-            this.lSkirmishSkirmishBard.Location = new System.Drawing.Point(7, 137);
+            this.lSkirmishSkirmishBard.Location = new System.Drawing.Point(5, 130);
             this.lSkirmishSkirmishBard.Name = "lSkirmishSkirmishBard";
             this.lSkirmishSkirmishBard.Size = new System.Drawing.Size(71, 13);
             this.lSkirmishSkirmishBard.TabIndex = 0;
@@ -903,7 +903,7 @@
             // lSkirmishSkirmishTrainer
             // 
             this.lSkirmishSkirmishTrainer.AutoSize = true;
-            this.lSkirmishSkirmishTrainer.Location = new System.Drawing.Point(7, 99);
+            this.lSkirmishSkirmishTrainer.Location = new System.Drawing.Point(5, 92);
             this.lSkirmishSkirmishTrainer.Name = "lSkirmishSkirmishTrainer";
             this.lSkirmishSkirmishTrainer.Size = new System.Drawing.Size(82, 13);
             this.lSkirmishSkirmishTrainer.TabIndex = 0;
@@ -920,9 +920,9 @@
             this.gSkirmish.Controls.Add(this.oSkirmishSkirmishBard);
             this.gSkirmish.Controls.Add(this.oSkirmishSkirmishTrainer);
             this.gSkirmish.Controls.Add(this.oSkirmishSkirmishPanel);
-            this.gSkirmish.Location = new System.Drawing.Point(600, 259);
+            this.gSkirmish.Location = new System.Drawing.Point(451, 292);
             this.gSkirmish.Name = "gSkirmish";
-            this.gSkirmish.Size = new System.Drawing.Size(143, 183);
+            this.gSkirmish.Size = new System.Drawing.Size(143, 175);
             this.gSkirmish.TabIndex = 8;
             this.gSkirmish.TabStop = false;
             this.gSkirmish.Text = "Skirmish";
@@ -930,7 +930,7 @@
             // lSkirmishSkirmishPanel
             // 
             this.lSkirmishSkirmishPanel.AutoSize = true;
-            this.lSkirmishSkirmishPanel.Location = new System.Drawing.Point(7, 61);
+            this.lSkirmishSkirmishPanel.Location = new System.Drawing.Point(5, 54);
             this.lSkirmishSkirmishPanel.Name = "lSkirmishSkirmishPanel";
             this.lSkirmishSkirmishPanel.Size = new System.Drawing.Size(76, 13);
             this.lSkirmishSkirmishPanel.TabIndex = 0;
@@ -939,7 +939,7 @@
             // lSkirmishSkirmishCreate
             // 
             this.lSkirmishSkirmishCreate.AutoSize = true;
-            this.lSkirmishSkirmishCreate.Location = new System.Drawing.Point(7, 23);
+            this.lSkirmishSkirmishCreate.Location = new System.Drawing.Point(5, 16);
             this.lSkirmishSkirmishCreate.Name = "lSkirmishSkirmishCreate";
             this.lSkirmishSkirmishCreate.Size = new System.Drawing.Size(80, 13);
             this.lSkirmishSkirmishCreate.TabIndex = 0;
@@ -950,9 +950,9 @@
             this.oSkirmishSkirmishCreate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oSkirmishSkirmishCreate.Enabled = false;
             this.oSkirmishSkirmishCreate.FormattingEnabled = true;
-            this.oSkirmishSkirmishCreate.Location = new System.Drawing.Point(10, 37);
+            this.oSkirmishSkirmishCreate.Location = new System.Drawing.Point(6, 30);
             this.oSkirmishSkirmishCreate.Name = "oSkirmishSkirmishCreate";
-            this.oSkirmishSkirmishCreate.Size = new System.Drawing.Size(121, 21);
+            this.oSkirmishSkirmishCreate.Size = new System.Drawing.Size(131, 21);
             this.oSkirmishSkirmishCreate.Sorted = true;
             this.oSkirmishSkirmishCreate.TabIndex = 49;
             this.oSkirmishSkirmishCreate.Tag = "Skirmish Create";
@@ -963,9 +963,9 @@
             this.oSkirmishSkirmishBard.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oSkirmishSkirmishBard.Enabled = false;
             this.oSkirmishSkirmishBard.FormattingEnabled = true;
-            this.oSkirmishSkirmishBard.Location = new System.Drawing.Point(10, 151);
+            this.oSkirmishSkirmishBard.Location = new System.Drawing.Point(6, 144);
             this.oSkirmishSkirmishBard.Name = "oSkirmishSkirmishBard";
-            this.oSkirmishSkirmishBard.Size = new System.Drawing.Size(121, 21);
+            this.oSkirmishSkirmishBard.Size = new System.Drawing.Size(131, 21);
             this.oSkirmishSkirmishBard.Sorted = true;
             this.oSkirmishSkirmishBard.TabIndex = 52;
             this.oSkirmishSkirmishBard.Tag = "Skirmish Bard";
@@ -976,9 +976,9 @@
             this.oSkirmishSkirmishTrainer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oSkirmishSkirmishTrainer.Enabled = false;
             this.oSkirmishSkirmishTrainer.FormattingEnabled = true;
-            this.oSkirmishSkirmishTrainer.Location = new System.Drawing.Point(10, 113);
+            this.oSkirmishSkirmishTrainer.Location = new System.Drawing.Point(6, 106);
             this.oSkirmishSkirmishTrainer.Name = "oSkirmishSkirmishTrainer";
-            this.oSkirmishSkirmishTrainer.Size = new System.Drawing.Size(121, 21);
+            this.oSkirmishSkirmishTrainer.Size = new System.Drawing.Size(131, 21);
             this.oSkirmishSkirmishTrainer.Sorted = true;
             this.oSkirmishSkirmishTrainer.TabIndex = 51;
             this.oSkirmishSkirmishTrainer.Tag = "Skirmish Trainer";
@@ -989,9 +989,9 @@
             this.oSkirmishSkirmishPanel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oSkirmishSkirmishPanel.Enabled = false;
             this.oSkirmishSkirmishPanel.FormattingEnabled = true;
-            this.oSkirmishSkirmishPanel.Location = new System.Drawing.Point(10, 75);
+            this.oSkirmishSkirmishPanel.Location = new System.Drawing.Point(6, 68);
             this.oSkirmishSkirmishPanel.Name = "oSkirmishSkirmishPanel";
-            this.oSkirmishSkirmishPanel.Size = new System.Drawing.Size(121, 21);
+            this.oSkirmishSkirmishPanel.Size = new System.Drawing.Size(131, 21);
             this.oSkirmishSkirmishPanel.Sorted = true;
             this.oSkirmishSkirmishPanel.TabIndex = 50;
             this.oSkirmishSkirmishPanel.Tag = "Skirmish Panel";
@@ -1002,7 +1002,7 @@
             this.gSkinName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.gSkinName.Controls.Add(this.lSkinName);
             this.gSkinName.Controls.Add(this.tSkinName);
-            this.gSkinName.Location = new System.Drawing.Point(0, 122);
+            this.gSkinName.Location = new System.Drawing.Point(0, 138);
             this.gSkinName.Name = "gSkinName";
             this.gSkinName.Size = new System.Drawing.Size(268, 75);
             this.gSkinName.TabIndex = 10;
@@ -1028,7 +1028,7 @@
             this.gResolution.Controls.Add(this.lResolutionMain);
             this.gResolution.Controls.Add(this.oResolutionToolbar);
             this.gResolution.Controls.Add(this.oResolutionMain);
-            this.gResolution.Location = new System.Drawing.Point(0, 0);
+            this.gResolution.Location = new System.Drawing.Point(0, 16);
             this.gResolution.Name = "gResolution";
             this.gResolution.Size = new System.Drawing.Size(268, 116);
             this.gResolution.TabIndex = 9;
@@ -1042,7 +1042,7 @@
             this.gFullSkinActions.Controls.Add(this.bDeleteSkin);
             this.gFullSkinActions.Controls.Add(this.bEditSkin);
             this.gFullSkinActions.Controls.Add(this.bBuildSkin);
-            this.gFullSkinActions.Location = new System.Drawing.Point(0, 203);
+            this.gFullSkinActions.Location = new System.Drawing.Point(0, 219);
             this.gFullSkinActions.Name = "gFullSkinActions";
             this.gFullSkinActions.Size = new System.Drawing.Size(268, 86);
             this.gFullSkinActions.TabIndex = 11;
@@ -1051,9 +1051,8 @@
             // 
             // lPanelStyleButtons
             // 
-            this.lPanelStyleButtons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lPanelStyleButtons.AutoSize = true;
-            this.lPanelStyleButtons.Location = new System.Drawing.Point(6, 62);
+            this.lPanelStyleButtons.Location = new System.Drawing.Point(5, 54);
             this.lPanelStyleButtons.Name = "lPanelStyleButtons";
             this.lPanelStyleButtons.Size = new System.Drawing.Size(43, 13);
             this.lPanelStyleButtons.TabIndex = 0;
@@ -1061,9 +1060,8 @@
             // 
             // lPanelStyleScrollbar
             // 
-            this.lPanelStyleScrollbar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lPanelStyleScrollbar.AutoSize = true;
-            this.lPanelStyleScrollbar.Location = new System.Drawing.Point(6, 100);
+            this.lPanelStyleScrollbar.Location = new System.Drawing.Point(5, 92);
             this.lPanelStyleScrollbar.Name = "lPanelStyleScrollbar";
             this.lPanelStyleScrollbar.Size = new System.Drawing.Size(48, 13);
             this.lPanelStyleScrollbar.TabIndex = 0;
@@ -1072,7 +1070,7 @@
             // lUIPanelsQuestLog
             // 
             this.lUIPanelsQuestLog.AutoSize = true;
-            this.lUIPanelsQuestLog.Location = new System.Drawing.Point(7, 244);
+            this.lUIPanelsQuestLog.Location = new System.Drawing.Point(5, 244);
             this.lUIPanelsQuestLog.Name = "lUIPanelsQuestLog";
             this.lUIPanelsQuestLog.Size = new System.Drawing.Size(56, 13);
             this.lUIPanelsQuestLog.TabIndex = 0;
@@ -1081,7 +1079,7 @@
             // lUIPanelsOptions
             // 
             this.lUIPanelsOptions.AutoSize = true;
-            this.lUIPanelsOptions.Location = new System.Drawing.Point(7, 206);
+            this.lUIPanelsOptions.Location = new System.Drawing.Point(5, 206);
             this.lUIPanelsOptions.Name = "lUIPanelsOptions";
             this.lUIPanelsOptions.Size = new System.Drawing.Size(43, 13);
             this.lUIPanelsOptions.TabIndex = 0;
@@ -1090,7 +1088,7 @@
             // lVitalsEscortVitals
             // 
             this.lVitalsEscortVitals.AutoSize = true;
-            this.lVitalsEscortVitals.Location = new System.Drawing.Point(6, 168);
+            this.lVitalsEscortVitals.Location = new System.Drawing.Point(5, 168);
             this.lVitalsEscortVitals.Name = "lVitalsEscortVitals";
             this.lVitalsEscortVitals.Size = new System.Drawing.Size(37, 13);
             this.lVitalsEscortVitals.TabIndex = 0;
@@ -1101,9 +1099,9 @@
             this.oVitalsSoldierVitals.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oVitalsSoldierVitals.Enabled = false;
             this.oVitalsSoldierVitals.FormattingEnabled = true;
-            this.oVitalsSoldierVitals.Location = new System.Drawing.Point(9, 144);
+            this.oVitalsSoldierVitals.Location = new System.Drawing.Point(6, 144);
             this.oVitalsSoldierVitals.Name = "oVitalsSoldierVitals";
-            this.oVitalsSoldierVitals.Size = new System.Drawing.Size(121, 21);
+            this.oVitalsSoldierVitals.Size = new System.Drawing.Size(131, 21);
             this.oVitalsSoldierVitals.Sorted = true;
             this.oVitalsSoldierVitals.TabIndex = 4;
             this.oVitalsSoldierVitals.Tag = "Soldier Vitals";
@@ -1112,7 +1110,7 @@
             // lVitalsSoldierVitals
             // 
             this.lVitalsSoldierVitals.AutoSize = true;
-            this.lVitalsSoldierVitals.Location = new System.Drawing.Point(6, 130);
+            this.lVitalsSoldierVitals.Location = new System.Drawing.Point(5, 130);
             this.lVitalsSoldierVitals.Name = "lVitalsSoldierVitals";
             this.lVitalsSoldierVitals.Size = new System.Drawing.Size(39, 13);
             this.lVitalsSoldierVitals.TabIndex = 0;
@@ -1121,7 +1119,7 @@
             // lUIPanelsMail
             // 
             this.lUIPanelsMail.AutoSize = true;
-            this.lUIPanelsMail.Location = new System.Drawing.Point(7, 168);
+            this.lUIPanelsMail.Location = new System.Drawing.Point(5, 168);
             this.lUIPanelsMail.Name = "lUIPanelsMail";
             this.lUIPanelsMail.Size = new System.Drawing.Size(26, 13);
             this.lUIPanelsMail.TabIndex = 0;
@@ -1130,7 +1128,7 @@
             // lUIPanelsSocial
             // 
             this.lUIPanelsSocial.AutoSize = true;
-            this.lUIPanelsSocial.Location = new System.Drawing.Point(7, 282);
+            this.lUIPanelsSocial.Location = new System.Drawing.Point(5, 282);
             this.lUIPanelsSocial.Name = "lUIPanelsSocial";
             this.lUIPanelsSocial.Size = new System.Drawing.Size(36, 13);
             this.lUIPanelsSocial.TabIndex = 0;
@@ -1141,9 +1139,9 @@
             this.oVitalsMountVitals.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oVitalsMountVitals.Enabled = false;
             this.oVitalsMountVitals.FormattingEnabled = true;
-            this.oVitalsMountVitals.Location = new System.Drawing.Point(9, 220);
+            this.oVitalsMountVitals.Location = new System.Drawing.Point(6, 220);
             this.oVitalsMountVitals.Name = "oVitalsMountVitals";
-            this.oVitalsMountVitals.Size = new System.Drawing.Size(121, 21);
+            this.oVitalsMountVitals.Size = new System.Drawing.Size(131, 21);
             this.oVitalsMountVitals.Sorted = true;
             this.oVitalsMountVitals.TabIndex = 6;
             this.oVitalsMountVitals.Tag = "Mount Vitals";
@@ -1152,7 +1150,7 @@
             // lVitalsMountVitals
             // 
             this.lVitalsMountVitals.AutoSize = true;
-            this.lVitalsMountVitals.Location = new System.Drawing.Point(6, 206);
+            this.lVitalsMountVitals.Location = new System.Drawing.Point(5, 206);
             this.lVitalsMountVitals.Name = "lVitalsMountVitals";
             this.lVitalsMountVitals.Size = new System.Drawing.Size(37, 13);
             this.lVitalsMountVitals.TabIndex = 0;
@@ -1163,9 +1161,9 @@
             this.oVitalsEscortVitals.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oVitalsEscortVitals.Enabled = false;
             this.oVitalsEscortVitals.FormattingEnabled = true;
-            this.oVitalsEscortVitals.Location = new System.Drawing.Point(9, 182);
+            this.oVitalsEscortVitals.Location = new System.Drawing.Point(6, 182);
             this.oVitalsEscortVitals.Name = "oVitalsEscortVitals";
-            this.oVitalsEscortVitals.Size = new System.Drawing.Size(121, 21);
+            this.oVitalsEscortVitals.Size = new System.Drawing.Size(131, 21);
             this.oVitalsEscortVitals.Sorted = true;
             this.oVitalsEscortVitals.TabIndex = 5;
             this.oVitalsEscortVitals.Tag = "Escort Vitals";
@@ -1174,7 +1172,7 @@
             // lUIPanelsInstanceJoin
             // 
             this.lUIPanelsInstanceJoin.AutoSize = true;
-            this.lUIPanelsInstanceJoin.Location = new System.Drawing.Point(7, 130);
+            this.lUIPanelsInstanceJoin.Location = new System.Drawing.Point(5, 130);
             this.lUIPanelsInstanceJoin.Name = "lUIPanelsInstanceJoin";
             this.lUIPanelsInstanceJoin.Size = new System.Drawing.Size(70, 13);
             this.lUIPanelsInstanceJoin.TabIndex = 0;
@@ -1185,9 +1183,9 @@
             this.oVitalsTargetsTarget.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oVitalsTargetsTarget.Enabled = false;
             this.oVitalsTargetsTarget.FormattingEnabled = true;
-            this.oVitalsTargetsTarget.Location = new System.Drawing.Point(9, 106);
+            this.oVitalsTargetsTarget.Location = new System.Drawing.Point(6, 106);
             this.oVitalsTargetsTarget.Name = "oVitalsTargetsTarget";
-            this.oVitalsTargetsTarget.Size = new System.Drawing.Size(121, 21);
+            this.oVitalsTargetsTarget.Size = new System.Drawing.Size(131, 21);
             this.oVitalsTargetsTarget.Sorted = true;
             this.oVitalsTargetsTarget.TabIndex = 3;
             this.oVitalsTargetsTarget.Tag = "Targets Target";
@@ -1196,7 +1194,7 @@
             // lUIPanelsDressingRoom
             // 
             this.lUIPanelsDressingRoom.AutoSize = true;
-            this.lUIPanelsDressingRoom.Location = new System.Drawing.Point(7, 92);
+            this.lUIPanelsDressingRoom.Location = new System.Drawing.Point(5, 92);
             this.lUIPanelsDressingRoom.Name = "lUIPanelsDressingRoom";
             this.lUIPanelsDressingRoom.Size = new System.Drawing.Size(79, 13);
             this.lUIPanelsDressingRoom.TabIndex = 0;
@@ -1205,7 +1203,7 @@
             // lUIPanelsDeedLog
             // 
             this.lUIPanelsDeedLog.AutoSize = true;
-            this.lUIPanelsDeedLog.Location = new System.Drawing.Point(7, 54);
+            this.lUIPanelsDeedLog.Location = new System.Drawing.Point(5, 54);
             this.lUIPanelsDeedLog.Name = "lUIPanelsDeedLog";
             this.lUIPanelsDeedLog.Size = new System.Drawing.Size(54, 13);
             this.lUIPanelsDeedLog.TabIndex = 0;
@@ -1216,9 +1214,9 @@
             this.oUIPanelsWardrobe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsWardrobe.Enabled = false;
             this.oUIPanelsWardrobe.FormattingEnabled = true;
-            this.oUIPanelsWardrobe.Location = new System.Drawing.Point(10, 410);
+            this.oUIPanelsWardrobe.Location = new System.Drawing.Point(6, 410);
             this.oUIPanelsWardrobe.Name = "oUIPanelsWardrobe";
-            this.oUIPanelsWardrobe.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsWardrobe.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsWardrobe.Sorted = true;
             this.oUIPanelsWardrobe.TabIndex = 32;
             this.oUIPanelsWardrobe.Tag = "Wardrobe";
@@ -1227,7 +1225,7 @@
             // lVitalsTargetsTarget
             // 
             this.lVitalsTargetsTarget.AutoSize = true;
-            this.lVitalsTargetsTarget.Location = new System.Drawing.Point(6, 92);
+            this.lVitalsTargetsTarget.Location = new System.Drawing.Point(5, 92);
             this.lVitalsTargetsTarget.Name = "lVitalsTargetsTarget";
             this.lVitalsTargetsTarget.Size = new System.Drawing.Size(79, 13);
             this.lVitalsTargetsTarget.TabIndex = 0;
@@ -1238,9 +1236,9 @@
             this.oVitalsOpponentVitals.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oVitalsOpponentVitals.Enabled = false;
             this.oVitalsOpponentVitals.FormattingEnabled = true;
-            this.oVitalsOpponentVitals.Location = new System.Drawing.Point(9, 68);
+            this.oVitalsOpponentVitals.Location = new System.Drawing.Point(6, 68);
             this.oVitalsOpponentVitals.Name = "oVitalsOpponentVitals";
-            this.oVitalsOpponentVitals.Size = new System.Drawing.Size(121, 21);
+            this.oVitalsOpponentVitals.Size = new System.Drawing.Size(131, 21);
             this.oVitalsOpponentVitals.Sorted = true;
             this.oVitalsOpponentVitals.TabIndex = 2;
             this.oVitalsOpponentVitals.Tag = "Opponent Vitals";
@@ -1249,7 +1247,7 @@
             // lVitalsOpponentVitals
             // 
             this.lVitalsOpponentVitals.AutoSize = true;
-            this.lVitalsOpponentVitals.Location = new System.Drawing.Point(6, 54);
+            this.lVitalsOpponentVitals.Location = new System.Drawing.Point(5, 54);
             this.lVitalsOpponentVitals.Name = "lVitalsOpponentVitals";
             this.lVitalsOpponentVitals.Size = new System.Drawing.Size(54, 13);
             this.lVitalsOpponentVitals.TabIndex = 0;
@@ -1258,7 +1256,7 @@
             // lUIPanelsWardrobe
             // 
             this.lUIPanelsWardrobe.AutoSize = true;
-            this.lUIPanelsWardrobe.Location = new System.Drawing.Point(7, 396);
+            this.lUIPanelsWardrobe.Location = new System.Drawing.Point(5, 396);
             this.lUIPanelsWardrobe.Name = "lUIPanelsWardrobe";
             this.lUIPanelsWardrobe.Size = new System.Drawing.Size(54, 13);
             this.lUIPanelsWardrobe.TabIndex = 0;
@@ -1269,9 +1267,9 @@
             this.oUIPanelsVault.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsVault.Enabled = false;
             this.oUIPanelsVault.FormattingEnabled = true;
-            this.oUIPanelsVault.Location = new System.Drawing.Point(10, 372);
+            this.oUIPanelsVault.Location = new System.Drawing.Point(6, 372);
             this.oUIPanelsVault.Name = "oUIPanelsVault";
-            this.oUIPanelsVault.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsVault.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsVault.Sorted = true;
             this.oUIPanelsVault.TabIndex = 31;
             this.oUIPanelsVault.Tag = "Vault";
@@ -1280,7 +1278,7 @@
             // lUIPanelsVault
             // 
             this.lUIPanelsVault.AutoSize = true;
-            this.lUIPanelsVault.Location = new System.Drawing.Point(7, 358);
+            this.lUIPanelsVault.Location = new System.Drawing.Point(5, 358);
             this.lUIPanelsVault.Name = "lUIPanelsVault";
             this.lUIPanelsVault.Size = new System.Drawing.Size(31, 13);
             this.lUIPanelsVault.TabIndex = 0;
@@ -1291,9 +1289,9 @@
             this.oUIPanelsSharedStorage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsSharedStorage.Enabled = false;
             this.oUIPanelsSharedStorage.FormattingEnabled = true;
-            this.oUIPanelsSharedStorage.Location = new System.Drawing.Point(10, 334);
+            this.oUIPanelsSharedStorage.Location = new System.Drawing.Point(6, 334);
             this.oUIPanelsSharedStorage.Name = "oUIPanelsSharedStorage";
-            this.oUIPanelsSharedStorage.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsSharedStorage.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsSharedStorage.Sorted = true;
             this.oUIPanelsSharedStorage.TabIndex = 30;
             this.oUIPanelsSharedStorage.Tag = "Shared Storage";
@@ -1328,9 +1326,9 @@
             this.oVitalsCompanionVitals.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oVitalsCompanionVitals.Enabled = false;
             this.oVitalsCompanionVitals.FormattingEnabled = true;
-            this.oVitalsCompanionVitals.Location = new System.Drawing.Point(9, 258);
+            this.oVitalsCompanionVitals.Location = new System.Drawing.Point(6, 258);
             this.oVitalsCompanionVitals.Name = "oVitalsCompanionVitals";
-            this.oVitalsCompanionVitals.Size = new System.Drawing.Size(121, 21);
+            this.oVitalsCompanionVitals.Size = new System.Drawing.Size(131, 21);
             this.oVitalsCompanionVitals.Sorted = true;
             this.oVitalsCompanionVitals.TabIndex = 8;
             this.oVitalsCompanionVitals.Tag = "Companion Vitals";
@@ -1339,7 +1337,7 @@
             // lVitalsCompanionVitals
             // 
             this.lVitalsCompanionVitals.AutoSize = true;
-            this.lVitalsCompanionVitals.Location = new System.Drawing.Point(6, 244);
+            this.lVitalsCompanionVitals.Location = new System.Drawing.Point(5, 244);
             this.lVitalsCompanionVitals.Name = "lVitalsCompanionVitals";
             this.lVitalsCompanionVitals.Size = new System.Drawing.Size(60, 13);
             this.lVitalsCompanionVitals.TabIndex = 7;
@@ -1350,9 +1348,9 @@
             this.oVitalsPlayerVitals.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oVitalsPlayerVitals.Enabled = false;
             this.oVitalsPlayerVitals.FormattingEnabled = true;
-            this.oVitalsPlayerVitals.Location = new System.Drawing.Point(9, 30);
+            this.oVitalsPlayerVitals.Location = new System.Drawing.Point(6, 30);
             this.oVitalsPlayerVitals.Name = "oVitalsPlayerVitals";
-            this.oVitalsPlayerVitals.Size = new System.Drawing.Size(121, 21);
+            this.oVitalsPlayerVitals.Size = new System.Drawing.Size(131, 21);
             this.oVitalsPlayerVitals.Sorted = true;
             this.oVitalsPlayerVitals.TabIndex = 1;
             this.oVitalsPlayerVitals.Tag = "Player Vitals";
@@ -1361,7 +1359,7 @@
             // lVitalsPlayerVitals
             // 
             this.lVitalsPlayerVitals.AutoSize = true;
-            this.lVitalsPlayerVitals.Location = new System.Drawing.Point(6, 16);
+            this.lVitalsPlayerVitals.Location = new System.Drawing.Point(5, 16);
             this.lVitalsPlayerVitals.Name = "lVitalsPlayerVitals";
             this.lVitalsPlayerVitals.Size = new System.Drawing.Size(36, 13);
             this.lVitalsPlayerVitals.TabIndex = 0;
@@ -1370,7 +1368,7 @@
             // lUIPanelsSharedStorage
             // 
             this.lUIPanelsSharedStorage.AutoSize = true;
-            this.lUIPanelsSharedStorage.Location = new System.Drawing.Point(7, 320);
+            this.lUIPanelsSharedStorage.Location = new System.Drawing.Point(5, 320);
             this.lUIPanelsSharedStorage.Name = "lUIPanelsSharedStorage";
             this.lUIPanelsSharedStorage.Size = new System.Drawing.Size(81, 13);
             this.lUIPanelsSharedStorage.TabIndex = 0;
@@ -1381,9 +1379,9 @@
             this.oUIPanelsSocial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsSocial.Enabled = false;
             this.oUIPanelsSocial.FormattingEnabled = true;
-            this.oUIPanelsSocial.Location = new System.Drawing.Point(10, 296);
+            this.oUIPanelsSocial.Location = new System.Drawing.Point(6, 296);
             this.oUIPanelsSocial.Name = "oUIPanelsSocial";
-            this.oUIPanelsSocial.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsSocial.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsSocial.Sorted = true;
             this.oUIPanelsSocial.TabIndex = 29;
             this.oUIPanelsSocial.Tag = "Social";
@@ -1394,9 +1392,9 @@
             this.oUIPanelsQuestLog.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsQuestLog.Enabled = false;
             this.oUIPanelsQuestLog.FormattingEnabled = true;
-            this.oUIPanelsQuestLog.Location = new System.Drawing.Point(10, 258);
+            this.oUIPanelsQuestLog.Location = new System.Drawing.Point(6, 258);
             this.oUIPanelsQuestLog.Name = "oUIPanelsQuestLog";
-            this.oUIPanelsQuestLog.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsQuestLog.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsQuestLog.Sorted = true;
             this.oUIPanelsQuestLog.TabIndex = 28;
             this.oUIPanelsQuestLog.Tag = "Quest Log";
@@ -1419,8 +1417,8 @@
             // sVertical.Panel2
             // 
             this.sVertical.Panel2.Controls.Add(this.sHorizontal);
-            this.sVertical.Size = new System.Drawing.Size(1022, 716);
-            this.sVertical.SplitterDistance = 260;
+            this.sVertical.Size = new System.Drawing.Size(1022, 729);
+            this.sVertical.SplitterDistance = 257;
             this.sVertical.SplitterWidth = 2;
             this.sVertical.TabIndex = 1;
             this.sVertical.TabStop = false;
@@ -1451,7 +1449,7 @@
             this.sHorizontal.Panel2.Controls.Add(this.gFullSkinActions);
             this.sHorizontal.Panel2.Controls.Add(this.gResolution);
             this.sHorizontal.Panel2.Controls.Add(this.gSkinName);
-            this.sHorizontal.Size = new System.Drawing.Size(1022, 454);
+            this.sHorizontal.Size = new System.Drawing.Size(1022, 470);
             this.sHorizontal.SplitterDistance = 746;
             this.sHorizontal.TabIndex = 0;
             this.sHorizontal.TabStop = false;
@@ -1493,9 +1491,9 @@
             this.oUIPanelsOptions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsOptions.Enabled = false;
             this.oUIPanelsOptions.FormattingEnabled = true;
-            this.oUIPanelsOptions.Location = new System.Drawing.Point(10, 220);
+            this.oUIPanelsOptions.Location = new System.Drawing.Point(6, 220);
             this.oUIPanelsOptions.Name = "oUIPanelsOptions";
-            this.oUIPanelsOptions.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsOptions.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsOptions.Sorted = true;
             this.oUIPanelsOptions.TabIndex = 27;
             this.oUIPanelsOptions.Tag = "Options";
@@ -1506,9 +1504,9 @@
             this.oUIPanelsMail.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsMail.Enabled = false;
             this.oUIPanelsMail.FormattingEnabled = true;
-            this.oUIPanelsMail.Location = new System.Drawing.Point(10, 182);
+            this.oUIPanelsMail.Location = new System.Drawing.Point(6, 182);
             this.oUIPanelsMail.Name = "oUIPanelsMail";
-            this.oUIPanelsMail.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsMail.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsMail.Sorted = true;
             this.oUIPanelsMail.TabIndex = 26;
             this.oUIPanelsMail.Tag = "Mail";
@@ -1519,9 +1517,9 @@
             this.oUIPanelsInstanceJoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsInstanceJoin.Enabled = false;
             this.oUIPanelsInstanceJoin.FormattingEnabled = true;
-            this.oUIPanelsInstanceJoin.Location = new System.Drawing.Point(10, 144);
+            this.oUIPanelsInstanceJoin.Location = new System.Drawing.Point(6, 144);
             this.oUIPanelsInstanceJoin.Name = "oUIPanelsInstanceJoin";
-            this.oUIPanelsInstanceJoin.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsInstanceJoin.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsInstanceJoin.Sorted = true;
             this.oUIPanelsInstanceJoin.TabIndex = 25;
             this.oUIPanelsInstanceJoin.Tag = "Instance Join";
@@ -1532,9 +1530,9 @@
             this.oUIPanelsDressingRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsDressingRoom.Enabled = false;
             this.oUIPanelsDressingRoom.FormattingEnabled = true;
-            this.oUIPanelsDressingRoom.Location = new System.Drawing.Point(10, 106);
+            this.oUIPanelsDressingRoom.Location = new System.Drawing.Point(6, 106);
             this.oUIPanelsDressingRoom.Name = "oUIPanelsDressingRoom";
-            this.oUIPanelsDressingRoom.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsDressingRoom.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsDressingRoom.Sorted = true;
             this.oUIPanelsDressingRoom.TabIndex = 24;
             this.oUIPanelsDressingRoom.Tag = "Dressing Room";
@@ -1545,9 +1543,9 @@
             this.oUIPanelsDeedLog.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsDeedLog.Enabled = false;
             this.oUIPanelsDeedLog.FormattingEnabled = true;
-            this.oUIPanelsDeedLog.Location = new System.Drawing.Point(10, 68);
+            this.oUIPanelsDeedLog.Location = new System.Drawing.Point(6, 68);
             this.oUIPanelsDeedLog.Name = "oUIPanelsDeedLog";
-            this.oUIPanelsDeedLog.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsDeedLog.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsDeedLog.Sorted = true;
             this.oUIPanelsDeedLog.TabIndex = 23;
             this.oUIPanelsDeedLog.Tag = "Deed Log";
@@ -1556,7 +1554,7 @@
             // lUIPanelsCrafting
             // 
             this.lUIPanelsCrafting.AutoSize = true;
-            this.lUIPanelsCrafting.Location = new System.Drawing.Point(7, 15);
+            this.lUIPanelsCrafting.Location = new System.Drawing.Point(5, 16);
             this.lUIPanelsCrafting.Name = "lUIPanelsCrafting";
             this.lUIPanelsCrafting.Size = new System.Drawing.Size(43, 13);
             this.lUIPanelsCrafting.TabIndex = 0;
@@ -1567,9 +1565,9 @@
             this.oUIPanelsCrafting.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oUIPanelsCrafting.Enabled = false;
             this.oUIPanelsCrafting.FormattingEnabled = true;
-            this.oUIPanelsCrafting.Location = new System.Drawing.Point(10, 30);
+            this.oUIPanelsCrafting.Location = new System.Drawing.Point(6, 30);
             this.oUIPanelsCrafting.Name = "oUIPanelsCrafting";
-            this.oUIPanelsCrafting.Size = new System.Drawing.Size(121, 21);
+            this.oUIPanelsCrafting.Size = new System.Drawing.Size(131, 21);
             this.oUIPanelsCrafting.Sorted = true;
             this.oUIPanelsCrafting.TabIndex = 22;
             this.oUIPanelsCrafting.Tag = "Crafting";
@@ -1602,7 +1600,7 @@
             // lNPCDialogsStableMaster
             // 
             this.lNPCDialogsStableMaster.AutoSize = true;
-            this.lNPCDialogsStableMaster.Location = new System.Drawing.Point(7, 206);
+            this.lNPCDialogsStableMaster.Location = new System.Drawing.Point(5, 206);
             this.lNPCDialogsStableMaster.Name = "lNPCDialogsStableMaster";
             this.lNPCDialogsStableMaster.Size = new System.Drawing.Size(72, 13);
             this.lNPCDialogsStableMaster.TabIndex = 0;
@@ -1611,7 +1609,7 @@
             // lNPCDialogsSkillTrainer
             // 
             this.lNPCDialogsSkillTrainer.AutoSize = true;
-            this.lNPCDialogsSkillTrainer.Location = new System.Drawing.Point(7, 168);
+            this.lNPCDialogsSkillTrainer.Location = new System.Drawing.Point(5, 168);
             this.lNPCDialogsSkillTrainer.Name = "lNPCDialogsSkillTrainer";
             this.lNPCDialogsSkillTrainer.Size = new System.Drawing.Size(62, 13);
             this.lNPCDialogsSkillTrainer.TabIndex = 0;
@@ -1620,7 +1618,7 @@
             // lNPCDialogsQuestStart
             // 
             this.lNPCDialogsQuestStart.AutoSize = true;
-            this.lNPCDialogsQuestStart.Location = new System.Drawing.Point(7, 130);
+            this.lNPCDialogsQuestStart.Location = new System.Drawing.Point(5, 130);
             this.lNPCDialogsQuestStart.Name = "lNPCDialogsQuestStart";
             this.lNPCDialogsQuestStart.Size = new System.Drawing.Size(60, 13);
             this.lNPCDialogsQuestStart.TabIndex = 0;
@@ -1629,7 +1627,7 @@
             // lNPCDialogsVendor
             // 
             this.lNPCDialogsVendor.AutoSize = true;
-            this.lNPCDialogsVendor.Location = new System.Drawing.Point(7, 244);
+            this.lNPCDialogsVendor.Location = new System.Drawing.Point(5, 244);
             this.lNPCDialogsVendor.Name = "lNPCDialogsVendor";
             this.lNPCDialogsVendor.Size = new System.Drawing.Size(41, 13);
             this.lNPCDialogsVendor.TabIndex = 0;
@@ -1638,7 +1636,7 @@
             // lNPCDialogsBarter
             // 
             this.lNPCDialogsBarter.AutoSize = true;
-            this.lNPCDialogsBarter.Location = new System.Drawing.Point(7, 92);
+            this.lNPCDialogsBarter.Location = new System.Drawing.Point(5, 92);
             this.lNPCDialogsBarter.Name = "lNPCDialogsBarter";
             this.lNPCDialogsBarter.Size = new System.Drawing.Size(35, 13);
             this.lNPCDialogsBarter.TabIndex = 0;
@@ -1647,7 +1645,7 @@
             // lNPCDialogsBard
             // 
             this.lNPCDialogsBard.AutoSize = true;
-            this.lNPCDialogsBard.Location = new System.Drawing.Point(7, 54);
+            this.lNPCDialogsBard.Location = new System.Drawing.Point(5, 54);
             this.lNPCDialogsBard.Name = "lNPCDialogsBard";
             this.lNPCDialogsBard.Size = new System.Drawing.Size(29, 13);
             this.lNPCDialogsBard.TabIndex = 0;
@@ -1658,9 +1656,9 @@
             this.oNPCDialogsVendor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oNPCDialogsVendor.Enabled = false;
             this.oNPCDialogsVendor.FormattingEnabled = true;
-            this.oNPCDialogsVendor.Location = new System.Drawing.Point(10, 258);
+            this.oNPCDialogsVendor.Location = new System.Drawing.Point(6, 258);
             this.oNPCDialogsVendor.Name = "oNPCDialogsVendor";
-            this.oNPCDialogsVendor.Size = new System.Drawing.Size(121, 21);
+            this.oNPCDialogsVendor.Size = new System.Drawing.Size(131, 21);
             this.oNPCDialogsVendor.Sorted = true;
             this.oNPCDialogsVendor.TabIndex = 39;
             this.oNPCDialogsVendor.Tag = "Vendor";
@@ -1671,9 +1669,9 @@
             this.oNPCDialogsStableMaster.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oNPCDialogsStableMaster.Enabled = false;
             this.oNPCDialogsStableMaster.FormattingEnabled = true;
-            this.oNPCDialogsStableMaster.Location = new System.Drawing.Point(10, 220);
+            this.oNPCDialogsStableMaster.Location = new System.Drawing.Point(6, 220);
             this.oNPCDialogsStableMaster.Name = "oNPCDialogsStableMaster";
-            this.oNPCDialogsStableMaster.Size = new System.Drawing.Size(121, 21);
+            this.oNPCDialogsStableMaster.Size = new System.Drawing.Size(131, 21);
             this.oNPCDialogsStableMaster.Sorted = true;
             this.oNPCDialogsStableMaster.TabIndex = 38;
             this.oNPCDialogsStableMaster.Tag = "Stable Master";
@@ -1684,9 +1682,9 @@
             this.oNPCDialogsSkillTrainer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oNPCDialogsSkillTrainer.Enabled = false;
             this.oNPCDialogsSkillTrainer.FormattingEnabled = true;
-            this.oNPCDialogsSkillTrainer.Location = new System.Drawing.Point(10, 182);
+            this.oNPCDialogsSkillTrainer.Location = new System.Drawing.Point(6, 182);
             this.oNPCDialogsSkillTrainer.Name = "oNPCDialogsSkillTrainer";
-            this.oNPCDialogsSkillTrainer.Size = new System.Drawing.Size(121, 21);
+            this.oNPCDialogsSkillTrainer.Size = new System.Drawing.Size(131, 21);
             this.oNPCDialogsSkillTrainer.Sorted = true;
             this.oNPCDialogsSkillTrainer.TabIndex = 37;
             this.oNPCDialogsSkillTrainer.Tag = "Skill Trainer";
@@ -1697,9 +1695,9 @@
             this.oNPCDialogsQuestStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oNPCDialogsQuestStart.Enabled = false;
             this.oNPCDialogsQuestStart.FormattingEnabled = true;
-            this.oNPCDialogsQuestStart.Location = new System.Drawing.Point(10, 144);
+            this.oNPCDialogsQuestStart.Location = new System.Drawing.Point(6, 144);
             this.oNPCDialogsQuestStart.Name = "oNPCDialogsQuestStart";
-            this.oNPCDialogsQuestStart.Size = new System.Drawing.Size(121, 21);
+            this.oNPCDialogsQuestStart.Size = new System.Drawing.Size(131, 21);
             this.oNPCDialogsQuestStart.Sorted = true;
             this.oNPCDialogsQuestStart.TabIndex = 36;
             this.oNPCDialogsQuestStart.Tag = "Quest Start";
@@ -1710,9 +1708,9 @@
             this.oNPCDialogsBarter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oNPCDialogsBarter.Enabled = false;
             this.oNPCDialogsBarter.FormattingEnabled = true;
-            this.oNPCDialogsBarter.Location = new System.Drawing.Point(10, 106);
+            this.oNPCDialogsBarter.Location = new System.Drawing.Point(6, 106);
             this.oNPCDialogsBarter.Name = "oNPCDialogsBarter";
-            this.oNPCDialogsBarter.Size = new System.Drawing.Size(121, 21);
+            this.oNPCDialogsBarter.Size = new System.Drawing.Size(131, 21);
             this.oNPCDialogsBarter.Sorted = true;
             this.oNPCDialogsBarter.TabIndex = 35;
             this.oNPCDialogsBarter.Tag = "Barter";
@@ -1723,9 +1721,9 @@
             this.oNPCDialogsBard.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oNPCDialogsBard.Enabled = false;
             this.oNPCDialogsBard.FormattingEnabled = true;
-            this.oNPCDialogsBard.Location = new System.Drawing.Point(10, 68);
+            this.oNPCDialogsBard.Location = new System.Drawing.Point(6, 68);
             this.oNPCDialogsBard.Name = "oNPCDialogsBard";
-            this.oNPCDialogsBard.Size = new System.Drawing.Size(121, 21);
+            this.oNPCDialogsBard.Size = new System.Drawing.Size(131, 21);
             this.oNPCDialogsBard.Sorted = true;
             this.oNPCDialogsBard.TabIndex = 34;
             this.oNPCDialogsBard.Tag = "Bard";
@@ -1734,7 +1732,7 @@
             // lNPCDialogsAuction
             // 
             this.lNPCDialogsAuction.AutoSize = true;
-            this.lNPCDialogsAuction.Location = new System.Drawing.Point(7, 14);
+            this.lNPCDialogsAuction.Location = new System.Drawing.Point(5, 16);
             this.lNPCDialogsAuction.Name = "lNPCDialogsAuction";
             this.lNPCDialogsAuction.Size = new System.Drawing.Size(43, 13);
             this.lNPCDialogsAuction.TabIndex = 0;
@@ -1745,9 +1743,9 @@
             this.oNPCDialogsAuction.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.oNPCDialogsAuction.Enabled = false;
             this.oNPCDialogsAuction.FormattingEnabled = true;
-            this.oNPCDialogsAuction.Location = new System.Drawing.Point(10, 30);
+            this.oNPCDialogsAuction.Location = new System.Drawing.Point(6, 30);
             this.oNPCDialogsAuction.Name = "oNPCDialogsAuction";
-            this.oNPCDialogsAuction.Size = new System.Drawing.Size(121, 21);
+            this.oNPCDialogsAuction.Size = new System.Drawing.Size(131, 21);
             this.oNPCDialogsAuction.Sorted = true;
             this.oNPCDialogsAuction.TabIndex = 33;
             this.oNPCDialogsAuction.Tag = "Auction";
@@ -1762,21 +1760,42 @@
             this.gPanelStyle.Controls.Add(this.oPanelStyleScrollbar);
             this.gPanelStyle.Controls.Add(this.oPanelStyleButtons);
             this.gPanelStyle.Controls.Add(this.oPanelStyleBorder);
-            this.gPanelStyle.Location = new System.Drawing.Point(4, 296);
+            this.gPanelStyle.Location = new System.Drawing.Point(4, 305);
             this.gPanelStyle.Name = "gPanelStyle";
-            this.gPanelStyle.Size = new System.Drawing.Size(143, 146);
+            this.gPanelStyle.Size = new System.Drawing.Size(143, 137);
             this.gPanelStyle.TabIndex = 2;
             this.gPanelStyle.TabStop = false;
             this.gPanelStyle.Text = "Panel Style";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(5, 358);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Tooltips";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Enabled = false;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 372);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(131, 21);
+            this.comboBox1.Sorted = true;
+            this.comboBox1.TabIndex = 23;
+            this.comboBox1.Tag = "Toolbar";
             // 
             // fBuildSkin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 716);
+            this.ClientSize = new System.Drawing.Size(1022, 729);
             this.Controls.Add(this.sVertical);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1038, 755);
+            this.MinimumSize = new System.Drawing.Size(1038, 768);
             this.Name = "fBuildSkin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuildSkin";
@@ -1951,6 +1970,8 @@
         private System.Windows.Forms.GroupBox gPanelStyle;
         private System.Windows.Forms.ComboBox oVitalsCompanionVitals;
         private System.Windows.Forms.Label lVitalsCompanionVitals;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
 
 
     }
