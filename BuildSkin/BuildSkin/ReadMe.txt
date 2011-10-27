@@ -39,10 +39,11 @@ CHANGELOG/ROADMAP
  v'	0.0.3a	Implement XML File Loading
  v'	0.0.3b	Implement Manual Editing
  v'	0.0.3c	Add Resolution Support
- ->	0.0.3z	Code Cleanup (FIRST TEST RELEASE)
-	0.0.4	Add More Skin Elements
-	0.0.4a	UI/Code Cleanup/Bugfixes
-	0.0.5	Add Options File
+ v'	0.0.3z	Code Cleanup (FIRST TEST RELEASE)
+ v'	0.0.4	Add More Skin Elements
+ v'	0.0.4a	Correctly Implement Error Messages/Handling
+ ->	0.0.4b	UI/Code Cleanup/Bugfixes
+ v'	0.0.5	Add Options File
 	0.0.5a	Add Options Window / More Options
 	0.0.6	Add Help/About Window
 	0.0.6a	Add Documentation
