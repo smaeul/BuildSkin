@@ -50,9 +50,7 @@ CHANGELOG/ROADMAP
  ??	0.0.6b	Add Internationalization Support (SECOND TEST RELEASE)
  ??	0.0.6c	Add Language Packs
  ??	0.0.7	Add Command Line Interface
-	0.0.9	Code Cleanup
-	0.0.9a	Image Cleanup (3rd TEST RELEASE)
-	0.0.9b	Directory Structure Cleanup (No longer UiBuilder Compatible) (May have compat fork)
+	0.0.9	Code/Images/Folders Cleanup
 	0.0.9z	Bugfixes (let it set a while)
 	0.1.0	FIRST PUBLIC BETA RELEASE!! YAY!! :D
 

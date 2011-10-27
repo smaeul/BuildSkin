@@ -124,7 +124,7 @@ namespace BuildSkin
                     {
                         if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\resenable.xml"))
                         {
-                            if (((String)oCurrBox.Tag) == "Toolbar")
+                            if (((String)oCurrBox.Tag) == "Interface-ToolbarQuickslots")
                             {
                                 fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\" + oCurrBox.Text + " " + oResolutionToolbar.Text + ".xml"));
                             }
