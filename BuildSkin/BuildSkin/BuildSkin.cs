@@ -29,15 +29,15 @@ namespace BuildSkin
             RefreshAll();
             LoadOptions();
         }
-        public void OnClose(object oSender, FormClosingEventArgs e)
+        void OnClose(object oSender, FormClosingEventArgs e)
         {
             SaveOptions();
         }
-        public void LoadSkin(object oSender, EventArgs e)
+        void LoadSkin(object oSender, EventArgs e)
         {
             LoadSkin(tSkinName.Text);
         }
-        public void LoadSkin(string sName)
+        void LoadSkin(string sName)
         {
             //Load From file
             if (System.IO.File.Exists(sName + " Skin\\SkinDefinition.BuildSkin"))
@@ -49,9 +49,17 @@ namespace BuildSkin
                 {
                     oResolutionMain.SelectedIndex = oResolutionMain.Items.IndexOf(sElements[0]);
                 }
+                else
+                {
+                    ErrorMessage(2);
+                }
                 if (oResolutionToolbar.Items.Contains(sElements[1]))
                 {
                     oResolutionToolbar.SelectedIndex = oResolutionToolbar.Items.IndexOf(sElements[1]);
+                }
+                else
+                {
+                    ErrorMessage(2);
                 }
 
                 //Fill in ComboBoxes
@@ -71,6 +79,7 @@ namespace BuildSkin
                             {
                                 oCurrBox.SelectedIndex = oCurrBox.Items.IndexOf("Default");
                             }
+                            break;
                         }
                     }
                 }
@@ -81,102 +90,131 @@ namespace BuildSkin
                 return;
             }
         }
-        public void BuildSkin(object oSender, EventArgs e)
+        void BuildSkin(object oSender, EventArgs e)
         {
             //Open (Create/Overwrite) Files for writing
-            System.IO.Directory.CreateDirectory(tSkinName.Text + " Skin\\");
-            System.IO.StreamWriter fXMLFile = new System.IO.StreamWriter(tSkinName.Text + " Skin\\SkinDefinition.xml", false);
-            System.IO.StreamWriter fConfFile = new System.IO.StreamWriter(tSkinName.Text + " Skin\\SkinDefinition.BuildSkin", false);
-
-            //Save resolution
-            fConfFile.WriteLine(oResolutionMain.Text);
-            fConfFile.WriteLine(oResolutionToolbar.Text);
-
-            //XML Header
-            fXMLFile.WriteLine("<opt><SkinName Name=\"" + tSkinName.Text + "\" />");
-
-            //Write content to files
-            //Use for to preserve order
-            foreach (ComboBox oCurrBox in oAllBoxes)
+            try
             {
-                fConfFile.WriteLine(oCurrBox.Tag + "=" + oCurrBox.Text);
-                if (oCurrBox.Text == "Default" && ! Options.ExplicitDefaults) { continue; }
-                if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml"))
+                System.IO.Directory.CreateDirectory(tSkinName.Text + " Skin\\");
+            }
+            catch
+            {
+                ErrorMessage(3);
+            }
+
+            try
+            {
+                System.IO.StreamWriter fXMLFile = new System.IO.StreamWriter(tSkinName.Text + " Skin\\SkinDefinition.xml", false);
+                System.IO.StreamWriter fConfFile = new System.IO.StreamWriter(tSkinName.Text + " Skin\\SkinDefinition.BuildSkin", false);
+
+                //Save resolution
+                fConfFile.WriteLine(oResolutionMain.Text);
+                fConfFile.WriteLine(oResolutionToolbar.Text);
+
+                //XML Header
+                fXMLFile.WriteLine("<opt><SkinName Name=\"" + tSkinName.Text + "\" />");
+
+                //Write content to files
+                //Use for to preserve order
+                foreach (ComboBox oCurrBox in oAllBoxes)
                 {
-                    if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\resenable.xml"))
+                    fConfFile.WriteLine(oCurrBox.Tag + "=" + oCurrBox.Text);
+                    if (oCurrBox.Text == "Default" && ! Options.ExplicitDefaults) { continue; }
+                    if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml"))
                     {
-                        if (((String)oCurrBox.Tag) == "Toolbar")
+                        if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\resenable.xml"))
                         {
-                            fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\" + oCurrBox.Text + " " + oResolutionToolbar.Text + ".xml"));
+                            if (((String)oCurrBox.Tag) == "Toolbar")
+                            {
+                                fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\" + oCurrBox.Text + " " + oResolutionToolbar.Text + ".xml"));
+                            }
+                            else
+                            {
+                                fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\" + oCurrBox.Text + " " + oResolutionMain.Text + ".xml"));
+                            }
                         }
                         else
                         {
-                            fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\" + oCurrBox.Text + " " + oResolutionMain.Text + ".xml"));
+                            fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml"));
                         }
                     }
                     else
                     {
-                        fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml"));
+                        ErrorMessage(5);
                     }
                 }
+
+                //XML Footer
+                fXMLFile.WriteLine("</opt> <!-- Built by BuildSkin -->");
+
+                //Close Files
+                fConfFile.Close();
+                fXMLFile.Close();
             }
-
-            //XML Footer
-            fXMLFile.WriteLine("</opt> <!-- Built by BuildSkin -->");
-
-            //Close Files
-            fConfFile.Close();
-            fXMLFile.Close();
+            catch
+            {
+                ErrorMessage(4);
+            }
 
             MessageBox.Show("Skin " + tSkinName.Text + " successfully built/updated.");
         }
-        public void EditSkin(object oSender, EventArgs e)
+        void EditSkin(object oSender, EventArgs e)
         {
             if (System.IO.File.Exists(tSkinName.Text + " Skin\\SkinDefinition.xml") && System.IO.File.Exists(Options.EditorPath))
             {
                 System.Diagnostics.Process procEditor = new System.Diagnostics.Process();
                 procEditor.StartInfo = new System.Diagnostics.ProcessStartInfo(Options.EditorPath, "\"" + tSkinName.Text + " Skin\\SkinDefinition.xml\"");
                 procEditor.Start();
-                procEditor.WaitForExit();
             }
             else
             {
-                ErrorMessage(0);
+                ErrorMessage(1);
             }
         }
-        public void DeleteSkin(object oSender, EventArgs e)
+        void DeleteSkin(object oSender, EventArgs e)
         {
-            if (System.IO.File.Exists(tSkinName.Text + " Skin\\SkinDefinition.xml"))
+            try
             {
-                System.IO.File.Delete(tSkinName.Text + " Skin\\SkinDefinition.xml");
-            }
-            if (System.IO.File.Exists(tSkinName.Text + " Skin\\SkinDefinition.BuildSkin"))
-            {
-                System.IO.File.Delete(tSkinName.Text + " Skin\\SkinDefinition.BuildSkin");
-            }
-            if (System.IO.Directory.Exists(tSkinName.Text + " Skin"))
-            {
-                System.IO.Directory.Delete(tSkinName.Text + " Skin");
-            }
+                if (System.IO.File.Exists(tSkinName.Text + " Skin\\SkinDefinition.xml"))
+                {
+                    System.IO.File.Delete(tSkinName.Text + " Skin\\SkinDefinition.xml");
+                }
+                if (System.IO.File.Exists(tSkinName.Text + " Skin\\SkinDefinition.BuildSkin"))
+                {
+                    System.IO.File.Delete(tSkinName.Text + " Skin\\SkinDefinition.BuildSkin");
+                }
+                if (System.IO.Directory.Exists(tSkinName.Text + " Skin"))
+                {
+                    System.IO.Directory.Delete(tSkinName.Text + " Skin");
+                }
 
-            MessageBox.Show("Skin " + tSkinName.Text + " deleted.");
+                MessageBox.Show("Skin " + tSkinName.Text + " deleted.");
+            }
+            catch
+            {
+                ErrorMessage(6);
+            }
         }
-        public void Preview(object oSender, EventArgs e)
+        void Preview(object oSender, EventArgs e)
         {
             pPreview.ImageLocation = ((ComboBox)oSender).Tag.ToString() + "\\Preview\\" + ((ComboBox)oSender).SelectedItem.ToString() + ".jpg";
         }
-        public void LoadOptions()
+        void LoadOptions()
         {
             //Read From File to Variables
             if (System.IO.File.Exists(".\\BuildSkin.conf"))
             {
-                string[] oFileContents = System.IO.File.ReadAllLines(".\\BuildSkin.conf");
-                Options.EditorPath = oFileContents[0];
-                Options.LastSkin = oFileContents[1];
-                Options.AvailRes = oFileContents[2].Split(',');
-                Options.AvailToolbarRes = oFileContents[3].Split(',');
-                Options.ExplicitDefaults = (oFileContents[4].ToLowerInvariant() == "true");
-                Options.AutoLoadLast = (oFileContents[5].ToLowerInvariant() == "true");
+                try
+                {
+                    string[] oFileContents = System.IO.File.ReadAllLines(".\\BuildSkin.conf");
+                    Options.EditorPath = oFileContents[0];
+                    Options.LastSkin = oFileContents[1];
+                    Options.AvailRes = oFileContents[2].Split(',');
+                    Options.AvailToolbarRes = oFileContents[3].Split(',');
+                    Options.ExplicitDefaults = (oFileContents[4].ToLowerInvariant() == "true");
+                    Options.AutoLoadLast = (oFileContents[5].ToLowerInvariant() == "true");
+                }
+                catch { ErrorMessage(7); }
             }
             else //Load Defaults
             {
@@ -194,7 +232,7 @@ namespace BuildSkin
             tSkinName.Text = Options.LastSkin;
             if (Options.AutoLoadLast && Options.LastSkin != null) { LoadSkin(Options.LastSkin); }
         }
-        public void SaveOptions()
+        void SaveOptions()
         {
             //Set Vars
             Options.LastSkin = tSkinName.Text;
@@ -210,13 +248,46 @@ namespace BuildSkin
                                     Options.ExplicitDefaults.ToString(),
                                     Options.AutoLoadLast.ToString()
                                 };
-            System.IO.File.WriteAllLines("BuildSkin.conf", sOptions);
+            try { System.IO.File.WriteAllLines("BuildSkin.conf", sOptions); }
+            catch { ErrorMessage(7); }
         }
-        public void ErrorMessage(int iType)
+        void ErrorMessage(int iType)
         {
-            MessageBox.Show("There was an error of type " + iType + ".");
+            switch (iType)
+            {
+                case 0:
+                    MessageBox.Show("Missing SkinDefinition.BuildSkin");
+                    break;
+                case 1:
+                    MessageBox.Show("Missing SkinDefinition.XML");
+                    break;
+                case 2:
+                    MessageBox.Show("Unsupported resolution in loaded skin. Please select another.");
+                    break;
+                case 3:
+                    MessageBox.Show("Error creating skin files. Check to see if they are in use.");
+                    break;
+                case 4:
+                    MessageBox.Show("Error writing to skin files. Check to see if they are in use.");
+                    break;
+                case 5:
+                    MessageBox.Show("Missing element XML snippet. Try restarting the program to refresh.");
+                    break;
+                case 6:
+                    MessageBox.Show("Error deleting skin.  Check to see if it is in use.");
+                    break;
+                case 7:
+                    MessageBox.Show("Error loading or saving options. Check to see if the file is in use.");
+                    break;
+                case 8:
+                    MessageBox.Show("Error opening webpage.");
+                    break;
+                default:
+                    MessageBox.Show("An unkown error has occurred.");
+                    break;
+            }
         }
-        public void RefreshAll()
+        void RefreshAll()
         {
             //Refresh Elements
             foreach (ComboBox oCurrBox in oAllBoxes)
@@ -237,15 +308,20 @@ namespace BuildSkin
                 tSkinName.Items.Add(sDir.Remove(sDir.Length - 5).Remove(0,2));
             }
         }
-        public void AboutWindow()
+        void OptionsWindow(object oSender, EventArgs e)
         {
-            MessageBox.Show("Copyright 2011 Mevordel.", "About");
+            if (MessageBox.Show("This feature is not yet implemented. Please edit the configuration file manually.", "Options") == DialogResult.OK)
+            {
+                //Change Options
+                
+            }
         }
-        public void OptionsWindow()
+        void NavigateToLI(object oSender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show("Not Implemented", "Options");
+            try { System.Diagnostics.Process.Start("http://www.lotrointerface.com/downloads/info623-BuildSkin.html"); }
+            catch { ErrorMessage(8); }
         }
-        public struct Options
+        struct Options
         {
             public static string EditorPath;
             public static string LastSkin;
@@ -254,6 +330,6 @@ namespace BuildSkin
             public static bool ExplicitDefaults;
             public static bool AutoLoadLast;
         }
-        public static ComboBox[] oAllBoxes = new ComboBox[52];
+        static ComboBox[] oAllBoxes = new ComboBox[74];
     }
 }

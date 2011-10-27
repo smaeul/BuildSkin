@@ -123,234 +123,361 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pPreview.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
-  <data name="pPreview.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <metadata name="oLegendaryRelicMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="sVertical.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryRelicMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="sHorizontal.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="gLegendary.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="groupBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oLegendaryLegendaryItemTracking.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label24.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryLegendaryItemTracking.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label25.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oLegendaryLegacyUpdate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox23.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryLegacyUpdate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox24.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oLegendaryLegacyExtraction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="gFellowship.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryLegacyExtraction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label19.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oLegendaryItemAdvancement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label20.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryItemAdvancement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label21.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oLegendaryForgeMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label22.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryForgeMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox18.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oLegendaryLegendaryItemTracking.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox19.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryLegendaryItemTracking.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox20.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oLegendaryLegacyUpdate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox21.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryLegacyUpdate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="gHousing.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oLegendaryLegacyExtraction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox16.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryLegacyExtraction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label17.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oLegendaryItemAdvancement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox17.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryItemAdvancement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label18.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oLegendaryForgeMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox10.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lLegendaryForgeMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label11.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lCharPanelsInspectBio.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox11.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lCharPanelsTraits.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label12.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oCharPanelsInspectBio.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox12.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label15.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox15.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label16.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="gUIPanels.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsQuestLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsOptions.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsMail.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsSocial.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsInstanceJoin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsDressingRoom.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsDeedLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsWardrobe.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsWardrobe.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsVault.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsVault.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsSharedStorage.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsSharedStorage.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsSocial.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsQuestLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsOptions.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsMail.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsInstanceJoin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsDressingRoom.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsDeedLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lUIPanelsCrafting.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oUIPanelsCrafting.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="gVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oVitalsFellowship.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lVitalsFellowship.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oVitalsCompanionVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lVitalsCompanionVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oVitalsMountVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lVitalsMountVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oVitalsEscortVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lVitalsEscortVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oVitalsSoldierVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lVitalsSoldierVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oVitalsTargetsTarget.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lVitalsTargetsTarget.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oVitalsOpponentVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lVitalsOpponentVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oVitalsPlayerVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lVitalsPlayerVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="gNPCDialogs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox9.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label9.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lNPCDialogsStableMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lNPCDialogsSkillTrainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lNPCDialogsQuestStart.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lNPCDialogsVendor.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lNPCDialogsBarter.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lNPCDialogsBard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oNPCDialogsVendor.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oNPCDialogsStableMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oNPCDialogsSkillTrainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oNPCDialogsQuestStart.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oNPCDialogsBarter.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oNPCDialogsBard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lNPCDialogsAuction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oNPCDialogsAuction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="gPanelStyle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lPanelStyleScrollbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lPanelStyleButtons.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="lPanelStyleBorder.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -359,28 +486,25 @@
   <metadata name="oPanelStyleScrollbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oCharPanelsTraits.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="oPanelStyleButtons.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="oPanelStyleBorder.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oCharPanelsCharacter.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lCharPanelsCharacter.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="gInterface.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="comboBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="comboBox7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceSkillQueue.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceSkillQueue.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="lInterfaceFullMap.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -449,46 +573,46 @@
   <metadata name="lInterfaceAttunement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="bLoadSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="gLegendary.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="bEditSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oLegendaryRelicMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="bDeleteSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lLegendaryRelicMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="gAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oLegendaryLegendaryItemTracking.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lLegendaryLegendaryItemTracking.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oLegendaryLegacyUpdate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="bBuildSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lLegendaryLegacyUpdate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lResolutionHelp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oLegendaryLegacyExtraction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lResolutionToolbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lLegendaryLegacyExtraction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lSkinName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oLegendaryItemAdvancement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="gHelp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lLegendaryItemAdvancement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lResolutionMain.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oLegendaryForgeMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oResolutionToolbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lLegendaryForgeMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oResolutionMain.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="gSkirmish.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="lSkirmishSkirmishBard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -515,19 +639,205 @@
   <metadata name="oSkirmishSkirmishPanel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="gSkinName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="gAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tSkinName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="bOptions.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tSkinName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="gHelp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="iLotroInterface.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="gFullSkinActions.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="bLoadSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="bDeleteSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="bEditSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="bBuildSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="gResolution.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="gFullSkinActions.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label10.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tSkinName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lResolutionToolbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lResolutionMain.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oResolutionToolbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oResolutionMain.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oSkirmishSkirmishPanel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oSkirmishSkirmishTrainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oSkirmishSkirmishBard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oSkirmishSkirmishCreate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lSkirmishSkirmishCreate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lSkirmishSkirmishPanel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lSkirmishSkirmishTrainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lSkirmishSkirmishBard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lLegendaryForgeMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oLegendaryForgeMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lLegendaryItemAdvancement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oLegendaryItemAdvancement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lLegendaryLegacyExtraction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oLegendaryLegacyExtraction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lLegendaryLegacyUpdate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oLegendaryLegacyUpdate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lLegendaryLegendaryItemTracking.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oLegendaryLegendaryItemTracking.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lLegendaryRelicMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oLegendaryRelicMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceAttunement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceAttunement.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceGambit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceBags.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceChat.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceEndTravel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceFullMap.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceMinimap.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceMinimap.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceProgressBar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceProgressBar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceQuestTracker.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceQuestTracker.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceToolbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceToolbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceTooltips.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceTooltips.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceGambit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceBags.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceChat.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceEndTravel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceFullMap.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lInterfaceSkillQueue.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oInterfaceSkillQueue.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="comboBox7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oPanelStyleBorder.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oPanelStyleButtons.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="oPanelStyleScrollbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lPanelStyleBorder.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="lPanelStyleButtons.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -536,247 +846,91 @@
   <metadata name="lPanelStyleScrollbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lUIPanelsQuestLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lAbout.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lUIPanelsOptions.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="iLotroInterface.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lVitalsEscortVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lVitalsPlayerVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oVitalsSoldierVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lVitalsSoldierVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lUIPanelsMail.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lUIPanelsSocial.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oVitalsMountVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lVitalsMountVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oVitalsEscortVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lUIPanelsInstanceJoin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oVitalsTargetsTarget.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lUIPanelsDressingRoom.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lUIPanelsDeedLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oUIPanelsWardrobe.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lVitalsTargetsTarget.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oVitalsOpponentVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oVitalsPlayerVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="lVitalsOpponentVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lUIPanelsWardrobe.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oVitalsOpponentVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oUIPanelsVault.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lVitalsTargetsTarget.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lUIPanelsVault.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oVitalsTargetsTarget.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oUIPanelsSharedStorage.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lVitalsSoldierVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="gVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oVitalsSoldierVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oVitalsCompanionVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lVitalsEscortVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lVitalsCompanionVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oVitalsEscortVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oVitalsPlayerVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lVitalsMountVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lVitalsPlayerVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oVitalsCompanionVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oVitalsMountVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="lVitalsCompanionVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oVitalsPlayerVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oVitalsCompanionVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lVitalsPlayerVitals.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lVitalsFellowship.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lUIPanelsSharedStorage.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oVitalsFellowship.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oUIPanelsSocial.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="tSkinName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oUIPanelsQuestLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oResolutionMain.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="sVertical.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="oResolutionToolbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="sHorizontal.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lResolutionMain.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="gUIPanels.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lResolutionToolbar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oUIPanelsOptions.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="bBuildSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oUIPanelsMail.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="bEditSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oUIPanelsInstanceJoin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="bDeleteSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oUIPanelsDressingRoom.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="bLoadSkin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="oUIPanelsDeedLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="label10.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lUIPanelsCrafting.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oUIPanelsCrafting.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="gNPCDialogs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsStableMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsSkillTrainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsQuestStart.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsVendor.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsBarter.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsBard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsVendor.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsStableMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsSkillTrainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsQuestStart.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsBarter.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsBard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsAuction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsAuction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="gPanelStyle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oUIPanelsOptions.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oUIPanelsMail.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oUIPanelsInstanceJoin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oUIPanelsDressingRoom.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oUIPanelsDeedLog.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lUIPanelsCrafting.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oUIPanelsCrafting.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsStableMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsSkillTrainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsQuestStart.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsVendor.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsBarter.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsBard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsVendor.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsStableMaster.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsSkillTrainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsQuestStart.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsBarter.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsBard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lNPCDialogsAuction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="oNPCDialogsAuction.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="bOptions.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
