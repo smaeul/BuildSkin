@@ -140,7 +140,10 @@ namespace BuildSkin
                     }
                     else
                     {
-                        ErrorMessage(5);
+                        if (oCurrBox.Text != "")
+                        {
+                            ErrorMessage(5);
+                        }
                     }
                 }
 
