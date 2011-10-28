@@ -7,6 +7,8 @@ Then run BuildSkin.exe (it has a ring icon).
 USAGE NOTES
 -----------
 + Skins created with UiBuilder cannot be "Loaded" in BuildSkin. (But you can rebuild them, and then they will work.)
++ Addons created for UiBuilder can be converted to BuildSkin by copying ConvertUiBuilderAddons.cmd to the UiBuilder directory and running it, then copying those folders into the BuildSkin directory.
+	NOTE: If they have Art assets, paths to those must also be fixed. See "Making Addons" below.
 
 MANAGING OPTIONS
 ----------------

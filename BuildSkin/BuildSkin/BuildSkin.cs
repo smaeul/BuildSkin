@@ -333,6 +333,6 @@ namespace BuildSkin
             public static bool ExplicitDefaults;
             public static bool AutoLoadLast;
         }
-        static ComboBox[] oAllBoxes = new ComboBox[74];
+        static ComboBox[] oAllBoxes = new ComboBox[73];
     }
 }
