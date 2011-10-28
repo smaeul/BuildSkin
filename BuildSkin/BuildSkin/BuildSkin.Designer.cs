@@ -848,7 +848,7 @@
             this.oUIPanelsSharedStorage.Size = new System.Drawing.Size(132, 21);
             this.oUIPanelsSharedStorage.Sorted = true;
             this.oUIPanelsSharedStorage.TabIndex = 30;
-            this.oUIPanelsSharedStorage.Tag = "UIPanels-Quest Log";
+            this.oUIPanelsSharedStorage.Tag = "UIPanels-QuestLog";
             this.oUIPanelsSharedStorage.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lUIPanelsSharedStorage
