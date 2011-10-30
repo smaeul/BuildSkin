@@ -32,6 +32,9 @@
             this.pPreview = new System.Windows.Forms.PictureBox();
             this.sVertical = new System.Windows.Forms.SplitContainer();
             this.sHorizontal = new System.Windows.Forms.SplitContainer();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.comboBox22 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -203,18 +206,14 @@
             this.lResolutionMain = new System.Windows.Forms.Label();
             this.oResolutionToolbar = new System.Windows.Forms.ComboBox();
             this.oResolutionMain = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pPreview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sVertical)).BeginInit();
             this.sVertical.Panel1.SuspendLayout();
             this.sVertical.Panel2.SuspendLayout();
             this.sVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sHorizontal)).BeginInit();
             this.sHorizontal.Panel1.SuspendLayout();
             this.sHorizontal.Panel2.SuspendLayout();
             this.sHorizontal.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gFellowship.SuspendLayout();
             this.gHousing.SuspendLayout();
@@ -229,7 +228,6 @@
             this.gHelp.SuspendLayout();
             this.gFullSkinActions.SuspendLayout();
             this.gResolution.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pPreview
@@ -300,6 +298,40 @@
             this.sHorizontal.SplitterDistance = 890;
             this.sHorizontal.TabIndex = 0;
             this.sHorizontal.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox2.Controls.Add(this.label26);
+            this.groupBox2.Controls.Add(this.comboBox22);
+            this.groupBox2.Location = new System.Drawing.Point(152, 458);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(144, 56);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "UI Panels";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(5, 16);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(37, 13);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Wallet";
+            // 
+            // comboBox22
+            // 
+            this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox22.Enabled = false;
+            this.comboBox22.FormattingEnabled = true;
+            this.comboBox22.Location = new System.Drawing.Point(6, 30);
+            this.comboBox22.Name = "comboBox22";
+            this.comboBox22.Size = new System.Drawing.Size(132, 21);
+            this.comboBox22.Sorted = true;
+            this.comboBox22.TabIndex = 9;
+            this.comboBox22.Tag = "UIPanels-Wallet";
+            this.comboBox22.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // groupBox1
             // 
@@ -2312,40 +2344,6 @@
             this.oResolutionMain.Size = new System.Drawing.Size(110, 21);
             this.oResolutionMain.TabIndex = 102;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox2.Controls.Add(this.label26);
-            this.groupBox2.Controls.Add(this.comboBox22);
-            this.groupBox2.Location = new System.Drawing.Point(152, 458);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(144, 56);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "UI Panels";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(5, 16);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(37, 13);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Wallet";
-            // 
-            // comboBox22
-            // 
-            this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox22.Enabled = false;
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Location = new System.Drawing.Point(6, 30);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(132, 21);
-            this.comboBox22.Sorted = true;
-            this.comboBox22.TabIndex = 9;
-            this.comboBox22.Tag = "UIPanels-Wallet";
-            this.comboBox22.SelectedIndexChanged += new System.EventHandler(this.Preview);
-            // 
             // fBuildSkin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2361,12 +2359,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pPreview)).EndInit();
             this.sVertical.Panel1.ResumeLayout(false);
             this.sVertical.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.sVertical)).EndInit();
             this.sVertical.ResumeLayout(false);
             this.sHorizontal.Panel1.ResumeLayout(false);
             this.sHorizontal.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.sHorizontal)).EndInit();
             this.sHorizontal.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.gFellowship.ResumeLayout(false);
@@ -2392,8 +2390,6 @@
             this.gFullSkinActions.ResumeLayout(false);
             this.gResolution.ResumeLayout(false);
             this.gResolution.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }

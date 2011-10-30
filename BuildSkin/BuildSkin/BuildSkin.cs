@@ -160,6 +160,7 @@ namespace BuildSkin
             }
 
             MessageBox.Show("Skin " + tSkinName.Text + " successfully built/updated.");
+            RefreshSkins();
         }
         void EditSkin(object oSender, EventArgs e)
         {
@@ -197,6 +198,7 @@ namespace BuildSkin
             {
                 ErrorMessage(6);
             }
+            RefreshSkins();
         }
         void Preview(object oSender, EventArgs e)
         {
@@ -309,6 +311,20 @@ namespace BuildSkin
             foreach (string sDir in System.IO.Directory.GetDirectories(".", "* Skin"))
             {
                 tSkinName.Items.Add(sDir.Remove(sDir.Length - 5).Remove(0,2));
+            }
+        }
+        void RefreshSkins()
+        {
+            //Refresh Skins
+            string sTmp = tSkinName.Text;
+            tSkinName.Items.Clear();
+            foreach (string sDir in System.IO.Directory.GetDirectories(".", "* Skin"))
+            {
+                tSkinName.Items.Add(sDir.Remove(sDir.Length - 5).Remove(0, 2));
+            }
+            if (tSkinName.Items.Contains(sTmp))
+            {
+                tSkinName.SelectedIndex = tSkinName.Items.IndexOf(sTmp);
             }
         }
         void OptionsWindow(object oSender, EventArgs e)
