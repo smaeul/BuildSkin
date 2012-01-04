@@ -16,8 +16,8 @@ They are stored in the following manner:
 	Path to text editor
 	Most recently selected skin
 	Available resolutions (separated by comma and NO space)
-	Available toolbar widths (same here)
-	Use explicit defaults? True/False
+	Deprecated line that used to contain available toolbar widths
+	Confirm on build, load or delete? True/False
 	Auto-load last skin on startup? True/False
 
 MAKING ADDONS
@@ -43,17 +43,17 @@ CHANGELOG/ROADMAP
  v'	0.0.3z	Code Cleanup (FIRST TEST RELEASE)
  v'	0.0.4	Add More Skin Elements
  v'	0.0.4a	Correctly Implement Error Messages/Handling
- ->	0.0.4b	UI/Code Cleanup/Bugfixes
- v'	0.0.5	Add Options File
-	0.0.5a	Add Options Window / More Options
-	0.0.6	Add Help/About Window
-	0.0.6a	Add Documentation
- ??	0.0.6b	Add Internationalization Support (SECOND TEST RELEASE)
- ??	0.0.6c	Add Language Packs
- ??	0.0.7	Add Command Line Interface
-	0.0.9	Code/Images/Folders Cleanup
-	0.0.9z	Bugfixes (let it set a while)
-	0.1.0	FIRST PUBLIC BETA RELEASE!! YAY!! :D
+ v'	0.0.4b	UI/Code Cleanup/Bugfixes
+ v'	0.0.4z	Add Options File
+ ->	0.5a	Add Options Window / More Options
+	0.5b	Add Automatic Resolution Calculation
+	0.6		Add Documentation
+ ??	0.6a	Add Internationalization Support (SECOND TEST RELEASE)
+ ??	0.6b	Add Language Packs
+ ??	0.7		Add Command Line Interface
+	0.9		Code/Images/Folders Cleanup
+	0.9z	Bugfixes (let it set a while)
+	1.0		Real Public Release - Probably final for a while
 
 COPYRIGHT/LICENSE
 -----------------

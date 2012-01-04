@@ -189,10 +189,8 @@
             this.lSkirmishSkirmishCreate = new System.Windows.Forms.Label();
             this.oSkirmishSkirmishCreate = new System.Windows.Forms.ComboBox();
             this.oSkirmishSkirmishPanel = new System.Windows.Forms.ComboBox();
-            this.gAbout = new System.Windows.Forms.GroupBox();
-            this.bOptions = new System.Windows.Forms.Button();
-            this.lAbout = new System.Windows.Forms.Label();
             this.gHelp = new System.Windows.Forms.GroupBox();
+            this.bOptions = new System.Windows.Forms.Button();
             this.iLotroInterface = new System.Windows.Forms.LinkLabel();
             this.gFullSkinActions = new System.Windows.Forms.GroupBox();
             this.bLoadSkin = new System.Windows.Forms.Button();
@@ -202,9 +200,7 @@
             this.gResolution = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tSkinName = new System.Windows.Forms.ComboBox();
-            this.lResolutionToolbar = new System.Windows.Forms.Label();
             this.lResolutionMain = new System.Windows.Forms.Label();
-            this.oResolutionToolbar = new System.Windows.Forms.ComboBox();
             this.oResolutionMain = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pPreview)).BeginInit();
             this.sVertical.Panel1.SuspendLayout();
@@ -224,7 +220,6 @@
             this.gInterface.SuspendLayout();
             this.gLegendary.SuspendLayout();
             this.gSkirmish.SuspendLayout();
-            this.gAbout.SuspendLayout();
             this.gHelp.SuspendLayout();
             this.gFullSkinActions.SuspendLayout();
             this.gResolution.SuspendLayout();
@@ -238,7 +233,7 @@
             this.pPreview.InitialImage = null;
             this.pPreview.Location = new System.Drawing.Point(0, 0);
             this.pPreview.Name = "pPreview";
-            this.pPreview.Size = new System.Drawing.Size(1024, 245);
+            this.pPreview.Size = new System.Drawing.Size(1024, 246);
             this.pPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pPreview.TabIndex = 0;
             this.pPreview.TabStop = false;
@@ -261,7 +256,7 @@
             // 
             this.sVertical.Panel2.Controls.Add(this.sHorizontal);
             this.sVertical.Size = new System.Drawing.Size(1024, 766);
-            this.sVertical.SplitterDistance = 245;
+            this.sVertical.SplitterDistance = 246;
             this.sVertical.SplitterWidth = 1;
             this.sVertical.TabIndex = 1;
             this.sVertical.TabStop = false;
@@ -290,11 +285,10 @@
             // 
             // sHorizontal.Panel2
             // 
-            this.sHorizontal.Panel2.Controls.Add(this.gAbout);
             this.sHorizontal.Panel2.Controls.Add(this.gHelp);
             this.sHorizontal.Panel2.Controls.Add(this.gFullSkinActions);
             this.sHorizontal.Panel2.Controls.Add(this.gResolution);
-            this.sHorizontal.Size = new System.Drawing.Size(1024, 520);
+            this.sHorizontal.Size = new System.Drawing.Size(1024, 519);
             this.sHorizontal.SplitterDistance = 890;
             this.sHorizontal.TabIndex = 0;
             this.sHorizontal.TabStop = false;
@@ -304,7 +298,7 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox2.Controls.Add(this.label26);
             this.groupBox2.Controls.Add(this.comboBox22);
-            this.groupBox2.Location = new System.Drawing.Point(152, 458);
+            this.groupBox2.Location = new System.Drawing.Point(152, 457);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(144, 56);
             this.groupBox2.TabIndex = 4;
@@ -340,7 +334,7 @@
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.comboBox23);
             this.groupBox1.Controls.Add(this.comboBox24);
-            this.groupBox1.Location = new System.Drawing.Point(596, 268);
+            this.groupBox1.Location = new System.Drawing.Point(596, 267);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(144, 104);
             this.groupBox1.TabIndex = 8;
@@ -402,7 +396,7 @@
             this.gFellowship.Controls.Add(this.comboBox19);
             this.gFellowship.Controls.Add(this.comboBox20);
             this.gFellowship.Controls.Add(this.comboBox21);
-            this.gFellowship.Location = new System.Drawing.Point(744, 344);
+            this.gFellowship.Location = new System.Drawing.Point(744, 343);
             this.gFellowship.Name = "gFellowship";
             this.gFellowship.Size = new System.Drawing.Size(144, 170);
             this.gFellowship.TabIndex = 11;
@@ -516,7 +510,7 @@
             this.gHousing.Controls.Add(this.label15);
             this.gHousing.Controls.Add(this.comboBox15);
             this.gHousing.Controls.Add(this.label16);
-            this.gHousing.Location = new System.Drawing.Point(744, 2);
+            this.gHousing.Location = new System.Drawing.Point(744, 1);
             this.gHousing.Name = "gHousing";
             this.gHousing.Size = new System.Drawing.Size(144, 332);
             this.gHousing.TabIndex = 10;
@@ -728,7 +722,7 @@
             this.gUIPanels.Controls.Add(this.oUIPanelsDeedLog);
             this.gUIPanels.Controls.Add(this.lUIPanelsCrafting);
             this.gUIPanels.Controls.Add(this.oUIPanelsCrafting);
-            this.gUIPanels.Location = new System.Drawing.Point(300, 2);
+            this.gUIPanels.Location = new System.Drawing.Point(300, 1);
             this.gUIPanels.Name = "gUIPanels";
             this.gUIPanels.Size = new System.Drawing.Size(144, 512);
             this.gUIPanels.TabIndex = 5;
@@ -1040,7 +1034,7 @@
             this.gVitals.Controls.Add(this.lVitalsOpponentVitals);
             this.gVitals.Controls.Add(this.oVitalsPlayerVitals);
             this.gVitals.Controls.Add(this.lVitalsPlayerVitals);
-            this.gVitals.Location = new System.Drawing.Point(152, 2);
+            this.gVitals.Location = new System.Drawing.Point(152, 1);
             this.gVitals.Name = "gVitals";
             this.gVitals.Size = new System.Drawing.Size(144, 332);
             this.gVitals.TabIndex = 2;
@@ -1252,7 +1246,7 @@
             this.gNPCDialogs.Controls.Add(this.oNPCDialogsBard);
             this.gNPCDialogs.Controls.Add(this.lNPCDialogsAuction);
             this.gNPCDialogs.Controls.Add(this.oNPCDialogsAuction);
-            this.gNPCDialogs.Location = new System.Drawing.Point(448, 2);
+            this.gNPCDialogs.Location = new System.Drawing.Point(448, 1);
             this.gNPCDialogs.Name = "gNPCDialogs";
             this.gNPCDialogs.Size = new System.Drawing.Size(144, 512);
             this.gNPCDialogs.TabIndex = 6;
@@ -1554,7 +1548,7 @@
             this.gPanelStyle.Controls.Add(this.oPanelStyleScrollbar);
             this.gPanelStyle.Controls.Add(this.oPanelStyleButtons);
             this.gPanelStyle.Controls.Add(this.oPanelStyleBorder);
-            this.gPanelStyle.Location = new System.Drawing.Point(596, 382);
+            this.gPanelStyle.Location = new System.Drawing.Point(596, 381);
             this.gPanelStyle.Name = "gPanelStyle";
             this.gPanelStyle.Size = new System.Drawing.Size(144, 132);
             this.gPanelStyle.TabIndex = 9;
@@ -1656,7 +1650,7 @@
             this.gInterface.Controls.Add(this.oInterfaceGambit);
             this.gInterface.Controls.Add(this.oInterfaceAttunement);
             this.gInterface.Controls.Add(this.lInterfaceAttunement);
-            this.gInterface.Location = new System.Drawing.Point(4, 2);
+            this.gInterface.Location = new System.Drawing.Point(4, 1);
             this.gInterface.Name = "gInterface";
             this.gInterface.Size = new System.Drawing.Size(144, 512);
             this.gInterface.TabIndex = 1;
@@ -1965,7 +1959,7 @@
             this.gLegendary.Controls.Add(this.lLegendaryItemAdvancement);
             this.gLegendary.Controls.Add(this.oLegendaryForgeMaster);
             this.gLegendary.Controls.Add(this.lLegendaryForgeMaster);
-            this.gLegendary.Location = new System.Drawing.Point(596, 2);
+            this.gLegendary.Location = new System.Drawing.Point(596, 1);
             this.gLegendary.Name = "gLegendary";
             this.gLegendary.Size = new System.Drawing.Size(144, 256);
             this.gLegendary.TabIndex = 7;
@@ -2111,7 +2105,7 @@
             this.gSkirmish.Controls.Add(this.lSkirmishSkirmishCreate);
             this.gSkirmish.Controls.Add(this.oSkirmishSkirmishCreate);
             this.gSkirmish.Controls.Add(this.oSkirmishSkirmishPanel);
-            this.gSkirmish.Location = new System.Drawing.Point(152, 344);
+            this.gSkirmish.Location = new System.Drawing.Point(152, 343);
             this.gSkirmish.Name = "gSkirmish";
             this.gSkirmish.Size = new System.Drawing.Size(144, 104);
             this.gSkirmish.TabIndex = 3;
@@ -2162,59 +2156,39 @@
             this.oSkirmishSkirmishPanel.Tag = "Skirmish-Panel";
             this.oSkirmishSkirmishPanel.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
-            // gAbout
-            // 
-            this.gAbout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.gAbout.Controls.Add(this.bOptions);
-            this.gAbout.Controls.Add(this.lAbout);
-            this.gAbout.Location = new System.Drawing.Point(4, 344);
-            this.gAbout.Name = "gAbout";
-            this.gAbout.Size = new System.Drawing.Size(120, 170);
-            this.gAbout.TabIndex = 15;
-            this.gAbout.TabStop = false;
-            this.gAbout.Text = "About";
-            // 
-            // bOptions
-            // 
-            this.bOptions.Location = new System.Drawing.Point(6, 140);
-            this.bOptions.Name = "bOptions";
-            this.bOptions.Size = new System.Drawing.Size(108, 23);
-            this.bOptions.TabIndex = 109;
-            this.bOptions.Text = "Program Options";
-            this.bOptions.UseVisualStyleBackColor = true;
-            this.bOptions.Click += new System.EventHandler(this.OptionsWindow);
-            // 
-            // lAbout
-            // 
-            this.lAbout.Location = new System.Drawing.Point(3, 16);
-            this.lAbout.Name = "lAbout";
-            this.lAbout.Size = new System.Drawing.Size(114, 121);
-            this.lAbout.TabIndex = 0;
-            this.lAbout.Text = "Copyright © 2011\r\nMevordel\r\n\r\nReleased under\r\nthe MIT License\r\n\r\nBased on works b" +
-                "y\r\nMrJackdaw and\r\nThe Old One";
-            this.lAbout.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // gHelp
             // 
             this.gHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.gHelp.Controls.Add(this.bOptions);
             this.gHelp.Controls.Add(this.iLotroInterface);
-            this.gHelp.Location = new System.Drawing.Point(4, 266);
+            this.gHelp.Location = new System.Drawing.Point(4, 245);
             this.gHelp.Name = "gHelp";
-            this.gHelp.Size = new System.Drawing.Size(120, 72);
+            this.gHelp.Size = new System.Drawing.Size(120, 268);
             this.gHelp.TabIndex = 14;
             this.gHelp.TabStop = false;
-            this.gHelp.Text = "Help";
+            this.gHelp.Text = "Help/About";
+            // 
+            // bOptions
+            // 
+            this.bOptions.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bOptions.Location = new System.Drawing.Point(3, 242);
+            this.bOptions.Name = "bOptions";
+            this.bOptions.Size = new System.Drawing.Size(114, 23);
+            this.bOptions.TabIndex = 109;
+            this.bOptions.Text = "Program &Options";
+            this.bOptions.UseVisualStyleBackColor = true;
+            this.bOptions.Click += new System.EventHandler(this.OptionsWindow);
             // 
             // iLotroInterface
             // 
-            this.iLotroInterface.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iLotroInterface.LinkArea = new System.Windows.Forms.LinkArea(0, 28);
+            this.iLotroInterface.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iLotroInterface.LinkArea = new System.Windows.Forms.LinkArea(66, 14);
             this.iLotroInterface.Location = new System.Drawing.Point(3, 16);
             this.iLotroInterface.Name = "iLotroInterface";
-            this.iLotroInterface.Size = new System.Drawing.Size(114, 53);
+            this.iLotroInterface.Size = new System.Drawing.Size(114, 220);
             this.iLotroInterface.TabIndex = 108;
             this.iLotroInterface.TabStop = true;
-            this.iLotroInterface.Text = "BuildSkin on\r\nLOTROInterface\r\n\r\nRead the ReadMe!";
+            this.iLotroInterface.Text = resources.GetString("iLotroInterface.Text");
             this.iLotroInterface.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.iLotroInterface.UseCompatibleTextRendering = true;
             this.iLotroInterface.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.NavigateToLI);
@@ -2226,7 +2200,7 @@
             this.gFullSkinActions.Controls.Add(this.bDeleteSkin);
             this.gFullSkinActions.Controls.Add(this.bEditSkin);
             this.gFullSkinActions.Controls.Add(this.bBuildSkin);
-            this.gFullSkinActions.Location = new System.Drawing.Point(4, 138);
+            this.gFullSkinActions.Location = new System.Drawing.Point(4, 115);
             this.gFullSkinActions.Name = "gFullSkinActions";
             this.gFullSkinActions.Size = new System.Drawing.Size(120, 122);
             this.gFullSkinActions.TabIndex = 13;
@@ -2278,13 +2252,11 @@
             this.gResolution.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.gResolution.Controls.Add(this.label10);
             this.gResolution.Controls.Add(this.tSkinName);
-            this.gResolution.Controls.Add(this.lResolutionToolbar);
             this.gResolution.Controls.Add(this.lResolutionMain);
-            this.gResolution.Controls.Add(this.oResolutionToolbar);
             this.gResolution.Controls.Add(this.oResolutionMain);
-            this.gResolution.Location = new System.Drawing.Point(4, 2);
+            this.gResolution.Location = new System.Drawing.Point(4, 1);
             this.gResolution.Name = "gResolution";
-            this.gResolution.Size = new System.Drawing.Size(120, 132);
+            this.gResolution.Size = new System.Drawing.Size(120, 104);
             this.gResolution.TabIndex = 12;
             this.gResolution.TabStop = false;
             this.gResolution.Text = "Skin Properties";
@@ -2308,32 +2280,14 @@
             this.tSkinName.Sorted = true;
             this.tSkinName.TabIndex = 101;
             // 
-            // lResolutionToolbar
-            // 
-            this.lResolutionToolbar.AutoSize = true;
-            this.lResolutionToolbar.Location = new System.Drawing.Point(5, 92);
-            this.lResolutionToolbar.Name = "lResolutionToolbar";
-            this.lResolutionToolbar.Size = new System.Drawing.Size(101, 13);
-            this.lResolutionToolbar.TabIndex = 0;
-            this.lResolutionToolbar.Text = "Toolbar Base Width";
-            // 
             // lResolutionMain
             // 
             this.lResolutionMain.AutoSize = true;
             this.lResolutionMain.Location = new System.Drawing.Point(5, 54);
             this.lResolutionMain.Name = "lResolutionMain";
-            this.lResolutionMain.Size = new System.Drawing.Size(94, 13);
+            this.lResolutionMain.Size = new System.Drawing.Size(57, 13);
             this.lResolutionMain.TabIndex = 0;
-            this.lResolutionMain.Text = "Screen Resolution";
-            // 
-            // oResolutionToolbar
-            // 
-            this.oResolutionToolbar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.oResolutionToolbar.FormattingEnabled = true;
-            this.oResolutionToolbar.Location = new System.Drawing.Point(6, 106);
-            this.oResolutionToolbar.Name = "oResolutionToolbar";
-            this.oResolutionToolbar.Size = new System.Drawing.Size(110, 21);
-            this.oResolutionToolbar.TabIndex = 103;
+            this.lResolutionMain.Text = "Resolution";
             // 
             // oResolutionMain
             // 
@@ -2385,7 +2339,6 @@
             this.gLegendary.PerformLayout();
             this.gSkirmish.ResumeLayout(false);
             this.gSkirmish.PerformLayout();
-            this.gAbout.ResumeLayout(false);
             this.gHelp.ResumeLayout(false);
             this.gFullSkinActions.ResumeLayout(false);
             this.gResolution.ResumeLayout(false);
@@ -2553,9 +2506,7 @@
         private System.Windows.Forms.Label lSkirmishSkirmishCreate;
         private System.Windows.Forms.ComboBox oSkirmishSkirmishCreate;
         private System.Windows.Forms.ComboBox oSkirmishSkirmishPanel;
-        private System.Windows.Forms.GroupBox gAbout;
         private System.Windows.Forms.Button bOptions;
-        private System.Windows.Forms.Label lAbout;
         private System.Windows.Forms.GroupBox gHelp;
         private System.Windows.Forms.LinkLabel iLotroInterface;
         private System.Windows.Forms.GroupBox gFullSkinActions;
@@ -2566,9 +2517,7 @@
         private System.Windows.Forms.GroupBox gResolution;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox tSkinName;
-        private System.Windows.Forms.Label lResolutionToolbar;
         private System.Windows.Forms.Label lResolutionMain;
-        private System.Windows.Forms.ComboBox oResolutionToolbar;
         private System.Windows.Forms.ComboBox oResolutionMain;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label26;

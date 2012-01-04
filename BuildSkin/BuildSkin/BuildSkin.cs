@@ -39,6 +39,7 @@ namespace BuildSkin
         }
         void LoadSkin(string sName)
         {
+            if (Options.ConfirmActions == true && MessageBox.Show("Do you want to continue loading this skin? This will overwrite any unsaved work.", "Confirmation", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No) { return; }
             //Load From file
             if (System.IO.File.Exists(sName + " Skin\\SkinDefinition.BuildSkin"))
             {
@@ -48,14 +49,6 @@ namespace BuildSkin
                 if (oResolutionMain.Items.Contains(sElements[0]))
                 {
                     oResolutionMain.SelectedIndex = oResolutionMain.Items.IndexOf(sElements[0]);
-                }
-                else
-                {
-                    ErrorMessage(2);
-                }
-                if (oResolutionToolbar.Items.Contains(sElements[1]))
-                {
-                    oResolutionToolbar.SelectedIndex = oResolutionToolbar.Items.IndexOf(sElements[1]);
                 }
                 else
                 {
@@ -92,6 +85,9 @@ namespace BuildSkin
         }
         void BuildSkin(object oSender, EventArgs e)
         {
+            if (Options.ConfirmActions == true && MessageBox.Show("Do you want to continue building this skin? This will overwrite any previous skin with the same name.", "Confirmation", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No) { return; }
+            if (tSkinName.Text == "") { MessageBox.Show("You must type a skin name.", "Error!"); return; }
+            if (oResolutionMain.Text == "") { MessageBox.Show("You must choose a resolution.", "Error!"); return; }
             //Open (Create/Overwrite) Files for writing
             try
             {
@@ -109,7 +105,7 @@ namespace BuildSkin
 
                 //Save resolution
                 fConfFile.WriteLine(oResolutionMain.Text);
-                fConfFile.WriteLine(oResolutionToolbar.Text);
+                fConfFile.WriteLine("Deprecated by removal of Toolbar Width");
 
                 //XML Header
                 fXMLFile.WriteLine("<opt><SkinName Name=\"" + tSkinName.Text + "\" />");
@@ -119,14 +115,13 @@ namespace BuildSkin
                 foreach (ComboBox oCurrBox in oAllBoxes)
                 {
                     fConfFile.WriteLine(oCurrBox.Tag + "=" + oCurrBox.Text);
-                    if (oCurrBox.Text == "Default" && ! Options.ExplicitDefaults) { continue; }
                     if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml"))
                     {
                         if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\resenable.xml"))
                         {
                             if (((String)oCurrBox.Tag) == "Interface-ToolbarQuickslots")
                             {
-                                fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\" + oCurrBox.Text + " " + oResolutionToolbar.Text + ".xml"));
+                                fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\" + oCurrBox.Text + " " + oResolutionMain.Text.Split('x')[0] + ".xml"));
                             }
                             else
                             {
@@ -177,6 +172,7 @@ namespace BuildSkin
         }
         void DeleteSkin(object oSender, EventArgs e)
         {
+            if (Options.ConfirmActions == true && MessageBox.Show("Are you sure you want to delete this skin?", "Confirmation", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No) { return; }
             try
             {
                 if (System.IO.File.Exists(tSkinName.Text + " Skin\\SkinDefinition.xml"))
@@ -215,8 +211,7 @@ namespace BuildSkin
                     Options.EditorPath = oFileContents[0];
                     Options.LastSkin = oFileContents[1];
                     Options.AvailRes = oFileContents[2].Split(',');
-                    Options.AvailToolbarRes = oFileContents[3].Split(',');
-                    Options.ExplicitDefaults = (oFileContents[4].ToLowerInvariant() == "true");
+                    Options.ConfirmActions = (oFileContents[4].ToLowerInvariant() == "true");
                     Options.AutoLoadLast = (oFileContents[5].ToLowerInvariant() == "true");
                 }
                 catch { ErrorMessage(7); }
@@ -224,18 +219,21 @@ namespace BuildSkin
             else //Load Defaults
             {
                 Options.EditorPath = "C:\\Windows\\Notepad.exe";
-                Options.LastSkin = null;
-                Options.AvailRes = new string[] { "800x600", "1024x768", "1152x768", "1280x720", "1280x1024", "1366x768", "1440x900", "1600x900", "1680x1024", "1680x1050", "1920x1080", "1920x1200", "2048x1080", "2048x1536", "2560x1600", "2560x2048" };
-                Options.AvailToolbarRes = new string[] { "800", "1024", "1152", "1280", "1366", "1440", "1600", "1680", "1920", "2048", "2560" };
-                Options.ExplicitDefaults = false;
+                Options.LastSkin = "";
+                Options.AvailRes = new string[] {
+                      "800x600",  "1024x768",  "1152x768",  "1280x720",
+                     "1280x800", "1280x1024",  "1366x768",  "1440x900",
+                     "1600x900", "1680x1024", "1680x1050", "1920x1080",
+                    "1920x1200", "2048x1080", "2048x1536", "2560x1600", "2560x2048" };
+                Options.ConfirmActions = false;
                 Options.AutoLoadLast = true;
             }
 
             //Apply
             oResolutionMain.Items.AddRange(Options.AvailRes);
-            oResolutionToolbar.Items.AddRange(Options.AvailToolbarRes);
+            //oResolutionMain.SelectedIndex = 1; //Don't want lowest resolution as default, do we?
             tSkinName.Text = Options.LastSkin;
-            if (Options.AutoLoadLast && Options.LastSkin != null) { LoadSkin(Options.LastSkin); }
+            if (Options.AutoLoadLast && Options.LastSkin != "") { LoadSkin(Options.LastSkin); }
         }
         void SaveOptions()
         {
@@ -243,14 +241,12 @@ namespace BuildSkin
             Options.LastSkin = tSkinName.Text;
 
             //Save to File
-            string sAvailRes = String.Join(",", Options.AvailRes);
-            string sAvailToolbarRes = String.Join(",", Options.AvailToolbarRes);
             string[] sOptions = {
                                     Options.EditorPath,
                                     Options.LastSkin,
-                                    sAvailRes,
-                                    sAvailToolbarRes,
-                                    Options.ExplicitDefaults.ToString(),
+                                    String.Join(",", Options.AvailRes),
+                                    "Deprecated",
+                                    Options.ConfirmActions.ToString(),
                                     Options.AutoLoadLast.ToString()
                                 };
             try { System.IO.File.WriteAllLines("BuildSkin.conf", sOptions); }
@@ -329,24 +325,28 @@ namespace BuildSkin
         }
         void OptionsWindow(object oSender, EventArgs e)
         {
-            if (MessageBox.Show("This feature is not yet implemented. Please edit the configuration file manually.", "Options") == DialogResult.OK)
+            OptWinForm oWinForm = new OptWinForm();
+            oWinForm.ShowDialog(this);
+            if (oWinForm.DialogResult == System.Windows.Forms.DialogResult.OK)
             {
                 //Change Options
-                
+                Options.AutoLoadLast = ((CheckBox)oWinForm.Controls["cAutoLoad"]).Checked;
+                Options.ConfirmActions = ((CheckBox)oWinForm.Controls["cConfirm"]).Checked;
+                Options.EditorPath = ((TextBox)oWinForm.Controls["tEditorPath"]).Text;
             }
+            oWinForm.Dispose();
         }
         void NavigateToLI(object oSender, LinkLabelLinkClickedEventArgs e)
         {
             try { System.Diagnostics.Process.Start("http://www.lotrointerface.com/downloads/info623-BuildSkin.html"); }
             catch { ErrorMessage(8); }
         }
-        struct Options
+        public struct Options
         {
             public static string EditorPath;
             public static string LastSkin;
             public static string[] AvailRes;
-            public static string[] AvailToolbarRes;
-            public static bool ExplicitDefaults;
+            public static bool ConfirmActions;
             public static bool AutoLoadLast;
         }
         static ComboBox[] oAllBoxes = new ComboBox[73];
