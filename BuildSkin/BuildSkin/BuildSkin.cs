@@ -35,11 +35,11 @@ namespace BuildSkin
         }
         void LoadSkin(object oSender, EventArgs e)
         {
-            LoadSkin(tSkinName.Text);
+            LoadSkin(tSkinName.Text, false);
         }
-        void LoadSkin(string sName)
+        void LoadSkin(string sName, bool isAuto)
         {
-            if (Options.ConfirmActions == true && MessageBox.Show("Do you want to continue loading this skin? This will overwrite any unsaved work.", "Confirmation", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No) { return; }
+            if (isAuto == false && Options.ConfirmActions && MessageBox.Show("Do you want to continue loading this skin? This will overwrite any unsaved work.", "Confirmation", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No) { return; }
             //Load From file
             if (System.IO.File.Exists(sName + " Skin\\SkinDefinition.BuildSkin"))
             {
@@ -85,21 +85,20 @@ namespace BuildSkin
         }
         void BuildSkin(object oSender, EventArgs e)
         {
+            //Sanity Checks
             if (Options.ConfirmActions == true && MessageBox.Show("Do you want to continue building this skin? This will overwrite any previous skin with the same name.", "Confirmation", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No) { return; }
             if (tSkinName.Text == "") { MessageBox.Show("You must type a skin name.", "Error!"); return; }
             if (oResolutionMain.Text == "") { MessageBox.Show("You must choose a resolution.", "Error!"); return; }
-            //Open (Create/Overwrite) Files for writing
-            try
-            {
-                System.IO.Directory.CreateDirectory(tSkinName.Text + " Skin\\");
-            }
-            catch
-            {
-                ErrorMessage(3);
-            }
 
-            try
-            {
+            //Resolution Vars
+            string iWidth = oResolutionMain.Text.Split('x')[0];
+            string iHeight = oResolutionMain.Text.Split('x')[1];
+
+            //Open (Create/Overwrite) Files for writing
+            try { System.IO.Directory.CreateDirectory(tSkinName.Text + " Skin\\"); }
+            catch { ErrorMessage(3); }
+
+            try {
                 System.IO.StreamWriter fXMLFile = new System.IO.StreamWriter(tSkinName.Text + " Skin\\SkinDefinition.xml", false);
                 System.IO.StreamWriter fConfFile = new System.IO.StreamWriter(tSkinName.Text + " Skin\\SkinDefinition.BuildSkin", false);
 
@@ -111,34 +110,49 @@ namespace BuildSkin
                 fXMLFile.WriteLine("<opt><SkinName Name=\"" + tSkinName.Text + "\" />");
 
                 //Write content to files
-                //Use for to preserve order
                 foreach (ComboBox oCurrBox in oAllBoxes)
                 {
                     fConfFile.WriteLine(oCurrBox.Tag + "=" + oCurrBox.Text);
-                    if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml"))
+                    if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml") )//&& oCurrBox.Text != "Default")
                     {
-                        if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\resenable.xml"))
+                        var sLines = System.IO.File.ReadAllLines(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml");
+                        for (short i = 0; i < sLines.Length; i++)
                         {
-                            if (((String)oCurrBox.Tag) == "Interface-ToolbarQuickslots")
+                            //parse xml line
+
+                            //Variables
+                            sLines[i].Replace("$sw", iWidth);
+                            sLines[i].Replace("$sh", iHeight);
+
+                            //Expressions
+                            if (sLines[i].Contains("ID=\"ToolbarField\""))
                             {
-                                fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\" + oCurrBox.Text + " " + oResolutionMain.Text.Split('x')[0] + ".xml"));
+                                int iTmpW = 0;
+                                int iTmpX = 0;
+                                foreach (string sAttr in sLines[i].Split(new char[] {' ', '<', '>'}))
+                                {
+                                    if (sAttr.Contains("Width"))
+                                    {
+                                        iTmpW = Int32.Parse(sAttr.Split('=')[1].Replace("\"", ""));
+                                    }
+                                    else if (sAttr.Contains("X="))
+                                    {
+                                        iTmpX = Int32.Parse(sAttr.Split('=')[1].Replace("\"", ""));
+                                    }
+                                }
+                                int iNewX = (Int32.Parse(iWidth) - iTmpW) / 2;
+                                sLines[i] = sLines[i].Replace("X=\"" + iTmpX.ToString() + "\"", "X=\"" + iNewX.ToString() + "\"");
                             }
-                            else
-                            {
-                                fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + "res\\" + oCurrBox.Text + " " + oResolutionMain.Text + ".xml"));
-                            }
-                        }
-                        else
-                        {
-                            fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml"));
+
+                            //Write It
+                            fXMLFile.WriteLine(sLines[i]);
                         }
                     }
-                    else
+                    else if (oCurrBox.Text != "")
                     {
-                        if (oCurrBox.Text != "")
-                        {
-                            ErrorMessage(5);
-                        }
+                        //Don't show an error if the box is empty, because if it is, it is probably
+                        //disabled anyways, or it is intentional, having the same effect as the "Default" option.
+                        ErrorMessage(5);
                     }
                 }
 
@@ -225,15 +239,14 @@ namespace BuildSkin
                      "1280x800", "1280x1024",  "1366x768",  "1440x900",
                      "1600x900", "1680x1024", "1680x1050", "1920x1080",
                     "1920x1200", "2048x1080", "2048x1536", "2560x1600", "2560x2048" };
-                Options.ConfirmActions = false;
+                Options.ConfirmActions = true;
                 Options.AutoLoadLast = true;
             }
 
             //Apply
             oResolutionMain.Items.AddRange(Options.AvailRes);
-            //oResolutionMain.SelectedIndex = 1; //Don't want lowest resolution as default, do we?
             tSkinName.Text = Options.LastSkin;
-            if (Options.AutoLoadLast && Options.LastSkin != "") { LoadSkin(Options.LastSkin); }
+            if (Options.AutoLoadLast && Options.LastSkin != "") { LoadSkin(Options.LastSkin, true); }
         }
         void SaveOptions()
         {
@@ -260,7 +273,7 @@ namespace BuildSkin
                     MessageBox.Show("Missing SkinDefinition.BuildSkin");
                     break;
                 case 1:
-                    MessageBox.Show("Missing SkinDefinition.XML");
+                    MessageBox.Show("Missing SkinDefinition.xml");
                     break;
                 case 2:
                     MessageBox.Show("Unsupported resolution in loaded skin. Please select another.");
@@ -281,10 +294,10 @@ namespace BuildSkin
                     MessageBox.Show("Error loading or saving options. Check to see if the file is in use.");
                     break;
                 case 8:
-                    MessageBox.Show("Error opening webpage.");
+                    MessageBox.Show("Error opening webpage. Try going to http://www.lotrointerface.com/downloads/info623-BuildSkin.html manually.");
                     break;
                 default:
-                    MessageBox.Show("An unkown error has occurred.");
+                    MessageBox.Show("An unknown error has occurred.");
                     break;
             }
         }
