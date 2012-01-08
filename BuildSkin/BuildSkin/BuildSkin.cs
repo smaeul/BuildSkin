@@ -222,7 +222,7 @@ namespace BuildSkin
                                 {
                                     if (sAttr.Split('=')[0].ToLowerInvariant().StartsWith(sVariable.Split('.')[1].ToLowerInvariant()))
                                     {
-                                        sExpr = sExpr.Replace(sVariable, new Expression("round(" + LookupVariables(sAttr.Split('=')[1].Split(new string[] {"\"", "{", "}"}, StringSplitOptions.RemoveEmptyEntries)[0])).Evaluate().ToString() + ")");
+                                        sExpr = sExpr.Replace(sVariable, new Expression("Round(" + LookupVariables(sAttr.Split('=')[1].Split(new string[] { "\"", "{", "}" }, StringSplitOptions.RemoveEmptyEntries)[0]) + ",0)").Evaluate().ToString());
                                     }
                                 }
                             }
