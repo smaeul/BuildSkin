@@ -27,7 +27,15 @@ namespace BuildSkin
                     }
                 }
             }
+
             RefreshAll();
+
+            //Add preview event handlers
+            foreach (ComboBox oCurrBox in oAllBoxes)
+            {
+                oCurrBox.SelectedIndexChanged += Preview;
+                oCurrBox.Enter += Preview;
+            }
             LoadOptions();
         }
         void OnClose(object oSender, FormClosingEventArgs e)
@@ -167,7 +175,7 @@ namespace BuildSkin
         }
         string LookupVariables(string sExpr)
         {
-            string[] sVariables = sExpr.Split(new char[] { '+', '-', '*', '/', '(', ')', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] sVariables = sExpr.Split(new char[] { ',', '+', '-', '*', '/', '(', ')', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' }, StringSplitOptions.RemoveEmptyEntries);
             if (sVariables.Length == 0)
             {
                 return sExpr;
@@ -192,18 +200,18 @@ namespace BuildSkin
                             sExpr = sExpr.Replace(sVariable, "0");
                         }
                     }
-                    else
+                    else if (sVariable.Contains("."))
                     {
                         foreach (string sLine in sAllLines)
                         {
-                            if (sLine.ToLowerInvariant().Contains("id=\"" + sVariable.Split('.')[0].ToLowerInvariant() + "\""))
+                            if (sLine.ToLowerInvariant().Contains(" id=\"" + sVariable.Split('.')[0].ToLowerInvariant() + "\""))
                             {
                                 string[] sAttrs = sLine.Split(' ');
                                 foreach (string sAttr in sAttrs)
                                 {
                                     if (sAttr.Split('=')[0].ToLowerInvariant().StartsWith(sVariable.Split('.')[1].ToLowerInvariant()))
                                     {
-                                        sExpr = sExpr.Replace(sVariable, new Expression(LookupVariables(sAttr.Split('=')[1].Split(new string[] {"\"", "{", "}"}, StringSplitOptions.RemoveEmptyEntries)[0])).Evaluate().ToString());
+                                        sExpr = sExpr.Replace(sVariable, new Expression("round(" + LookupVariables(sAttr.Split('=')[1].Split(new string[] {"\"", "{", "}"}, StringSplitOptions.RemoveEmptyEntries)[0])).Evaluate().ToString() + ")");
                                     }
                                 }
                             }
@@ -285,8 +293,14 @@ namespace BuildSkin
                 Options.AutoLoadLast = true;
             }
 
-            //Apply
+            //Apply resolutions
             oResolutionMain.Items.AddRange(Options.AvailRes);
+
+            //Loading Skin
+            if (! System.IO.Directory.Exists(Options.LastSkin + " Skin"))
+            {
+                Options.LastSkin = "";
+            }
             tSkinName.Text = Options.LastSkin;
             if (Options.AutoLoadLast && Options.LastSkin != "") { LoadSkin(Options.LastSkin, true); }
         }
@@ -357,8 +371,8 @@ namespace BuildSkin
                     if (oCurrBox.Items.Count > 1)
                     {
                         oCurrBox.Enabled = true;
-                        oCurrBox.SelectedIndex = oCurrBox.Items.IndexOf("Default");
                     }
+                    oCurrBox.SelectedIndex = oCurrBox.Items.IndexOf("Default");
                 }
             }
             

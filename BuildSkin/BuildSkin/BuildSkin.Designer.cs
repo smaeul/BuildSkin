@@ -325,7 +325,6 @@
             this.comboBox22.Sorted = true;
             this.comboBox22.TabIndex = 9;
             this.comboBox22.Tag = "UIPanels-Wallet";
-            this.comboBox22.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // groupBox1
             // 
@@ -370,7 +369,6 @@
             this.comboBox23.Sorted = true;
             this.comboBox23.TabIndex = 9;
             this.comboBox23.Tag = "Items-Stacks";
-            this.comboBox23.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // comboBox24
             // 
@@ -383,7 +381,6 @@
             this.comboBox24.Sorted = true;
             this.comboBox24.TabIndex = 8;
             this.comboBox24.Tag = "Items-PaperItems";
-            this.comboBox24.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // gFellowship
             // 
@@ -450,7 +447,6 @@
             this.comboBox18.Sorted = true;
             this.comboBox18.TabIndex = 49;
             this.comboBox18.Tag = "FellowshipRaid-AssistWindow";
-            this.comboBox18.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // comboBox19
             // 
@@ -463,7 +459,6 @@
             this.comboBox19.Sorted = true;
             this.comboBox19.TabIndex = 52;
             this.comboBox19.Tag = "FellowshipRaid-Maneuvers";
-            this.comboBox19.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // comboBox20
             // 
@@ -476,7 +471,6 @@
             this.comboBox20.Sorted = true;
             this.comboBox20.TabIndex = 51;
             this.comboBox20.Tag = "FellowshipRaid-ItemRoll";
-            this.comboBox20.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // comboBox21
             // 
@@ -489,7 +483,6 @@
             this.comboBox21.Sorted = true;
             this.comboBox21.TabIndex = 50;
             this.comboBox21.Tag = "FellowshipRaid-FellowSelection";
-            this.comboBox21.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // gHousing
             // 
@@ -528,7 +521,6 @@
             this.comboBox16.Sorted = true;
             this.comboBox16.TabIndex = 52;
             this.comboBox16.Tag = "Housing-Purchase";
-            this.comboBox16.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label17
             // 
@@ -550,7 +542,6 @@
             this.comboBox17.Sorted = true;
             this.comboBox17.TabIndex = 50;
             this.comboBox17.Tag = "Housing-Permissions";
-            this.comboBox17.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label18
             // 
@@ -572,7 +563,6 @@
             this.comboBox10.Sorted = true;
             this.comboBox10.TabIndex = 48;
             this.comboBox10.Tag = "Housing-NeighborhoodSelection";
-            this.comboBox10.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label11
             // 
@@ -594,7 +584,6 @@
             this.comboBox11.Sorted = true;
             this.comboBox11.TabIndex = 47;
             this.comboBox11.Tag = "Housing-Maintenance";
-            this.comboBox11.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label12
             // 
@@ -616,7 +605,6 @@
             this.comboBox12.Sorted = true;
             this.comboBox12.TabIndex = 46;
             this.comboBox12.Tag = "Housing-HousingPanel";
-            this.comboBox12.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label13
             // 
@@ -638,7 +626,6 @@
             this.comboBox13.Sorted = true;
             this.comboBox13.TabIndex = 45;
             this.comboBox13.Tag = "Housing-ForSaleSign";
-            this.comboBox13.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label14
             // 
@@ -660,7 +647,6 @@
             this.comboBox14.Sorted = true;
             this.comboBox14.TabIndex = 44;
             this.comboBox14.Tag = "Housing-Escrow";
-            this.comboBox14.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label15
             // 
@@ -682,7 +668,6 @@
             this.comboBox15.Sorted = true;
             this.comboBox15.TabIndex = 43;
             this.comboBox15.Tag = "Housing-Decoration";
-            this.comboBox15.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label16
             // 
@@ -740,7 +725,6 @@
             this.comboBox8.Sorted = true;
             this.comboBox8.TabIndex = 36;
             this.comboBox8.Tag = "UIPanels-Traits";
-            this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label8
             // 
@@ -762,7 +746,6 @@
             this.comboBox1.Sorted = true;
             this.comboBox1.TabIndex = 34;
             this.comboBox1.Tag = "UIPanels-Tracking";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label1
             // 
@@ -847,7 +830,6 @@
             this.oUIPanelsWardrobe.Sorted = true;
             this.oUIPanelsWardrobe.TabIndex = 32;
             this.oUIPanelsWardrobe.Tag = "UIPanels-SecureTrade";
-            this.oUIPanelsWardrobe.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lUIPanelsWardrobe
             // 
@@ -869,7 +851,6 @@
             this.oUIPanelsVault.Sorted = true;
             this.oUIPanelsVault.TabIndex = 31;
             this.oUIPanelsVault.Tag = "UIPanels-Social";
-            this.oUIPanelsVault.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lUIPanelsVault
             // 
@@ -891,7 +872,6 @@
             this.oUIPanelsSharedStorage.Sorted = true;
             this.oUIPanelsSharedStorage.TabIndex = 30;
             this.oUIPanelsSharedStorage.Tag = "UIPanels-QuestLog";
-            this.oUIPanelsSharedStorage.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lUIPanelsSharedStorage
             // 
@@ -913,7 +893,6 @@
             this.oUIPanelsSocial.Sorted = true;
             this.oUIPanelsSocial.TabIndex = 29;
             this.oUIPanelsSocial.Tag = "UIPanels-Options";
-            this.oUIPanelsSocial.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oUIPanelsQuestLog
             // 
@@ -926,7 +905,6 @@
             this.oUIPanelsQuestLog.Sorted = true;
             this.oUIPanelsQuestLog.TabIndex = 28;
             this.oUIPanelsQuestLog.Tag = "UIPanels-Mail";
-            this.oUIPanelsQuestLog.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oUIPanelsOptions
             // 
@@ -939,7 +917,6 @@
             this.oUIPanelsOptions.Sorted = true;
             this.oUIPanelsOptions.TabIndex = 27;
             this.oUIPanelsOptions.Tag = "UIPanels-InstanceJoin";
-            this.oUIPanelsOptions.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oUIPanelsMail
             // 
@@ -952,7 +929,6 @@
             this.oUIPanelsMail.Sorted = true;
             this.oUIPanelsMail.TabIndex = 26;
             this.oUIPanelsMail.Tag = "UIPanels-InspectionBio";
-            this.oUIPanelsMail.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oUIPanelsInstanceJoin
             // 
@@ -965,7 +941,6 @@
             this.oUIPanelsInstanceJoin.Sorted = true;
             this.oUIPanelsInstanceJoin.TabIndex = 25;
             this.oUIPanelsInstanceJoin.Tag = "UIPanels-DressingRoom";
-            this.oUIPanelsInstanceJoin.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oUIPanelsDressingRoom
             // 
@@ -978,7 +953,6 @@
             this.oUIPanelsDressingRoom.Sorted = true;
             this.oUIPanelsDressingRoom.TabIndex = 24;
             this.oUIPanelsDressingRoom.Tag = "UIPanels-DeedLog";
-            this.oUIPanelsDressingRoom.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oUIPanelsDeedLog
             // 
@@ -991,7 +965,6 @@
             this.oUIPanelsDeedLog.Sorted = true;
             this.oUIPanelsDeedLog.TabIndex = 23;
             this.oUIPanelsDeedLog.Tag = "UIPanels-Crafting";
-            this.oUIPanelsDeedLog.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lUIPanelsCrafting
             // 
@@ -1013,7 +986,6 @@
             this.oUIPanelsCrafting.Sorted = true;
             this.oUIPanelsCrafting.TabIndex = 22;
             this.oUIPanelsCrafting.Tag = "UIPanels-Character";
-            this.oUIPanelsCrafting.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // gVitals
             // 
@@ -1052,7 +1024,6 @@
             this.oVitalsFellowship.Sorted = true;
             this.oVitalsFellowship.TabIndex = 8;
             this.oVitalsFellowship.Tag = "Vitals-Fellowship";
-            this.oVitalsFellowship.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lVitalsFellowship
             // 
@@ -1074,7 +1045,6 @@
             this.oVitalsCompanionVitals.Sorted = true;
             this.oVitalsCompanionVitals.TabIndex = 7;
             this.oVitalsCompanionVitals.Tag = "Vitals-Companion";
-            this.oVitalsCompanionVitals.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lVitalsCompanionVitals
             // 
@@ -1096,7 +1066,6 @@
             this.oVitalsMountVitals.Sorted = true;
             this.oVitalsMountVitals.TabIndex = 6;
             this.oVitalsMountVitals.Tag = "Vitals-Mount";
-            this.oVitalsMountVitals.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lVitalsMountVitals
             // 
@@ -1118,7 +1087,6 @@
             this.oVitalsEscortVitals.Sorted = true;
             this.oVitalsEscortVitals.TabIndex = 5;
             this.oVitalsEscortVitals.Tag = "Vitals-Escort";
-            this.oVitalsEscortVitals.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lVitalsEscortVitals
             // 
@@ -1140,7 +1108,6 @@
             this.oVitalsSoldierVitals.Sorted = true;
             this.oVitalsSoldierVitals.TabIndex = 4;
             this.oVitalsSoldierVitals.Tag = "Vitals-Soldier";
-            this.oVitalsSoldierVitals.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lVitalsSoldierVitals
             // 
@@ -1162,7 +1129,6 @@
             this.oVitalsTargetsTarget.Sorted = true;
             this.oVitalsTargetsTarget.TabIndex = 3;
             this.oVitalsTargetsTarget.Tag = "Vitals-TargetsTarget";
-            this.oVitalsTargetsTarget.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lVitalsTargetsTarget
             // 
@@ -1184,7 +1150,6 @@
             this.oVitalsOpponentVitals.Sorted = true;
             this.oVitalsOpponentVitals.TabIndex = 2;
             this.oVitalsOpponentVitals.Tag = "Vitals-Opponent";
-            this.oVitalsOpponentVitals.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lVitalsOpponentVitals
             // 
@@ -1206,7 +1171,6 @@
             this.oVitalsPlayerVitals.Sorted = true;
             this.oVitalsPlayerVitals.TabIndex = 1;
             this.oVitalsPlayerVitals.Tag = "Vitals-Player";
-            this.oVitalsPlayerVitals.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lVitalsPlayerVitals
             // 
@@ -1264,7 +1228,6 @@
             this.comboBox9.Sorted = true;
             this.comboBox9.TabIndex = 51;
             this.comboBox9.Tag = "NPCDialogs-VocationTrainer";
-            this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label9
             // 
@@ -1295,7 +1258,6 @@
             this.comboBox6.Sorted = true;
             this.comboBox6.TabIndex = 49;
             this.comboBox6.Tag = "NPCDialogs-Vendor";
-            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label5
             // 
@@ -1317,7 +1279,6 @@
             this.comboBox5.Sorted = true;
             this.comboBox5.TabIndex = 47;
             this.comboBox5.Tag = "NPCDialogs-StableMaster";
-            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label4
             // 
@@ -1339,7 +1300,6 @@
             this.comboBox4.Sorted = true;
             this.comboBox4.TabIndex = 45;
             this.comboBox4.Tag = "NPCDialogs-SkillTrainer";
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label3
             // 
@@ -1361,7 +1321,6 @@
             this.comboBox3.Sorted = true;
             this.comboBox3.TabIndex = 43;
             this.comboBox3.Tag = "NPCDialogs-QuestStartFinish";
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label2
             // 
@@ -1383,7 +1342,6 @@
             this.comboBox2.Sorted = true;
             this.comboBox2.TabIndex = 41;
             this.comboBox2.Tag = "NPCDialogs-Notary";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lNPCDialogsStableMaster
             // 
@@ -1450,7 +1408,6 @@
             this.oNPCDialogsVendor.Sorted = true;
             this.oNPCDialogsVendor.TabIndex = 39;
             this.oNPCDialogsVendor.Tag = "NPCDialogs-HobbyMaster";
-            this.oNPCDialogsVendor.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oNPCDialogsStableMaster
             // 
@@ -1463,7 +1420,6 @@
             this.oNPCDialogsStableMaster.Sorted = true;
             this.oNPCDialogsStableMaster.TabIndex = 38;
             this.oNPCDialogsStableMaster.Tag = "NPCDialogs-CraftingGuildTrainer";
-            this.oNPCDialogsStableMaster.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oNPCDialogsSkillTrainer
             // 
@@ -1476,7 +1432,6 @@
             this.oNPCDialogsSkillTrainer.Sorted = true;
             this.oNPCDialogsSkillTrainer.TabIndex = 37;
             this.oNPCDialogsSkillTrainer.Tag = "NPCDialogs-Comments";
-            this.oNPCDialogsSkillTrainer.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oNPCDialogsQuestStart
             // 
@@ -1489,7 +1444,6 @@
             this.oNPCDialogsQuestStart.Sorted = true;
             this.oNPCDialogsQuestStart.TabIndex = 36;
             this.oNPCDialogsQuestStart.Tag = "NPCDialogs-Barter";
-            this.oNPCDialogsQuestStart.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oNPCDialogsBarter
             // 
@@ -1502,7 +1456,6 @@
             this.oNPCDialogsBarter.Sorted = true;
             this.oNPCDialogsBarter.TabIndex = 35;
             this.oNPCDialogsBarter.Tag = "NPCDialogs-Bard";
-            this.oNPCDialogsBarter.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oNPCDialogsBard
             // 
@@ -1515,7 +1468,6 @@
             this.oNPCDialogsBard.Sorted = true;
             this.oNPCDialogsBard.TabIndex = 34;
             this.oNPCDialogsBard.Tag = "NPCDialogs-Barber";
-            this.oNPCDialogsBard.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lNPCDialogsAuction
             // 
@@ -1537,7 +1489,6 @@
             this.oNPCDialogsAuction.Sorted = true;
             this.oNPCDialogsAuction.TabIndex = 33;
             this.oNPCDialogsAuction.Tag = "NPCDialogs-Auction";
-            this.oNPCDialogsAuction.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // gPanelStyle
             // 
@@ -1593,7 +1544,6 @@
             this.oPanelStyleScrollbar.Sorted = true;
             this.oPanelStyleScrollbar.TabIndex = 10;
             this.oPanelStyleScrollbar.Tag = "PanelStyle-Scrollbar";
-            this.oPanelStyleScrollbar.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oPanelStyleButtons
             // 
@@ -1606,7 +1556,6 @@
             this.oPanelStyleButtons.Sorted = true;
             this.oPanelStyleButtons.TabIndex = 9;
             this.oPanelStyleButtons.Tag = "PanelStyle-Buttons";
-            this.oPanelStyleButtons.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oPanelStyleBorder
             // 
@@ -1619,7 +1568,6 @@
             this.oPanelStyleBorder.Sorted = true;
             this.oPanelStyleBorder.TabIndex = 8;
             this.oPanelStyleBorder.Tag = "PanelStyle-Border";
-            this.oPanelStyleBorder.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // gInterface
             // 
@@ -1668,7 +1616,6 @@
             this.comboBox7.Sorted = true;
             this.comboBox7.TabIndex = 25;
             this.comboBox7.Tag = "Interface-Tooltips";
-            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // label7
             // 
@@ -1690,7 +1637,6 @@
             this.oInterfaceSkillQueue.Sorted = true;
             this.oInterfaceSkillQueue.TabIndex = 20;
             this.oInterfaceSkillQueue.Tag = "Interface-SkillQueue";
-            this.oInterfaceSkillQueue.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lInterfaceSkillQueue
             // 
@@ -1758,7 +1704,6 @@
             this.oInterfaceTooltips.Sorted = true;
             this.oInterfaceTooltips.TabIndex = 22;
             this.oInterfaceTooltips.Tag = "Interface-ToolbarQuickslots";
-            this.oInterfaceTooltips.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lInterfaceTooltips
             // 
@@ -1780,7 +1725,6 @@
             this.oInterfaceToolbar.Sorted = true;
             this.oInterfaceToolbar.TabIndex = 21;
             this.oInterfaceToolbar.Tag = "Interface-SparringTimer";
-            this.oInterfaceToolbar.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lInterfaceToolbar
             // 
@@ -1802,7 +1746,6 @@
             this.oInterfaceQuestTracker.Sorted = true;
             this.oInterfaceQuestTracker.TabIndex = 19;
             this.oInterfaceQuestTracker.Tag = "Interface-QuestTracker";
-            this.oInterfaceQuestTracker.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lInterfaceQuestTracker
             // 
@@ -1824,7 +1767,6 @@
             this.oInterfaceProgressBar.Sorted = true;
             this.oInterfaceProgressBar.TabIndex = 18;
             this.oInterfaceProgressBar.Tag = "Interface-ProgressBar";
-            this.oInterfaceProgressBar.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lInterfaceProgressBar
             // 
@@ -1846,7 +1788,6 @@
             this.oInterfaceMinimap.Sorted = true;
             this.oInterfaceMinimap.TabIndex = 17;
             this.oInterfaceMinimap.Tag = "Interface-Minimap";
-            this.oInterfaceMinimap.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lInterfaceMinimap
             // 
@@ -1868,7 +1809,6 @@
             this.oInterfaceFullMap.Sorted = true;
             this.oInterfaceFullMap.TabIndex = 16;
             this.oInterfaceFullMap.Tag = "Interface-FullMap";
-            this.oInterfaceFullMap.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oInterfaceEndTravel
             // 
@@ -1881,7 +1821,6 @@
             this.oInterfaceEndTravel.Sorted = true;
             this.oInterfaceEndTravel.TabIndex = 15;
             this.oInterfaceEndTravel.Tag = "Interface-EndTravel";
-            this.oInterfaceEndTravel.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oInterfaceChat
             // 
@@ -1894,7 +1833,6 @@
             this.oInterfaceChat.Sorted = true;
             this.oInterfaceChat.TabIndex = 14;
             this.oInterfaceChat.Tag = "Interface-ChatBox";
-            this.oInterfaceChat.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oInterfaceBags
             // 
@@ -1907,7 +1845,6 @@
             this.oInterfaceBags.Sorted = true;
             this.oInterfaceBags.TabIndex = 13;
             this.oInterfaceBags.Tag = "Interface-Bags";
-            this.oInterfaceBags.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oInterfaceGambit
             // 
@@ -1920,7 +1857,6 @@
             this.oInterfaceGambit.Sorted = true;
             this.oInterfaceGambit.TabIndex = 12;
             this.oInterfaceGambit.Tag = "Interface-Gambit";
-            this.oInterfaceGambit.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oInterfaceAttunement
             // 
@@ -1933,7 +1869,6 @@
             this.oInterfaceAttunement.Sorted = true;
             this.oInterfaceAttunement.TabIndex = 11;
             this.oInterfaceAttunement.Tag = "Interface-Attunement";
-            this.oInterfaceAttunement.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lInterfaceAttunement
             // 
@@ -1977,7 +1912,6 @@
             this.oLegendaryRelicMaster.Sorted = true;
             this.oLegendaryRelicMaster.TabIndex = 48;
             this.oLegendaryRelicMaster.Tag = "Legendary-RelicMaster";
-            this.oLegendaryRelicMaster.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lLegendaryRelicMaster
             // 
@@ -1999,7 +1933,6 @@
             this.oLegendaryLegendaryItemTracking.Sorted = true;
             this.oLegendaryLegendaryItemTracking.TabIndex = 47;
             this.oLegendaryLegendaryItemTracking.Tag = "Legendary-ItemTracking";
-            this.oLegendaryLegendaryItemTracking.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lLegendaryLegendaryItemTracking
             // 
@@ -2021,7 +1954,6 @@
             this.oLegendaryLegacyUpdate.Sorted = true;
             this.oLegendaryLegacyUpdate.TabIndex = 46;
             this.oLegendaryLegacyUpdate.Tag = "Legendary-LegacyUpdate";
-            this.oLegendaryLegacyUpdate.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lLegendaryLegacyUpdate
             // 
@@ -2043,7 +1975,6 @@
             this.oLegendaryLegacyExtraction.Sorted = true;
             this.oLegendaryLegacyExtraction.TabIndex = 45;
             this.oLegendaryLegacyExtraction.Tag = "Legendary-LegacyExtraction";
-            this.oLegendaryLegacyExtraction.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lLegendaryLegacyExtraction
             // 
@@ -2065,7 +1996,6 @@
             this.oLegendaryItemAdvancement.Sorted = true;
             this.oLegendaryItemAdvancement.TabIndex = 44;
             this.oLegendaryItemAdvancement.Tag = "Legendary-ItemAdvancement";
-            this.oLegendaryItemAdvancement.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lLegendaryItemAdvancement
             // 
@@ -2087,7 +2017,6 @@
             this.oLegendaryForgeMaster.Sorted = true;
             this.oLegendaryForgeMaster.TabIndex = 43;
             this.oLegendaryForgeMaster.Tag = "Legendary-ForgeMaster";
-            this.oLegendaryForgeMaster.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lLegendaryForgeMaster
             // 
@@ -2141,7 +2070,6 @@
             this.oSkirmishSkirmishCreate.Sorted = true;
             this.oSkirmishSkirmishCreate.TabIndex = 9;
             this.oSkirmishSkirmishCreate.Tag = "Skirmish-Create";
-            this.oSkirmishSkirmishCreate.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // oSkirmishSkirmishPanel
             // 
@@ -2154,7 +2082,6 @@
             this.oSkirmishSkirmishPanel.Sorted = true;
             this.oSkirmishSkirmishPanel.TabIndex = 10;
             this.oSkirmishSkirmishPanel.Tag = "Skirmish-Panel";
-            this.oSkirmishSkirmishPanel.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // gHelp
             // 
@@ -2182,7 +2109,7 @@
             // iLotroInterface
             // 
             this.iLotroInterface.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iLotroInterface.LinkArea = new System.Windows.Forms.LinkArea(77, 14);
+            this.iLotroInterface.LinkArea = new System.Windows.Forms.LinkArea(82, 14);
             this.iLotroInterface.Location = new System.Drawing.Point(3, 16);
             this.iLotroInterface.Name = "iLotroInterface";
             this.iLotroInterface.Size = new System.Drawing.Size(114, 220);

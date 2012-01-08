@@ -3,6 +3,10 @@ HOW TO USE
 Extract everything in this archive to your LOTRO skins directory in your My Documents folder.
 It should end up looking something like "My Documents\The Lord of the Rings Online\ui\skins\BuildSkin\..."
 Then run BuildSkin.exe (it has a ring icon).
+The program contains 3 areas: Element options, in the bottom left; Preview, at the top; and Skin options, in the bottom right.
+To create a skin, first name it and select your screen resolution on the right side, then select what type of each UI element you want.
+Preview images, if available, will be shown at the top of the program.
+Then click on the build button, and select your skin in LOTRO.
 
 USAGE NOTES
 -----------
@@ -20,14 +24,26 @@ They are stored in the following manner:
 	Confirm on build, load or delete? True/False
 	Auto-load last skin on startup? True/False
 
+Text editor path, confirmations, and auto-load can be configured from within the program, through the options window (the button in the bottom right corner).
+
 MAKING ADDONS
 -------------
 The general procedure is the same as that for UiBuilder.
 1. In the appropriate directory (folder) for the element, place an XML file called "<YourSkinName>.xml"
-2. If the skin element is resolution specific, create a directory called "<YourSkinName>res" and put in it an (empty) file named "resenable.xml" and a file named "<YourSkinName> <Resolution>.xml" for each supported resolution.
+2. See the Expressions section for resolution-specific values.
 3. If you have a screenshot of just that element with your skin enabled, place it in the Preview folder and name it "<YourSkinName>.jpg"
 4. If your skin requires custom art, place it in a separate folder (preferrably something like "<YourSkinName>art").
 5. NOTE: You MUST change the paths of your art mappings. They need to be relative to where the full skin XML will end up, NOT where your element XML file goes. In other words, they should be something like "..\<Element>\<YourSkinArtFolder>\<whatever>.tga"
+
+EXPRESSIONS
+-----------
+Resolution-specific elements are calculated during skin building for the user's resolution. To use them in your XML, put an expression contained in { and } in the apropriate field, instead of a nubmer.
+There are two types of variables. First are Screen.Width and Screen.Height, which are replaced with the appropriate values from the user's resolution.
+Also available are variables in the form "ElementID.Attribute" such as ToolbarField.X or DyeColorMenu_Legs.Height
+This theoretically works for any element id.
+HOWEVER, using it on repeated items such as BaseBox or InnerShadow will most likely cause undesired results.
+In other words, you can set the BaseBox to the size of its panel, but not the other way around.
+For example toolbar width would be written as Width="{(Screen.Width-1024)/2}" for a 1024 pixel wide toolbar.
 
 CHANGELOG/ROADMAP
 -----------------
@@ -45,19 +61,15 @@ CHANGELOG/ROADMAP
  v'	0.0.4a	Correctly Implement Error Messages/Handling
  v'	0.0.4b	UI/Code Cleanup/Bugfixes
  v'	0.0.4z	Add Options File
- ->	0.5a	Add Options Window / More Options
-	0.5b	Add Automatic Resolution Calculation
-	0.6		Add Documentation
- ??	0.6a	Add Internationalization Support (SECOND TEST RELEASE)
- ??	0.6b	Add Language Packs
- ??	0.7		Add Command Line Interface
-	0.9		Code/Images/Folders Cleanup
+ v'	0.5		Add Options Window / More Options
+ ->	0.9		Add Automatic Resolution Calculation
+	0.9a	Code/Images/Folders Cleanup
 	0.9z	Bugfixes (let it set a while)
 	1.0		Real Public Release - Probably final for a while
 
 COPYRIGHT/LICENSE
 -----------------
-Copyright (c) 2012 Mevordel
+Copyright (c) 2012 Mevordel and Telemachus
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
