@@ -8,10 +8,11 @@ To create a skin, first name it and select your screen resolution on the right s
 Preview images, if available, will be shown at the top of the program.
 Then click on the build button, and select your skin in LOTRO.
 
-USAGE NOTES
------------
-+ Skins created with UiBuilder cannot be "Loaded" in BuildSkin. (But you can rebuild them, and then they will work.)
-+ Addons created for UiBuilder can be converted to BuildSkin by copying ConvertUiBuilderAddons.cmd to the UiBuilder directory and running it, then copying those folders into the BuildSkin directory. If they have Art assets, paths to those must also be fixed. Simply do a find and replace with the search string of \<Old name>\ and replace it witn \<new name>\
+UIBUILDER COMPATIBILITY
+-----------------------
+Skins created with UiBuilder cannot be "Loaded" in BuildSkin. (But you can rebuild them, and then they will work.)
+Addons created for UiBuilder can be converted to BuildSkin by copying ConvertUiBuilderAddons.cmd to the UiBuilder directory and running it, then copying those folders into the BuildSkin directory.
+	If they have Art assets, paths to those must also be fixed. Simply do a find and replace with the search string of \<Old folder name>\ and replace it witn \<new folder name>\
 
 MANAGING OPTIONS
 ----------------
@@ -33,11 +34,13 @@ The general procedure is the same as that for UiBuilder.
 2. See the Expressions section for resolution-specific values.
 3. If you have a screenshot of just that element with your skin enabled, place it in the Preview folder and name it "<YourSkinName>.jpg"
 4. If your skin requires custom art, place it in a separate folder (preferrably something like "<YourSkinName>art").
-5. NOTE: You MUST change the paths of your art mappings. They need to be relative to where the full skin XML will end up, NOT where your element XML file goes. In other words, they should be something like "..\<Element>\<YourSkinArtFolder>\<whatever>.tga"
+5. NOTE: You MUST change the paths of your art mappings. They need to be relative to where the full skin XML will end up, NOT where your element XML file goes.
+	In other words, they should be something like "..\<Element>\<YourSkinArtFolder>\<whatever>.tga"
 
 EXPRESSIONS
 -----------
-Resolution-specific elements are calculated during skin building for the user's resolution. To use them in your XML, put an expression contained in { and } in the apropriate field, instead of a nubmer.
+Resolution-specific elements are calculated during skin building for the user's resolution.
+	To use them in your XML, put an expression contained in { and } in the apropriate field, instead of a nubmer.
 There are two types of variables. First are Screen.Width and Screen.Height, which are replaced with the appropriate values from the user's resolution.
 Also available are variables in the form "ElementID.Attribute" such as ToolbarField.X or DyeColorMenu_Legs.Height
 This theoretically works for any element id.

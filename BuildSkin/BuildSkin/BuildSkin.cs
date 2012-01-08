@@ -28,6 +28,17 @@ namespace BuildSkin
                 }
             }
 
+            foreach (Control oGroup in sHorizontal.Panel1.Controls)
+            {
+                foreach (Control oCtrl in oGroup.Controls)
+                {
+                    if (oCtrl.GetType() == typeof(Label))
+                    {
+                        ((Label)oCtrl).DoubleClick += EditElem;
+                    }
+                }
+            }
+
             RefreshAll();
 
             //Add preview event handlers
@@ -232,6 +243,27 @@ namespace BuildSkin
             else
             {
                 ErrorMessage(1);
+            }
+        }
+        void EditElem(object oSender, EventArgs e)
+        {
+            string sText = "Default";
+            foreach (ComboBox oCurrBox in oAllBoxes)
+            {
+                if (oCurrBox.Tag == ((Label)oSender).Tag)
+                {
+                    sText = oCurrBox.Text;
+                }
+            }
+            if (System.IO.File.Exists(((Label)oSender).Tag + "\\" + sText + ".xml") && System.IO.File.Exists(Options.EditorPath))
+            {
+                System.Diagnostics.Process procEditor = new System.Diagnostics.Process();
+                procEditor.StartInfo = new System.Diagnostics.ProcessStartInfo(((Label)oSender).Tag + "\\" + sText + ".xml");
+                procEditor.Start();
+            }
+            else
+            {
+                ErrorMessage(9);
             }
         }
         void DeleteSkin(object oSender, EventArgs e)

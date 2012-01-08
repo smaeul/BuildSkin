@@ -312,6 +312,7 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(37, 13);
             this.label26.TabIndex = 0;
+            this.label26.Tag = "UIPanels-Wallet";
             this.label26.Text = "Wallet";
             // 
             // comboBox22
@@ -347,6 +348,7 @@
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(40, 13);
             this.label24.TabIndex = 0;
+            this.label24.Tag = "Items-Stacks";
             this.label24.Text = "Stacks";
             // 
             // label25
@@ -356,6 +358,7 @@
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(63, 13);
             this.label25.TabIndex = 0;
+            this.label25.Tag = "Items-PaperItems";
             this.label25.Text = "Paper Items";
             // 
             // comboBox23
@@ -407,6 +410,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(60, 13);
             this.label19.TabIndex = 0;
+            this.label19.Tag = "FellowshipRaid-Maneuvers";
             this.label19.Text = "Maneuvers";
             // 
             // label20
@@ -416,6 +420,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(48, 13);
             this.label20.TabIndex = 0;
+            this.label20.Tag = "FellowshipRaid-ItemRoll";
             this.label20.Text = "Item Roll";
             // 
             // label21
@@ -425,6 +430,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(84, 13);
             this.label21.TabIndex = 0;
+            this.label21.Tag = "FellowshipRaid-FellowSelection";
             this.label21.Text = "Fellow Selection";
             // 
             // label22
@@ -434,6 +440,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(76, 13);
             this.label22.TabIndex = 0;
+            this.label22.Tag = "FellowshipRaid-AssistWindow";
             this.label22.Text = "Assist Window";
             // 
             // comboBox18
@@ -529,6 +536,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(52, 13);
             this.label17.TabIndex = 51;
+            this.label17.Tag = "Housing-Purchase";
             this.label17.Text = "Purchase";
             // 
             // comboBox17
@@ -550,6 +558,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(62, 13);
             this.label18.TabIndex = 49;
+            this.label18.Tag = "Housing-Permissions";
             this.label18.Text = "Permissions";
             // 
             // comboBox10
@@ -571,6 +580,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(121, 13);
             this.label11.TabIndex = 0;
+            this.label11.Tag = "Housing-NeighborhoodSelection";
             this.label11.Text = "Neighborhood Selection";
             // 
             // comboBox11
@@ -592,6 +602,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(69, 13);
             this.label12.TabIndex = 0;
+            this.label12.Tag = "Housing-Maintenance";
             this.label12.Text = "Maintenance";
             // 
             // comboBox12
@@ -613,6 +624,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(76, 13);
             this.label13.TabIndex = 0;
+            this.label13.Tag = "Housing-HousingPanel";
             this.label13.Text = "Housing Panel";
             // 
             // comboBox13
@@ -634,6 +646,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(80, 13);
             this.label14.TabIndex = 0;
+            this.label14.Tag = "Housing-ForSaleSign";
             this.label14.Text = "\"For Sale\" Sign";
             // 
             // comboBox14
@@ -655,6 +668,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(42, 13);
             this.label15.TabIndex = 0;
+            this.label15.Tag = "Housing-Escrow";
             this.label15.Text = "Escrow";
             // 
             // comboBox15
@@ -676,6 +690,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(59, 13);
             this.label16.TabIndex = 9;
+            this.label16.Tag = "Housing-Decoration";
             this.label16.Text = "Decoration";
             // 
             // gUIPanels
@@ -733,6 +748,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(33, 13);
             this.label8.TabIndex = 35;
+            this.label8.Tag = "UIPanels-Traits";
             this.label8.Text = "Traits";
             // 
             // comboBox1
@@ -754,6 +770,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 13);
             this.label1.TabIndex = 33;
+            this.label1.Tag = "UIPanels-Tracking";
             this.label1.Text = "Tracking (Hunter, etc.)";
             // 
             // lUIPanelsQuestLog
@@ -763,6 +780,7 @@
             this.lUIPanelsQuestLog.Name = "lUIPanelsQuestLog";
             this.lUIPanelsQuestLog.Size = new System.Drawing.Size(26, 13);
             this.lUIPanelsQuestLog.TabIndex = 0;
+            this.lUIPanelsQuestLog.Tag = "UIPanels-Mail";
             this.lUIPanelsQuestLog.Text = "Mail";
             // 
             // lUIPanelsOptions
@@ -772,6 +790,7 @@
             this.lUIPanelsOptions.Name = "lUIPanelsOptions";
             this.lUIPanelsOptions.Size = new System.Drawing.Size(70, 13);
             this.lUIPanelsOptions.TabIndex = 0;
+            this.lUIPanelsOptions.Tag = "UIPanels-InstanceJoin";
             this.lUIPanelsOptions.Text = "Instance Join";
             // 
             // lUIPanelsMail
@@ -781,6 +800,7 @@
             this.lUIPanelsMail.Name = "lUIPanelsMail";
             this.lUIPanelsMail.Size = new System.Drawing.Size(76, 13);
             this.lUIPanelsMail.TabIndex = 0;
+            this.lUIPanelsMail.Tag = "UIPanels-InspectionBio";
             this.lUIPanelsMail.Text = "Inspection/Bio";
             // 
             // lUIPanelsSocial
@@ -790,6 +810,7 @@
             this.lUIPanelsSocial.Name = "lUIPanelsSocial";
             this.lUIPanelsSocial.Size = new System.Drawing.Size(43, 13);
             this.lUIPanelsSocial.TabIndex = 0;
+            this.lUIPanelsSocial.Tag = "UIPanels-Options";
             this.lUIPanelsSocial.Text = "Options";
             // 
             // lUIPanelsInstanceJoin
@@ -799,6 +820,7 @@
             this.lUIPanelsInstanceJoin.Name = "lUIPanelsInstanceJoin";
             this.lUIPanelsInstanceJoin.Size = new System.Drawing.Size(79, 13);
             this.lUIPanelsInstanceJoin.TabIndex = 0;
+            this.lUIPanelsInstanceJoin.Tag = "UIPanels-DressingRoom";
             this.lUIPanelsInstanceJoin.Text = "Dressing Room";
             // 
             // lUIPanelsDressingRoom
@@ -808,6 +830,7 @@
             this.lUIPanelsDressingRoom.Name = "lUIPanelsDressingRoom";
             this.lUIPanelsDressingRoom.Size = new System.Drawing.Size(54, 13);
             this.lUIPanelsDressingRoom.TabIndex = 0;
+            this.lUIPanelsDressingRoom.Tag = "UIPanels-DeedLog";
             this.lUIPanelsDressingRoom.Text = "Deed Log";
             // 
             // lUIPanelsDeedLog
@@ -817,6 +840,7 @@
             this.lUIPanelsDeedLog.Name = "lUIPanelsDeedLog";
             this.lUIPanelsDeedLog.Size = new System.Drawing.Size(43, 13);
             this.lUIPanelsDeedLog.TabIndex = 0;
+            this.lUIPanelsDeedLog.Tag = "UIPanels-Crafting";
             this.lUIPanelsDeedLog.Text = "Crafting";
             // 
             // oUIPanelsWardrobe
@@ -838,6 +862,7 @@
             this.lUIPanelsWardrobe.Name = "lUIPanelsWardrobe";
             this.lUIPanelsWardrobe.Size = new System.Drawing.Size(72, 13);
             this.lUIPanelsWardrobe.TabIndex = 0;
+            this.lUIPanelsWardrobe.Tag = "UIPanels-SecureTrade";
             this.lUIPanelsWardrobe.Text = "Secure Trade";
             // 
             // oUIPanelsVault
@@ -859,6 +884,7 @@
             this.lUIPanelsVault.Name = "lUIPanelsVault";
             this.lUIPanelsVault.Size = new System.Drawing.Size(36, 13);
             this.lUIPanelsVault.TabIndex = 0;
+            this.lUIPanelsVault.Tag = "UIPanels-Social";
             this.lUIPanelsVault.Text = "Social";
             // 
             // oUIPanelsSharedStorage
@@ -880,6 +906,7 @@
             this.lUIPanelsSharedStorage.Name = "lUIPanelsSharedStorage";
             this.lUIPanelsSharedStorage.Size = new System.Drawing.Size(56, 13);
             this.lUIPanelsSharedStorage.TabIndex = 0;
+            this.lUIPanelsSharedStorage.Tag = "UIPanels-QuestLog";
             this.lUIPanelsSharedStorage.Text = "Quest Log";
             // 
             // oUIPanelsSocial
@@ -973,6 +1000,7 @@
             this.lUIPanelsCrafting.Name = "lUIPanelsCrafting";
             this.lUIPanelsCrafting.Size = new System.Drawing.Size(53, 13);
             this.lUIPanelsCrafting.TabIndex = 0;
+            this.lUIPanelsCrafting.Tag = "UIPanels-Character";
             this.lUIPanelsCrafting.Text = "Character";
             // 
             // oUIPanelsCrafting
@@ -1032,6 +1060,7 @@
             this.lVitalsFellowship.Name = "lVitalsFellowship";
             this.lVitalsFellowship.Size = new System.Drawing.Size(56, 13);
             this.lVitalsFellowship.TabIndex = 19;
+            this.lVitalsFellowship.Tag = "Vitals-Fellowship";
             this.lVitalsFellowship.Text = "Fellowship";
             // 
             // oVitalsCompanionVitals
@@ -1053,6 +1082,7 @@
             this.lVitalsCompanionVitals.Name = "lVitalsCompanionVitals";
             this.lVitalsCompanionVitals.Size = new System.Drawing.Size(60, 13);
             this.lVitalsCompanionVitals.TabIndex = 7;
+            this.lVitalsCompanionVitals.Tag = "Vitals-Companion";
             this.lVitalsCompanionVitals.Text = "Companion";
             // 
             // oVitalsMountVitals
@@ -1074,6 +1104,7 @@
             this.lVitalsMountVitals.Name = "lVitalsMountVitals";
             this.lVitalsMountVitals.Size = new System.Drawing.Size(37, 13);
             this.lVitalsMountVitals.TabIndex = 0;
+            this.lVitalsMountVitals.Tag = "Vitals-Mount";
             this.lVitalsMountVitals.Text = "Mount";
             // 
             // oVitalsEscortVitals
@@ -1095,6 +1126,7 @@
             this.lVitalsEscortVitals.Name = "lVitalsEscortVitals";
             this.lVitalsEscortVitals.Size = new System.Drawing.Size(37, 13);
             this.lVitalsEscortVitals.TabIndex = 0;
+            this.lVitalsEscortVitals.Tag = "Vitals-Escort";
             this.lVitalsEscortVitals.Text = "Escort";
             // 
             // oVitalsSoldierVitals
@@ -1116,6 +1148,7 @@
             this.lVitalsSoldierVitals.Name = "lVitalsSoldierVitals";
             this.lVitalsSoldierVitals.Size = new System.Drawing.Size(39, 13);
             this.lVitalsSoldierVitals.TabIndex = 0;
+            this.lVitalsSoldierVitals.Tag = "Vitals-Soldier";
             this.lVitalsSoldierVitals.Text = "Soldier";
             // 
             // oVitalsTargetsTarget
@@ -1137,6 +1170,7 @@
             this.lVitalsTargetsTarget.Name = "lVitalsTargetsTarget";
             this.lVitalsTargetsTarget.Size = new System.Drawing.Size(79, 13);
             this.lVitalsTargetsTarget.TabIndex = 0;
+            this.lVitalsTargetsTarget.Tag = "Vitals-TargetsTarget";
             this.lVitalsTargetsTarget.Text = "Target\'s Target";
             // 
             // oVitalsOpponentVitals
@@ -1158,6 +1192,7 @@
             this.lVitalsOpponentVitals.Name = "lVitalsOpponentVitals";
             this.lVitalsOpponentVitals.Size = new System.Drawing.Size(54, 13);
             this.lVitalsOpponentVitals.TabIndex = 0;
+            this.lVitalsOpponentVitals.Tag = "Vitals-Opponent";
             this.lVitalsOpponentVitals.Text = "Opponent";
             // 
             // oVitalsPlayerVitals
@@ -1179,6 +1214,7 @@
             this.lVitalsPlayerVitals.Name = "lVitalsPlayerVitals";
             this.lVitalsPlayerVitals.Size = new System.Drawing.Size(36, 13);
             this.lVitalsPlayerVitals.TabIndex = 0;
+            this.lVitalsPlayerVitals.Tag = "Vitals-Player";
             this.lVitalsPlayerVitals.Text = "Player";
             // 
             // gNPCDialogs
@@ -1236,6 +1272,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 13);
             this.label9.TabIndex = 50;
+            this.label9.Tag = "NPCDialogs-VocationTrainer";
             this.label9.Text = "Vocation Trainer";
             // 
             // label6
@@ -1245,6 +1282,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 48;
+            this.label6.Tag = "NPCDialogs-Vendor";
             this.label6.Text = "Vendor";
             // 
             // comboBox6
@@ -1266,6 +1304,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 13);
             this.label5.TabIndex = 46;
+            this.label5.Tag = "NPCDialogs-StableMaster";
             this.label5.Text = "Stable Master";
             // 
             // comboBox5
@@ -1287,6 +1326,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 44;
+            this.label4.Tag = "NPCDialogs-SkillTrainer";
             this.label4.Text = "Skill Trainer";
             // 
             // comboBox4
@@ -1308,6 +1348,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 13);
             this.label3.TabIndex = 42;
+            this.label3.Tag = "NPCDialogs-QuestStartFinish";
             this.label3.Text = "Quest Start/Finish";
             // 
             // comboBox3
@@ -1329,6 +1370,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 40;
+            this.label2.Tag = "NPCDialogs-Notary";
             this.label2.Text = "Notary";
             // 
             // comboBox2
@@ -1350,6 +1392,7 @@
             this.lNPCDialogsStableMaster.Name = "lNPCDialogsStableMaster";
             this.lNPCDialogsStableMaster.Size = new System.Drawing.Size(106, 13);
             this.lNPCDialogsStableMaster.TabIndex = 0;
+            this.lNPCDialogsStableMaster.Tag = "NPCDialogs-CraftingGuildTrainer";
             this.lNPCDialogsStableMaster.Text = "Crafting Guild Trainer";
             // 
             // lNPCDialogsSkillTrainer
@@ -1359,6 +1402,7 @@
             this.lNPCDialogsSkillTrainer.Name = "lNPCDialogsSkillTrainer";
             this.lNPCDialogsSkillTrainer.Size = new System.Drawing.Size(117, 13);
             this.lNPCDialogsSkillTrainer.TabIndex = 0;
+            this.lNPCDialogsSkillTrainer.Tag = "NPCDialogs-Comments";
             this.lNPCDialogsSkillTrainer.Text = "Comments (Quest, etc.)";
             // 
             // lNPCDialogsQuestStart
@@ -1368,6 +1412,7 @@
             this.lNPCDialogsQuestStart.Name = "lNPCDialogsQuestStart";
             this.lNPCDialogsQuestStart.Size = new System.Drawing.Size(35, 13);
             this.lNPCDialogsQuestStart.TabIndex = 0;
+            this.lNPCDialogsQuestStart.Tag = "NPCDialogs-Barter";
             this.lNPCDialogsQuestStart.Text = "Barter";
             // 
             // lNPCDialogsVendor
@@ -1377,6 +1422,7 @@
             this.lNPCDialogsVendor.Name = "lNPCDialogsVendor";
             this.lNPCDialogsVendor.Size = new System.Drawing.Size(73, 13);
             this.lNPCDialogsVendor.TabIndex = 0;
+            this.lNPCDialogsVendor.Tag = "NPCDialogs-HobbyMaster";
             this.lNPCDialogsVendor.Text = "Hobby Master";
             // 
             // lNPCDialogsBarter
@@ -1386,6 +1432,7 @@
             this.lNPCDialogsBarter.Name = "lNPCDialogsBarter";
             this.lNPCDialogsBarter.Size = new System.Drawing.Size(29, 13);
             this.lNPCDialogsBarter.TabIndex = 0;
+            this.lNPCDialogsBarter.Tag = "NPCDialogs-Bard";
             this.lNPCDialogsBarter.Text = "Bard";
             // 
             // lNPCDialogsBard
@@ -1395,6 +1442,7 @@
             this.lNPCDialogsBard.Name = "lNPCDialogsBard";
             this.lNPCDialogsBard.Size = new System.Drawing.Size(38, 13);
             this.lNPCDialogsBard.TabIndex = 0;
+            this.lNPCDialogsBard.Tag = "NPCDialogs-Barber";
             this.lNPCDialogsBard.Text = "Barber";
             // 
             // oNPCDialogsVendor
@@ -1476,6 +1524,7 @@
             this.lNPCDialogsAuction.Name = "lNPCDialogsAuction";
             this.lNPCDialogsAuction.Size = new System.Drawing.Size(43, 13);
             this.lNPCDialogsAuction.TabIndex = 0;
+            this.lNPCDialogsAuction.Tag = "NPCDialogs-Auction";
             this.lNPCDialogsAuction.Text = "Auction";
             // 
             // oNPCDialogsAuction
@@ -1513,6 +1562,7 @@
             this.lPanelStyleScrollbar.Name = "lPanelStyleScrollbar";
             this.lPanelStyleScrollbar.Size = new System.Drawing.Size(48, 13);
             this.lPanelStyleScrollbar.TabIndex = 0;
+            this.lPanelStyleScrollbar.Tag = "PanelStyle-Scrollbar";
             this.lPanelStyleScrollbar.Text = "Scrollbar";
             // 
             // lPanelStyleButtons
@@ -1522,6 +1572,7 @@
             this.lPanelStyleButtons.Name = "lPanelStyleButtons";
             this.lPanelStyleButtons.Size = new System.Drawing.Size(43, 13);
             this.lPanelStyleButtons.TabIndex = 0;
+            this.lPanelStyleButtons.Tag = "PanelStyle-Buttons";
             this.lPanelStyleButtons.Text = "Buttons";
             // 
             // lPanelStyleBorder
@@ -1531,6 +1582,7 @@
             this.lPanelStyleBorder.Name = "lPanelStyleBorder";
             this.lPanelStyleBorder.Size = new System.Drawing.Size(38, 13);
             this.lPanelStyleBorder.TabIndex = 0;
+            this.lPanelStyleBorder.Tag = "PanelStyle-Border";
             this.lPanelStyleBorder.Text = "Border";
             // 
             // oPanelStyleScrollbar
@@ -1624,6 +1676,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 13);
             this.label7.TabIndex = 24;
+            this.label7.Tag = "Interface-Tooltips";
             this.label7.Text = "Tooltips";
             // 
             // oInterfaceSkillQueue
@@ -1645,7 +1698,7 @@
             this.lInterfaceSkillQueue.Name = "lInterfaceSkillQueue";
             this.lInterfaceSkillQueue.Size = new System.Drawing.Size(61, 13);
             this.lInterfaceSkillQueue.TabIndex = 22;
-            this.lInterfaceSkillQueue.Tag = "";
+            this.lInterfaceSkillQueue.Tag = "Interface-SkillQueue";
             this.lInterfaceSkillQueue.Text = "Skill Queue";
             // 
             // lInterfaceFullMap
@@ -1655,6 +1708,7 @@
             this.lInterfaceFullMap.Name = "lInterfaceFullMap";
             this.lInterfaceFullMap.Size = new System.Drawing.Size(47, 13);
             this.lInterfaceFullMap.TabIndex = 0;
+            this.lInterfaceFullMap.Tag = "Interface-FullMap";
             this.lInterfaceFullMap.Text = "Full Map";
             // 
             // lInterfaceEndTravel
@@ -1664,6 +1718,7 @@
             this.lInterfaceEndTravel.Name = "lInterfaceEndTravel";
             this.lInterfaceEndTravel.Size = new System.Drawing.Size(59, 13);
             this.lInterfaceEndTravel.TabIndex = 0;
+            this.lInterfaceEndTravel.Tag = "Interface-EndTravel";
             this.lInterfaceEndTravel.Text = "End Travel";
             // 
             // lInterfaceChat
@@ -1673,6 +1728,7 @@
             this.lInterfaceChat.Name = "lInterfaceChat";
             this.lInterfaceChat.Size = new System.Drawing.Size(50, 13);
             this.lInterfaceChat.TabIndex = 0;
+            this.lInterfaceChat.Tag = "Interface-ChatBox";
             this.lInterfaceChat.Text = "Chat Box";
             // 
             // lInterfaceBags
@@ -1682,6 +1738,7 @@
             this.lInterfaceBags.Name = "lInterfaceBags";
             this.lInterfaceBags.Size = new System.Drawing.Size(31, 13);
             this.lInterfaceBags.TabIndex = 0;
+            this.lInterfaceBags.Tag = "Interface-Bags";
             this.lInterfaceBags.Text = "Bags";
             // 
             // lInterfaceGambit
@@ -1691,6 +1748,7 @@
             this.lInterfaceGambit.Name = "lInterfaceGambit";
             this.lInterfaceGambit.Size = new System.Drawing.Size(40, 13);
             this.lInterfaceGambit.TabIndex = 0;
+            this.lInterfaceGambit.Tag = "Interface-Gambit";
             this.lInterfaceGambit.Text = "Gambit";
             // 
             // oInterfaceTooltips
@@ -1712,6 +1770,7 @@
             this.lInterfaceTooltips.Name = "lInterfaceTooltips";
             this.lInterfaceTooltips.Size = new System.Drawing.Size(97, 13);
             this.lInterfaceTooltips.TabIndex = 0;
+            this.lInterfaceTooltips.Tag = "Interface-ToolbarQuickslots";
             this.lInterfaceTooltips.Text = "Toolbar/Quickslots";
             // 
             // oInterfaceToolbar
@@ -1733,6 +1792,7 @@
             this.lInterfaceToolbar.Name = "lInterfaceToolbar";
             this.lInterfaceToolbar.Size = new System.Drawing.Size(75, 13);
             this.lInterfaceToolbar.TabIndex = 0;
+            this.lInterfaceToolbar.Tag = "Interface-SparringTimer";
             this.lInterfaceToolbar.Text = "Sparring Timer";
             // 
             // oInterfaceQuestTracker
@@ -1754,6 +1814,7 @@
             this.lInterfaceQuestTracker.Name = "lInterfaceQuestTracker";
             this.lInterfaceQuestTracker.Size = new System.Drawing.Size(75, 13);
             this.lInterfaceQuestTracker.TabIndex = 0;
+            this.lInterfaceQuestTracker.Tag = "Interface-QuestTracker";
             this.lInterfaceQuestTracker.Text = "Quest Tracker";
             // 
             // oInterfaceProgressBar
@@ -1775,6 +1836,7 @@
             this.lInterfaceProgressBar.Name = "lInterfaceProgressBar";
             this.lInterfaceProgressBar.Size = new System.Drawing.Size(67, 13);
             this.lInterfaceProgressBar.TabIndex = 0;
+            this.lInterfaceProgressBar.Tag = "Interface-ProgressBar";
             this.lInterfaceProgressBar.Text = "Progress Bar";
             // 
             // oInterfaceMinimap
@@ -1796,6 +1858,7 @@
             this.lInterfaceMinimap.Name = "lInterfaceMinimap";
             this.lInterfaceMinimap.Size = new System.Drawing.Size(84, 13);
             this.lInterfaceMinimap.TabIndex = 0;
+            this.lInterfaceMinimap.Tag = "Interface-Minimap";
             this.lInterfaceMinimap.Text = "Minimap (Radar)";
             // 
             // oInterfaceFullMap
@@ -1877,6 +1940,7 @@
             this.lInterfaceAttunement.Name = "lInterfaceAttunement";
             this.lInterfaceAttunement.Size = new System.Drawing.Size(61, 13);
             this.lInterfaceAttunement.TabIndex = 0;
+            this.lInterfaceAttunement.Tag = "Interface-Attunement";
             this.lInterfaceAttunement.Text = "Attunement";
             // 
             // gLegendary
@@ -1920,6 +1984,7 @@
             this.lLegendaryRelicMaster.Name = "lLegendaryRelicMaster";
             this.lLegendaryRelicMaster.Size = new System.Drawing.Size(66, 13);
             this.lLegendaryRelicMaster.TabIndex = 0;
+            this.lLegendaryRelicMaster.Tag = "Legendary-RelicMaster";
             this.lLegendaryRelicMaster.Text = "Relic Master";
             // 
             // oLegendaryLegendaryItemTracking
@@ -1941,6 +2006,7 @@
             this.lLegendaryLegendaryItemTracking.Name = "lLegendaryLegendaryItemTracking";
             this.lLegendaryLegendaryItemTracking.Size = new System.Drawing.Size(72, 13);
             this.lLegendaryLegendaryItemTracking.TabIndex = 0;
+            this.lLegendaryLegendaryItemTracking.Tag = "Legendary-ItemTracking";
             this.lLegendaryLegendaryItemTracking.Text = "Item Tracking";
             // 
             // oLegendaryLegacyUpdate
@@ -1962,6 +2028,7 @@
             this.lLegendaryLegacyUpdate.Name = "lLegendaryLegacyUpdate";
             this.lLegendaryLegacyUpdate.Size = new System.Drawing.Size(80, 13);
             this.lLegendaryLegacyUpdate.TabIndex = 0;
+            this.lLegendaryLegacyUpdate.Tag = "Legendary-LegacyUpdate";
             this.lLegendaryLegacyUpdate.Text = "Legacy Update";
             // 
             // oLegendaryLegacyExtraction
@@ -1983,6 +2050,7 @@
             this.lLegendaryLegacyExtraction.Name = "lLegendaryLegacyExtraction";
             this.lLegendaryLegacyExtraction.Size = new System.Drawing.Size(92, 13);
             this.lLegendaryLegacyExtraction.TabIndex = 0;
+            this.lLegendaryLegacyExtraction.Tag = "Legendary-LegacyExtraction";
             this.lLegendaryLegacyExtraction.Text = "Legacy Extraction";
             // 
             // oLegendaryItemAdvancement
@@ -2004,6 +2072,7 @@
             this.lLegendaryItemAdvancement.Name = "lLegendaryItemAdvancement";
             this.lLegendaryItemAdvancement.Size = new System.Drawing.Size(96, 13);
             this.lLegendaryItemAdvancement.TabIndex = 0;
+            this.lLegendaryItemAdvancement.Tag = "Legendary-ItemAdvancement";
             this.lLegendaryItemAdvancement.Text = "Item Advancement";
             // 
             // oLegendaryForgeMaster
@@ -2025,6 +2094,7 @@
             this.lLegendaryForgeMaster.Name = "lLegendaryForgeMaster";
             this.lLegendaryForgeMaster.Size = new System.Drawing.Size(69, 13);
             this.lLegendaryForgeMaster.TabIndex = 0;
+            this.lLegendaryForgeMaster.Tag = "Legendary-ForgeMaster";
             this.lLegendaryForgeMaster.Text = "Forge Master";
             // 
             // gSkirmish
@@ -2048,6 +2118,7 @@
             this.lSkirmishSkirmishPanel.Name = "lSkirmishSkirmishPanel";
             this.lSkirmishSkirmishPanel.Size = new System.Drawing.Size(76, 13);
             this.lSkirmishSkirmishPanel.TabIndex = 0;
+            this.lSkirmishSkirmishPanel.Tag = "Skirmish-Panel";
             this.lSkirmishSkirmishPanel.Text = "Skirmish Panel";
             // 
             // lSkirmishSkirmishCreate
@@ -2057,6 +2128,7 @@
             this.lSkirmishSkirmishCreate.Name = "lSkirmishSkirmishCreate";
             this.lSkirmishSkirmishCreate.Size = new System.Drawing.Size(80, 13);
             this.lSkirmishSkirmishCreate.TabIndex = 0;
+            this.lSkirmishSkirmishCreate.Tag = "Skirmish-Create";
             this.lSkirmishSkirmishCreate.Text = "Skirmish Create";
             // 
             // oSkirmishSkirmishCreate
