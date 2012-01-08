@@ -258,7 +258,7 @@ namespace BuildSkin
             if (System.IO.File.Exists(((Label)oSender).Tag + "\\" + sText + ".xml") && System.IO.File.Exists(Options.EditorPath))
             {
                 System.Diagnostics.Process procEditor = new System.Diagnostics.Process();
-                procEditor.StartInfo = new System.Diagnostics.ProcessStartInfo(((Label)oSender).Tag + "\\" + sText + ".xml");
+                procEditor.StartInfo = new System.Diagnostics.ProcessStartInfo(Options.EditorPath, ((Label)oSender).Tag + "\\" + sText + ".xml");
                 procEditor.Start();
             }
             else
