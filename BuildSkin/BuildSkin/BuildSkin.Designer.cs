@@ -2064,7 +2064,7 @@
             this.oLegendaryItemAdvancement.Size = new System.Drawing.Size(132, 21);
             this.oLegendaryItemAdvancement.Sorted = true;
             this.oLegendaryItemAdvancement.TabIndex = 44;
-            this.oLegendaryItemAdvancement.Tag = "Legendary-ItemAdvancemet";
+            this.oLegendaryItemAdvancement.Tag = "Legendary-ItemAdvancement";
             this.oLegendaryItemAdvancement.SelectedIndexChanged += new System.EventHandler(this.Preview);
             // 
             // lLegendaryItemAdvancement

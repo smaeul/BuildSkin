@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using NCalc;
 
 namespace BuildSkin
 {
@@ -115,50 +116,17 @@ namespace BuildSkin
                     fConfFile.WriteLine(oCurrBox.Tag + "=" + oCurrBox.Text);
                     if (System.IO.File.Exists(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml") )//&& oCurrBox.Text != "Default")
                     {
-                        var sLines = System.IO.File.ReadAllLines(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml");
-                        for (short i = 0; i < sLines.Length; i++)
-                        {
-                            //parse xml line
-
-                            //Variables
-                            sLines[i].Replace("$sw", iWidth);
-                            sLines[i].Replace("$sh", iHeight);
-
-                            //Expressions
-                            if (sLines[i].Contains("ID=\"ToolbarField\""))
-                            {
-                                int iTmpW = 0;
-                                int iTmpX = 0;
-                                foreach (string sAttr in sLines[i].Split(new char[] {' ', '<', '>'}))
-                                {
-                                    if (sAttr.Contains("Width"))
-                                    {
-                                        iTmpW = Int32.Parse(sAttr.Split('=')[1].Replace("\"", ""));
-                                    }
-                                    else if (sAttr.Contains("X="))
-                                    {
-                                        iTmpX = Int32.Parse(sAttr.Split('=')[1].Replace("\"", ""));
-                                    }
-                                }
-                                int iNewX = (Int32.Parse(iWidth) - iTmpW) / 2;
-                                sLines[i] = sLines[i].Replace("X=\"" + iTmpX.ToString() + "\"", "X=\"" + iNewX.ToString() + "\"");
-                            }
-
-                            //Write It
-                            fXMLFile.WriteLine(sLines[i]);
-                        }
+                        fXMLFile.WriteLine(System.IO.File.ReadAllText(oCurrBox.Tag + "\\" + oCurrBox.Text + ".xml"));
                     }
-                    else if (oCurrBox.Text != "")
+                    else
                     {
-                        //Don't show an error if the box is empty, because if it is, it is probably
-                        //disabled anyways, or it is intentional, having the same effect as the "Default" option.
                         ErrorMessage(5);
                     }
                 }
 
                 //XML Footer
                 fXMLFile.WriteLine("</opt> <!-- Built by BuildSkin -->");
-
+                
                 //Close Files
                 fConfFile.Close();
                 fXMLFile.Close();
@@ -168,8 +136,84 @@ namespace BuildSkin
                 ErrorMessage(4);
             }
 
+            //Replace Expressions
+            var sLines = System.IO.File.ReadAllLines(tSkinName.Text + " Skin\\SkinDefinition.xml");
+            for (short i = 0; i < sLines.Length; i++)
+            {
+                if (sLines[i].Contains("\"{") && sLines[i].Contains("}\""))
+                {
+                    //Isolate expression
+                    string sBefore = sLines[i].Split(new string[] { "\"{" }, 2, StringSplitOptions.None)[0];
+                    string sAfter = sLines[i].Split(new string[] { "}\"" }, 2, StringSplitOptions.None)[1];
+                    string sExpr = sLines[i].Split('{')[1].Split('}')[0];
+
+                    //Evaluate expression
+                    MessageBox.Show(sExpr);
+                    //Get variables
+                    sExpr = LookupVariables(sExpr);
+                    MessageBox.Show(sExpr);
+                    //Evaluate Math
+                    sExpr = new Expression(sExpr).Evaluate().ToString();
+                    MessageBox.Show(sExpr);
+                    //Put it back in
+                    sLines[i] = sBefore + "\"" + sExpr + "\"" + sAfter;
+
+                    //for more than one expr per line - repeat line
+                    i--;
+                }
+            }
+            System.IO.File.WriteAllLines(tSkinName.Text + " Skin\\SkinDefinition.xml", sLines);
+
             MessageBox.Show("Skin " + tSkinName.Text + " successfully built/updated.");
             RefreshSkins();
+        }
+        string LookupVariables(string sExpr)
+        {
+            string[] sVariables = sExpr.Split(new char[] { '+', '-', '*', '/', '(', ')', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' }, StringSplitOptions.RemoveEmptyEntries);
+            if (sVariables.Length == 0)
+            {
+                return sExpr;
+            }
+            else
+            {
+                string[] sAllLines = System.IO.File.ReadAllLines(tSkinName.Text + " Skin\\SkinDefinition.xml");
+                foreach (string sVariable in sVariables)
+                {
+                    if (sVariable.Split('.')[0].ToLowerInvariant() == "screen")
+                    {
+                        if (sVariable.Split('.')[1].ToLowerInvariant().StartsWith("w"))
+                        {
+                            sExpr = sExpr.Replace(sVariable, oResolutionMain.Text.Split('x')[0]);
+                        }
+                        else if (sVariable.Split('.')[1].ToLowerInvariant().StartsWith("h"))
+                        {
+                            sExpr = sExpr.Replace(sVariable, oResolutionMain.Text.Split('x')[1]);
+                        }
+                        else
+                        {
+                            sExpr.Replace(sVariable, "0");
+                        }
+                    }
+                    else
+                    {
+                        foreach (string sLine in sAllLines)
+                        {
+                            if (sLine.ToLowerInvariant().Contains("ID=\"" + sVariable.Split('.')[0].ToLowerInvariant() + "\""))
+                            {
+                                string[] sAttrs = sLine.Split(' ');
+                                foreach (string sAttr in sAttrs)
+                                {
+                                    if (sAttr.Split('=')[0].ToLowerInvariant().StartsWith(sVariable.Split('.')[1].ToLowerInvariant()))
+                                    {
+                                        sExpr = sExpr.Replace(sVariable, LookupVariables(sAttr.Split('=')[1]));
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                return sExpr;
+            }
         }
         void EditSkin(object oSender, EventArgs e)
         {
@@ -312,7 +356,11 @@ namespace BuildSkin
                     {
                         oCurrBox.Items.Add(System.IO.Path.GetFileNameWithoutExtension(sFile));
                     }
-                    if (oCurrBox.Items.Count > 1) { oCurrBox.Enabled = true; }
+                    if (oCurrBox.Items.Count > 1)
+                    {
+                        oCurrBox.Enabled = true;
+                        oCurrBox.SelectedIndex = oCurrBox.Items.IndexOf("Default");
+                    }
                 }
             }
             
