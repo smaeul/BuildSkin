@@ -2182,7 +2182,7 @@
             // iLotroInterface
             // 
             this.iLotroInterface.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iLotroInterface.LinkArea = new System.Windows.Forms.LinkArea(66, 14);
+            this.iLotroInterface.LinkArea = new System.Windows.Forms.LinkArea(77, 14);
             this.iLotroInterface.Location = new System.Drawing.Point(3, 16);
             this.iLotroInterface.Name = "iLotroInterface";
             this.iLotroInterface.Size = new System.Drawing.Size(114, 220);

@@ -148,13 +148,11 @@ namespace BuildSkin
                     string sExpr = sLines[i].Split('{')[1].Split('}')[0];
 
                     //Evaluate expression
-                    MessageBox.Show(sExpr);
+
                     //Get variables
                     sExpr = LookupVariables(sExpr);
-                    MessageBox.Show(sExpr);
                     //Evaluate Math
                     sExpr = new Expression(sExpr).Evaluate().ToString();
-                    MessageBox.Show(sExpr);
                     //Put it back in
                     sLines[i] = sBefore + "\"" + sExpr + "\"" + sAfter;
 
@@ -191,21 +189,21 @@ namespace BuildSkin
                         }
                         else
                         {
-                            sExpr.Replace(sVariable, "0");
+                            sExpr = sExpr.Replace(sVariable, "0");
                         }
                     }
                     else
                     {
                         foreach (string sLine in sAllLines)
                         {
-                            if (sLine.ToLowerInvariant().Contains("ID=\"" + sVariable.Split('.')[0].ToLowerInvariant() + "\""))
+                            if (sLine.ToLowerInvariant().Contains("id=\"" + sVariable.Split('.')[0].ToLowerInvariant() + "\""))
                             {
                                 string[] sAttrs = sLine.Split(' ');
                                 foreach (string sAttr in sAttrs)
                                 {
                                     if (sAttr.Split('=')[0].ToLowerInvariant().StartsWith(sVariable.Split('.')[1].ToLowerInvariant()))
                                     {
-                                        sExpr = sExpr.Replace(sVariable, LookupVariables(sAttr.Split('=')[1]));
+                                        sExpr = sExpr.Replace(sVariable, new Expression(LookupVariables(sAttr.Split('=')[1].Split(new string[] {"\"", "{", "}"}, StringSplitOptions.RemoveEmptyEntries)[0])).Evaluate().ToString());
                                     }
                                 }
                             }
