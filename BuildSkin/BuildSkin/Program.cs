@@ -12,9 +12,9 @@ namespace BuildSkin
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles(); //Must be here to exist before Builder object is created
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fBuildSkin());
+            Application.Run(new mainWindow());
         }
     }
 }
