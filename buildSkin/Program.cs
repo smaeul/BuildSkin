@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace BuildSkin
+namespace buildSkin
 {
     static class Program
     {
@@ -14,7 +14,7 @@ namespace BuildSkin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainWindow());
+            Application.Run(new mainForm());
         }
     }
 }

@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BuildSkin (Beta)")]
-[assembly: AssemblyDescription("A program to manage LOTRO interfaces.")]
+[assembly: AssemblyTitle("BuildSkin (Beta Release)")]
+[assembly: AssemblyDescription("A tool to make LOTRO skins by combining individual elements and adapting them to your resolution.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Mevordel and Telemachus")]
+[assembly: AssemblyCompany("Mevordel")]
 [assembly: AssemblyProduct("BuildSkin")]
-[assembly: AssemblyCopyright("Copyright © 2012")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyTrademark("BuildSkin")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3532fc34-5cea-4247-886f-4b78dfd07f9d")]
+[assembly: Guid("cda2ece5-15d2-4943-b16a-a2f70d10f373")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.99.1.0")]
-[assembly: AssemblyFileVersion("0.99.1.0")]
+[assembly: AssemblyVersion("0.99.2.10")]
+[assembly: AssemblyFileVersion("0.99.2.10")]
