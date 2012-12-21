@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BuildSkin (Beta Release)")]
+[assembly: AssemblyTitle("BuildSkin")]
 [assembly: AssemblyDescription("A tool to make LOTRO skins by combining individual elements and adapting them to your resolution.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mevordel")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.99.2.10")]
-[assembly: AssemblyFileVersion("0.99.2.10")]
+[assembly: AssemblyVersion("0.99.9.20")]
+[assembly: AssemblyFileVersion("0.99.9.20")]

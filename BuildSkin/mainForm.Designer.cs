@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.mainTabs = new System.Windows.Forms.TabControl();
             this.skinsTab = new System.Windows.Forms.TabPage();
@@ -35,6 +37,7 @@
             this.customCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customOptions = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.skinsPreview = new System.Windows.Forms.PictureBox();
             this.skinsPanel = new System.Windows.Forms.Panel();
             this.skinsEditXML = new System.Windows.Forms.LinkLabel();
             this.skinsReload = new System.Windows.Forms.LinkLabel();
@@ -46,12 +49,17 @@
             this.addonsTab = new System.Windows.Forms.TabPage();
             this.addonsSelectAll = new System.Windows.Forms.CheckBox();
             this.addonsDataGrid = new System.Windows.Forms.DataGridView();
-            this.addonsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addonsSelected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.addonsInstalled = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.addonsID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addonsAuthor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addonsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addonsDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addonsVersion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addonsInstVer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addonsLink = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.addonsSelected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.addonsFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addonsDescription = new System.Windows.Forms.TextBox();
             this.addonsPanel = new System.Windows.Forms.Panel();
             this.addonsDelete = new System.Windows.Forms.LinkLabel();
             this.addonsRefreshLabel = new System.Windows.Forms.Label();
@@ -94,6 +102,7 @@
             this.mainTabs.SuspendLayout();
             this.skinsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.skinsCustomize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skinsPreview)).BeginInit();
             this.skinsPanel.SuspendLayout();
             this.addonsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addonsDataGrid)).BeginInit();
@@ -116,17 +125,18 @@
             this.mainTabs.Location = new System.Drawing.Point(2, 2);
             this.mainTabs.Name = "mainTabs";
             this.mainTabs.SelectedIndex = 0;
-            this.mainTabs.Size = new System.Drawing.Size(580, 310);
+            this.mainTabs.Size = new System.Drawing.Size(580, 410);
             this.mainTabs.TabIndex = 1;
             // 
             // skinsTab
             // 
             this.skinsTab.Controls.Add(this.skinsCustomize);
+            this.skinsTab.Controls.Add(this.skinsPreview);
             this.skinsTab.Controls.Add(this.skinsPanel);
             this.skinsTab.Location = new System.Drawing.Point(4, 22);
             this.skinsTab.Name = "skinsTab";
             this.skinsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.skinsTab.Size = new System.Drawing.Size(572, 284);
+            this.skinsTab.Size = new System.Drawing.Size(572, 384);
             this.skinsTab.TabIndex = 0;
             this.skinsTab.Text = "Skins";
             this.skinsTab.UseVisualStyleBackColor = true;
@@ -157,7 +167,8 @@
             this.skinsCustomize.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.skinsCustomize.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.skinsCustomize.Size = new System.Drawing.Size(566, 254);
-            this.skinsCustomize.TabIndex = 9;
+            this.skinsCustomize.TabIndex = 11;
+            this.skinsCustomize.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.skinOptionEditing);
             // 
             // customCategory
             // 
@@ -179,6 +190,15 @@
             this.customOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customOptions.HeaderText = "Options";
             this.customOptions.Name = "customOptions";
+            // 
+            // skinsPreview
+            // 
+            this.skinsPreview.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.skinsPreview.Location = new System.Drawing.Point(3, 281);
+            this.skinsPreview.Name = "skinsPreview";
+            this.skinsPreview.Size = new System.Drawing.Size(566, 100);
+            this.skinsPreview.TabIndex = 10;
+            this.skinsPreview.TabStop = false;
             // 
             // skinsPanel
             // 
@@ -282,24 +302,25 @@
             // 
             this.addonsTab.Controls.Add(this.addonsSelectAll);
             this.addonsTab.Controls.Add(this.addonsDataGrid);
+            this.addonsTab.Controls.Add(this.addonsDescription);
             this.addonsTab.Controls.Add(this.addonsPanel);
             this.addonsTab.Location = new System.Drawing.Point(4, 22);
             this.addonsTab.Name = "addonsTab";
             this.addonsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.addonsTab.Size = new System.Drawing.Size(572, 284);
+            this.addonsTab.Size = new System.Drawing.Size(572, 384);
             this.addonsTab.TabIndex = 1;
             this.addonsTab.Text = "Addons";
             this.addonsTab.UseVisualStyleBackColor = true;
             // 
             // addonsSelectAll
             // 
-            this.addonsSelectAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.addonsSelectAll.BackColor = System.Drawing.SystemColors.Control;
-            this.addonsSelectAll.Location = new System.Drawing.Point(551, 30);
+            this.addonsSelectAll.Location = new System.Drawing.Point(8, 30);
             this.addonsSelectAll.Name = "addonsSelectAll";
             this.addonsSelectAll.Size = new System.Drawing.Size(15, 13);
             this.addonsSelectAll.TabIndex = 15;
             this.addonsSelectAll.UseVisualStyleBackColor = false;
+            this.addonsSelectAll.CheckedChanged += new System.EventHandler(this.addonSelectAll);
             // 
             // addonsDataGrid
             // 
@@ -307,15 +328,21 @@
             this.addonsDataGrid.AllowUserToDeleteRows = false;
             this.addonsDataGrid.AllowUserToOrderColumns = true;
             this.addonsDataGrid.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            this.addonsDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.addonsDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.addonsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.addonsDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.addonsName,
+            this.addonsSelected,
+            this.addonsInstalled,
+            this.addonsID,
             this.addonsAuthor,
+            this.addonsName,
+            this.addonsDesc,
             this.addonsVersion,
             this.addonsInstVer,
             this.addonsLink,
-            this.addonsSelected});
+            this.addonsFile});
             this.addonsDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addonsDataGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.addonsDataGrid.EnableHeadersVisualStyles = false;
@@ -324,45 +351,78 @@
             this.addonsDataGrid.Name = "addonsDataGrid";
             this.addonsDataGrid.RowHeadersVisible = false;
             this.addonsDataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.addonsDataGrid.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.Window;
-            this.addonsDataGrid.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            this.addonsDataGrid.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            this.addonsDataGrid.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.addonsDataGrid.RowTemplate.Height = 21;
             this.addonsDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.addonsDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.addonsDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.addonsDataGrid.Size = new System.Drawing.Size(566, 254);
-            this.addonsDataGrid.TabIndex = 16;
+            this.addonsDataGrid.TabIndex = 18;
+            this.addonsDataGrid.SelectionChanged += new System.EventHandler(this.addonSelectRow);
             // 
-            // addonsName
+            // addonsSelected
             // 
-            this.addonsName.HeaderText = "Name";
-            this.addonsName.Name = "addonsName";
-            this.addonsName.ReadOnly = true;
-            this.addonsName.Width = 158;
+            this.addonsSelected.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.addonsSelected.HeaderText = "";
+            this.addonsSelected.Name = "addonsSelected";
+            this.addonsSelected.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.addonsSelected.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.addonsSelected.Width = 20;
+            // 
+            // addonsInstalled
+            // 
+            this.addonsInstalled.HeaderText = "Installed";
+            this.addonsInstalled.Name = "addonsInstalled";
+            this.addonsInstalled.ReadOnly = true;
+            this.addonsInstalled.Visible = false;
+            // 
+            // addonsID
+            // 
+            this.addonsID.HeaderText = "ID";
+            this.addonsID.Name = "addonsID";
+            this.addonsID.ReadOnly = true;
+            this.addonsID.Visible = false;
             // 
             // addonsAuthor
             // 
-            this.addonsAuthor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.addonsAuthor.HeaderText = "Author";
             this.addonsAuthor.Name = "addonsAuthor";
             this.addonsAuthor.ReadOnly = true;
+            this.addonsAuthor.Width = 138;
+            // 
+            // addonsName
+            // 
+            this.addonsName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.addonsName.HeaderText = "Name";
+            this.addonsName.Name = "addonsName";
+            this.addonsName.ReadOnly = true;
+            // 
+            // addonsDesc
+            // 
+            this.addonsDesc.HeaderText = "Description";
+            this.addonsDesc.Name = "addonsDesc";
+            this.addonsDesc.ReadOnly = true;
+            this.addonsDesc.Visible = false;
             // 
             // addonsVersion
             // 
-            this.addonsVersion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.addonsVersion.HeaderText = "Latest Version";
             this.addonsVersion.Name = "addonsVersion";
             this.addonsVersion.ReadOnly = true;
+            this.addonsVersion.Width = 98;
             // 
             // addonsInstVer
             // 
-            this.addonsInstVer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.addonsInstVer.HeaderText = "Installed Version";
             this.addonsInstVer.Name = "addonsInstVer";
             this.addonsInstVer.ReadOnly = true;
+            this.addonsInstVer.Width = 108;
             // 
             // addonsLink
             // 
             this.addonsLink.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.addonsLink.DefaultCellStyle = dataGridViewCellStyle2;
             this.addonsLink.HeaderText = "Link";
             this.addonsLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.addonsLink.Name = "addonsLink";
@@ -374,14 +434,23 @@
             this.addonsLink.UseColumnTextForLinkValue = true;
             this.addonsLink.Width = 30;
             // 
-            // addonsSelected
+            // addonsFile
             // 
-            this.addonsSelected.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.addonsSelected.HeaderText = "";
-            this.addonsSelected.Name = "addonsSelected";
-            this.addonsSelected.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.addonsSelected.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.addonsSelected.Width = 20;
+            this.addonsFile.HeaderText = "File";
+            this.addonsFile.Name = "addonsFile";
+            this.addonsFile.ReadOnly = true;
+            this.addonsFile.Visible = false;
+            // 
+            // addonsDescription
+            // 
+            this.addonsDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addonsDescription.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.addonsDescription.Location = new System.Drawing.Point(3, 281);
+            this.addonsDescription.Multiline = true;
+            this.addonsDescription.Name = "addonsDescription";
+            this.addonsDescription.ReadOnly = true;
+            this.addonsDescription.Size = new System.Drawing.Size(566, 100);
+            this.addonsDescription.TabIndex = 17;
             // 
             // addonsPanel
             // 
@@ -421,8 +490,6 @@
             // 
             // addonsFilter
             // 
-            this.addonsFilter.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.addonsFilter.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.addonsFilter.Location = new System.Drawing.Point(0, 0);
             this.addonsFilter.Name = "addonsFilter";
             this.addonsFilter.Size = new System.Drawing.Size(160, 20);
@@ -474,7 +541,7 @@
             this.settingsTab.Location = new System.Drawing.Point(4, 22);
             this.settingsTab.Name = "settingsTab";
             this.settingsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.settingsTab.Size = new System.Drawing.Size(572, 284);
+            this.settingsTab.Size = new System.Drawing.Size(572, 384);
             this.settingsTab.TabIndex = 2;
             this.settingsTab.Text = "Info/Settings";
             this.settingsTab.UseVisualStyleBackColor = true;
@@ -498,7 +565,7 @@
             this.infoGroup.Controls.Add(this.infoLI);
             this.infoGroup.Location = new System.Drawing.Point(3, 27);
             this.infoGroup.Name = "infoGroup";
-            this.infoGroup.Size = new System.Drawing.Size(362, 254);
+            this.infoGroup.Size = new System.Drawing.Size(362, 354);
             this.infoGroup.TabIndex = 2;
             this.infoGroup.TabStop = false;
             this.infoGroup.Text = "Information";
@@ -535,8 +602,9 @@
             this.infoReadMe.Name = "infoReadMe";
             this.infoReadMe.ReadOnly = true;
             this.infoReadMe.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.infoReadMe.Size = new System.Drawing.Size(293, 106);
+            this.infoReadMe.Size = new System.Drawing.Size(293, 206);
             this.infoReadMe.TabIndex = 28;
+            this.infoReadMe.Text = resources.GetString("infoReadMe.Text");
             // 
             // infoReadMeLabel
             // 
@@ -602,7 +670,7 @@
             this.infoVersion.ReadOnly = true;
             this.infoVersion.Size = new System.Drawing.Size(293, 20);
             this.infoVersion.TabIndex = 21;
-            this.infoVersion.Text = "0.99.2 (April 2012)";
+            this.infoVersion.Text = "0.99.9 (December 2012)";
             this.infoVersion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // infoVersionLabel
@@ -635,7 +703,7 @@
             this.infoLI.ReadOnly = true;
             this.infoLI.Size = new System.Drawing.Size(293, 20);
             this.infoLI.TabIndex = 26;
-            this.infoLI.Text = "lotrointerface.com/downloads/info623-BuildSkin.html";
+            this.infoLI.Text = "http://lotrointerface.com/downloads/info623";
             this.infoLI.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // settingsGroup
@@ -654,14 +722,14 @@
             this.settingsGroup.Dock = System.Windows.Forms.DockStyle.Right;
             this.settingsGroup.Location = new System.Drawing.Point(369, 27);
             this.settingsGroup.Name = "settingsGroup";
-            this.settingsGroup.Size = new System.Drawing.Size(200, 254);
+            this.settingsGroup.Size = new System.Drawing.Size(200, 354);
             this.settingsGroup.TabIndex = 3;
             this.settingsGroup.TabStop = false;
             this.settingsGroup.Text = "Settings";
             // 
             // settingsResolution
             // 
-            this.settingsResolution.FormattingEnabled = true;
+            this.settingsResolution.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.settingsResolution.Items.AddRange(new object[] {
             "800x600",
             "1024x768",
@@ -678,22 +746,22 @@
             "1920x1200",
             "2048x1080",
             "2048x1536",
+            "2560x1440",
             "2560x1600",
             "2560x2048"});
             this.settingsResolution.Location = new System.Drawing.Point(10, 217);
             this.settingsResolution.Name = "settingsResolution";
             this.settingsResolution.Size = new System.Drawing.Size(180, 21);
             this.settingsResolution.TabIndex = 37;
-            this.settingsResolution.Text = "1024x768";
             // 
             // settingsResolutionLabel
             // 
             this.settingsResolutionLabel.AutoSize = true;
             this.settingsResolutionLabel.Location = new System.Drawing.Point(7, 201);
             this.settingsResolutionLabel.Name = "settingsResolutionLabel";
-            this.settingsResolutionLabel.Size = new System.Drawing.Size(94, 13);
+            this.settingsResolutionLabel.Size = new System.Drawing.Size(57, 13);
             this.settingsResolutionLabel.TabIndex = 0;
-            this.settingsResolutionLabel.Text = "Default Resolution";
+            this.settingsResolutionLabel.Text = "Resolution";
             // 
             // settingsEditorBrowse
             // 
@@ -748,6 +816,7 @@
             this.settingsReadOnly.TabIndex = 34;
             this.settingsReadOnly.Text = "Make Downloads Read-Only";
             this.settingsReadOnly.UseVisualStyleBackColor = true;
+            this.settingsReadOnly.Visible = false;
             // 
             // settingsTransMax
             // 
@@ -834,7 +903,7 @@
             this.statusProgress,
             this.statusText});
             this.statusBar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.statusBar.Location = new System.Drawing.Point(0, 314);
+            this.statusBar.Location = new System.Drawing.Point(0, 414);
             this.statusBar.Name = "statusBar";
             this.statusBar.Size = new System.Drawing.Size(584, 22);
             this.statusBar.TabIndex = 1;
@@ -854,7 +923,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 336);
+            this.ClientSize = new System.Drawing.Size(584, 436);
             this.Controls.Add(this.statusBar);
             this.Controls.Add(this.mainTabs);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -867,9 +936,11 @@
             this.mainTabs.ResumeLayout(false);
             this.skinsTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.skinsCustomize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skinsPreview)).EndInit();
             this.skinsPanel.ResumeLayout(false);
             this.skinsPanel.PerformLayout();
             this.addonsTab.ResumeLayout(false);
+            this.addonsTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addonsDataGrid)).EndInit();
             this.addonsPanel.ResumeLayout(false);
             this.addonsPanel.PerformLayout();
@@ -896,7 +967,6 @@
         private System.Windows.Forms.StatusStrip statusBar;
         private System.Windows.Forms.ToolStripProgressBar statusProgress;
         private System.Windows.Forms.ToolStripStatusLabel statusText;
-        private System.Windows.Forms.DataGridView skinsCustomize;
         private System.Windows.Forms.Panel skinsPanel;
         private System.Windows.Forms.ComboBox skinsList;
         private System.Windows.Forms.LinkLabel skinsBuild;
@@ -919,9 +989,6 @@
         private System.Windows.Forms.LinkLabel settingsEditorBrowse;
         private System.Windows.Forms.ComboBox settingsResolution;
         private System.Windows.Forms.Label settingsResolutionLabel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customCategory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customName;
-        private System.Windows.Forms.DataGridViewComboBoxColumn customOptions;
         private System.Windows.Forms.GroupBox infoGroup;
         private System.Windows.Forms.LinkLabel skinsEditXML;
         private System.Windows.Forms.TextBox infoReadMe;
@@ -945,12 +1012,22 @@
         private System.Windows.Forms.Label addonsRefreshLabel;
         private System.Windows.Forms.CheckBox addonsSelectAll;
         private System.Windows.Forms.DataGridView addonsDataGrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addonsName;
+        private System.Windows.Forms.TextBox addonsDescription;
+        private System.Windows.Forms.DataGridView skinsCustomize;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customCategory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customName;
+        private System.Windows.Forms.DataGridViewComboBoxColumn customOptions;
+        private System.Windows.Forms.PictureBox skinsPreview;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn addonsSelected;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn addonsInstalled;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addonsID;
         private System.Windows.Forms.DataGridViewTextBoxColumn addonsAuthor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addonsName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addonsDesc;
         private System.Windows.Forms.DataGridViewTextBoxColumn addonsVersion;
         private System.Windows.Forms.DataGridViewTextBoxColumn addonsInstVer;
         private System.Windows.Forms.DataGridViewLinkColumn addonsLink;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn addonsSelected;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addonsFile;
     }
 }
 
