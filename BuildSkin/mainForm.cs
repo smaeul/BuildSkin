@@ -455,7 +455,7 @@ namespace buildSkin
                         if (row.Cells["addonsID"].Value.ToString() == data[0])
                         {
                             //Record Installed Version
-                            row.Cells["addonsInstVer"].Value = data[4];
+                            row.Cells["addonsInstVer"].Value = data[3];
 
                             //Select Outdated Addons
                             if (row.Cells["addonsInstVer"].Value.ToString() != row.Cells["addonsVersion"].Value.ToString())
